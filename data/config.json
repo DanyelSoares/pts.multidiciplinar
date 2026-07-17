@@ -1,0 +1,48 @@
+{
+  "patientStatuses": [
+    { "id": "active", "label": "Ativo", "kind": "ok" },
+    { "id": "awaiting_validation", "label": "Aguardando validação", "kind": "warn" },
+    { "id": "review_in_progress", "label": "Revisão em andamento", "kind": "info" },
+    { "id": "interview_in_progress", "label": "Entrevista em andamento", "kind": "risk" }
+  ],
+  "alerts": [
+    { "id": "critical", "label": "1 crítico", "kind": "risk" },
+    { "id": "review_overdue", "label": "Revisão vencida", "kind": "warn" }
+  ],
+  "infoSources": [
+    { "id": "family_report", "label": "Relato familiar" },
+    { "id": "clinical_observation", "label": "Observação clínica" },
+    { "id": "school_info", "label": "Informação escolar" },
+    { "id": "patient_report", "label": "Relato do paciente" },
+    { "id": "critical_alert", "label": "Alerta crítico" },
+    { "id": "env_home", "label": "Ambiente: casa" },
+    { "id": "env_school", "label": "Ambiente: escola" },
+    { "id": "env_street", "label": "Ambiente: rua" }
+  ],
+  "accessLevels": [
+    { "id": "interdisciplinary", "label": "Interdisciplinar — toda a equipe", "icon": "fa-users-rectangle", "kind": "info" },
+    { "id": "category_private", "label": "Privativo por categoria", "icon": "fa-lock", "kind": "risk" },
+    { "id": "administrative", "label": "Administrativo", "icon": "fa-file-shield", "kind": "muted" },
+    { "id": "family_released", "label": "Liberado à família", "icon": "fa-house-user", "kind": "ok" },
+    { "id": "technical_restricted", "label": "Restrito ao responsável técnico", "icon": "fa-user-doctor", "kind": "warn" }
+  ],
+  "referenceProfilesDisclaimer": "Estes perfis são referências visuais configuráveis para comparação e discussão clínica — não constituem padrões diagnósticos nem indicam presença ou ausência de TEA, TDAH ou outra condição. Uma criança sem TEA ou TDAH pode apresentar pontuações elevadas em domínios específicos.",
+  "referenceProfiles": [
+    {
+      "id": "neurotypical", "label": "Neurotípico", "colorVar": "var(--success)",
+      "values": { "impulsivity": 20, "inattention": 20, "temporal_blindness": 15, "hyperactivity": 20, "emotional_dysregulation": 20, "task_initiation": 15, "hyperfocus": 25, "sensory": 15 }
+    },
+    {
+      "id": "adhd", "label": "TDAH", "colorVar": "var(--warning)",
+      "values": { "impulsivity": 80, "inattention": 85, "temporal_blindness": 80, "hyperactivity": 75, "emotional_dysregulation": 65, "task_initiation": 80, "hyperfocus": 70, "sensory": 35 }
+    },
+    {
+      "id": "autism", "label": "Autismo", "colorVar": "var(--danger)",
+      "values": { "impulsivity": 35, "inattention": 40, "temporal_blindness": 45, "hyperactivity": 30, "emotional_dysregulation": 75, "task_initiation": 65, "hyperfocus": 90, "sensory": 90 }
+    },
+    {
+      "id": "adhd_autism", "label": "TDAH + Autismo", "colorVar": "var(--primary-dark)",
+      "values": { "impulsivity": 85, "inattention": 90, "temporal_blindness": 85, "hyperactivity": 80, "emotional_dysregulation": 90, "task_initiation": 90, "hyperfocus": 90, "sensory": 95 }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "versionTrack": [
+    { "label": "v1.0", "sub": "PTS inicial", "state": "done" },
+    { "label": "v2.0", "sub": "Revisão periódica", "state": "done" },
+    { "label": "v2.1", "sub": "Publicada", "state": "done" },
+    { "label": "v2.2", "sub": "Futura", "state": "pending" }
+  ],
+  "approvals": [
+    { "approver": "camila", "who": "Dra. Camila Souza", "role": "Supervisora do caso", "approved": true, "approveLabel": "Aprovado" },
+    { "approver": "familia", "who": "Família (mãe)", "role": "Ciência da família", "approved": true, "approveLabel": "Ciência confirmada" }
+  ],
+  "diff": {
+    "from": "Versão 2.0",
+    "to": "Versão 2.1",
+    "fromLines": [
+      { "type": "same", "text": "Objetivo: aguardar a própria vez em jogos de grupo" },
+      { "type": "rem", "text": "Meta: 60% das oportunidades observadas" }
+    ],
+    "toLines": [
+      { "type": "same", "text": "Objetivo: aguardar a própria vez em jogos de grupo" },
+      { "type": "add", "text": "Meta atualizada: 80% das oportunidades observadas em 4 semanas" }
+    ]
+  },
+  "publishRequirements": "A versão 2.1 já foi publicada e está ativa. A versão 2.0 permanece disponível no histórico."
+}

@@ -1,0 +1,18 @@
+{
+  "notice": "Programas ABA são planos de ensino vinculados a um objetivo aprovado do PTS — nunca substituem o PTS nem são gerados automaticamente. Procedimentos restritivos, punitivos ou de extinção não são sugeridos pelo sistema.",
+  "programs": [
+    {
+      "code": "PRG-033",
+      "name": "Comportamento de heteroagressão — avaliação funcional",
+      "objectiveLink": "Avaliação funcional em andamento · não vinculado a objetivo publicado ainda",
+      "status": "warn", "statusLabel": "Aguardando aprovação do supervisor",
+      "responsible": "Dr. Bruno Alencar",
+      "supervisor": "Dr. Bruno Alencar",
+      "environment": "Casa e escola",
+      "frequency": "Diária, por 10 dias (avaliação)",
+      "functionHypothesis": "Fuga ou esquiva de demanda em situações de frustração — hipótese a ser confirmada por avaliação funcional formal antes de qualquer intervenção.",
+      "substituteSkills": "Comunicação funcional para solicitar pausa e apoio visual antecipatório.",
+      "warning": "Nenhum procedimento restritivo, punitivo ou de extinção é sugerido automaticamente. Este programa permanece como rascunho até avaliação funcional completa e aprovação do supervisor ABA."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "versionTrack": [
+    { "label": "v1.0", "sub": "PTS inicial", "state": "done" },
+    { "label": "v1.2", "sub": "Revisão periódica", "state": "done" },
+    { "label": "v1.4", "sub": "Publicada", "state": "done" },
+    { "label": "v1.5", "sub": "Revisão vencida", "state": "pending" }
+  ],
+  "approvals": [
+    { "approver": "bruno", "who": "Dr. Bruno Alencar", "role": "Supervisor do caso", "approved": true, "approveLabel": "Aprovado" },
+    { "approver": "familia", "who": "Família (avó)", "role": "Ciência da família", "approved": true, "approveLabel": "Ciência confirmada" }
+  ],
+  "diff": {
+    "from": "Versão 1.2",
+    "to": "Versão 1.4",
+    "fromLines": [
+      { "type": "same", "text": "Objetivo: aceitar novas texturas de alimentos" },
+      { "type": "rem", "text": "Meta: introduzir 1 nova textura a cada 2 meses" }
+    ],
+    "toLines": [
+      { "type": "same", "text": "Objetivo: aceitar novas texturas de alimentos" },
+      { "type": "add", "text": "Meta atualizada: introduzir 1 nova textura por mês" }
+    ]
+  },
+  "publishRequirements": "A versão 1.4 está ativa, porém a revisão periódica prevista para 29/06/2026 está vencida. Recomenda-se agendar nova entrevista de revisão para iniciar o ciclo da versão 1.5."
+}

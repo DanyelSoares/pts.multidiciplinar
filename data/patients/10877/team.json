@@ -1,0 +1,14 @@
+{
+  "members": [
+    { "initials": "BA", "name": "Dr. Bruno Alencar", "role": "Supervisor ABA · Supervisor do caso", "note": "1 objetivo sob responsabilidade" },
+    { "initials": "FL", "name": "Família (pai)", "role": "Representante familiar", "note": "Ciência pendente" }
+  ],
+  "responsibilityMatrix": [
+    { "goal": "Solicitar pausa em vez de heteroagressão", "responsible": "Dr. Bruno Alencar", "collaborators": "—", "supervisor": "—", "familyParticipation": { "status": "warn", "label": "Pendente" }, "schoolParticipation": { "status": "warn", "label": "Pendente" }, "status": { "status": "risk", "label": "Vinculado a alerta" } }
+  ],
+  "accessLevelIds": ["category_private", "technical_restricted"],
+  "timeline": [
+    { "date": "28/06/2026", "text": "Entrevista inicial concluída — alerta de segurança gerado a partir da pergunta 13." },
+    { "date": "01/07/2026", "text": "Dr. Bruno Alencar confirmado como supervisor do caso e supervisor ABA." }
+  ]
+}

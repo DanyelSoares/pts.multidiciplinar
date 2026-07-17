@@ -1,0 +1,60 @@
+{
+  "identification": {
+    "patient": "Heitor Cavalcanti de Mello Queiroz",
+    "record": "#08765 · 0723606.01",
+    "unit": "Mais Saúde — Unidade Poço",
+    "version": "1.4",
+    "status": "Ativo · revisão vencida",
+    "validity": "29/06/2025 – 29/06/2026",
+    "nextReview": "29/06/2026 (vencida)",
+    "supervisor": "Dr. Bruno Alencar"
+  },
+  "synthesis": [
+    { "icon": "fa-comment-dots", "title": "Demanda principal", "text": "Manejo de seletividade sensorial a texturas e manutenção da rotina estruturada já estabelecida." },
+    { "icon": "fa-house-chimney", "title": "Contexto de vida", "text": "Reside com avó materna, responsável legal. Frequenta escola municipal regular no turno da manhã." },
+    { "icon": "fa-star", "title": "Prioridades da família", "text": "Ampliação da tolerância a texturas de alimentos e roupas, mantendo a rotina estruturada." },
+    { "icon": "fa-seedling", "title": "Potencialidades e preferências", "text": "Forte interesse por quebra-cabeças e blocos de encaixe; boa concentração em atividades estruturadas." },
+    { "icon": "fa-triangle-exclamation", "title": "Riscos identificados", "text": "Nenhum alerta crítico aberto. Atenção administrativa: revisão periódica está vencida desde 29/06/2026." }
+  ],
+  "diagnosis": {
+    "intro": "Consolidação das necessidades identificadas na Entrevista Inicial PTS v1.1 e no Mapa de necessidades, mantida desde a última revisão.",
+    "rows": [
+      { "domain": "Perfil sensorial", "impact": "Moderado", "environments": "Casa, escola", "source": "Relato familiar, informação escolar" }
+    ],
+    "note": "Nenhuma hipótese pendente de confirmação. Revisão de conteúdo recomendada por estar vencida."
+  },
+  "generalGoals": [
+    { "icon": "fa-hand-sparkles", "label": "Ampliar tolerância sensorial a texturas" },
+    { "icon": "fa-house-chimney-window", "label": "Manter rotina estruturada" }
+  ],
+  "specificGoals": [
+    {
+      "title": "Aceitar progressivamente novas texturas de alimentos em refeições estruturadas, com incentivo gradual.",
+      "status": "ok", "statusLabel": "Ativo",
+      "domain": "Perfil sensorial", "responsible": "T.O. Marcos Vinícius",
+      "goal": "introduzir 1 nova textura por mês, aceitação em 3 refeições consecutivas", "deadline": "29/06/2026",
+      "progress": 100, "progressNote": "100% do critério atingido — objetivo concluído, aguardando revisão para novo ciclo"
+    }
+  ],
+  "goalChecklist": [
+    { "label": "Observável", "ok": true },
+    { "label": "Possui medida", "ok": true },
+    { "label": "Possui condição", "ok": true },
+    { "label": "Critério de domínio completo", "ok": true },
+    { "label": "Possui prazo", "ok": true },
+    { "label": "Possui responsável", "ok": true }
+  ],
+  "plans": [
+    { "goal": "Aceitar novas texturas de alimentos", "type": "Plano sensorial (T.O.)", "responsible": "T.O. Marcos Vinícius", "environments": "Casa", "status": "ok", "statusLabel": "Ativo" }
+  ],
+  "monitoring": {
+    "indicator": "Nº de texturas novas aceitas por ciclo",
+    "collection": "Registro familiar",
+    "periodicity": "Mensal",
+    "nextAnalysis": "atrasada — última análise em 29/05/2026"
+  },
+  "approvals": [
+    { "who": "Dr. Bruno Alencar", "role": "Supervisor do caso", "status": "ok", "statusLabel": "Aprovado" },
+    { "who": "Família (avó)", "role": "Ciência da família", "status": "ok", "statusLabel": "Aprovado" }
+  ]
+}

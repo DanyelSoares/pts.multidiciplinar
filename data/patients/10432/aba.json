@@ -1,0 +1,35 @@
+{
+  "notice": "Programas ABA são planos de ensino vinculados a um objetivo aprovado do PTS — nunca substituem o PTS nem são gerados automaticamente. Procedimentos restritivos, punitivos ou de extinção não são sugeridos pelo sistema.",
+  "programs": [
+    {
+      "code": "PRG-005",
+      "name": "Tolerância à espera em jogos de grupo",
+      "objectiveLink": "Vinculado ao objetivo: \"Aguardar a própria vez em jogos de grupo\" · Regulação emocional",
+      "status": "ok", "statusLabel": "Ativo · v3",
+      "responsible": "Dra. Camila Souza",
+      "supervisor": "Dr. Bruno Alencar",
+      "environment": "Escola",
+      "frequency": "2x por semana, 30 min",
+      "operationalDefinition": "A criança permanece na atividade de grupo aguardando sua vez, sem sair da atividade ou verbalizar recusa, por até 3 minutos de espera.",
+      "antecedentResponse": "Início de jogo em grupo com regra de turnos → criança aguarda sua vez sem intervenção do adulto.",
+      "helpHierarchy": [
+        { "n": 1, "label": "Física total", "current": false },
+        { "n": 2, "label": "Física parcial", "current": false },
+        { "n": 3, "label": "Gestual", "current": false },
+        { "n": 4, "label": "Verbal", "current": false },
+        { "n": 5, "label": "Independente", "current": true }
+      ],
+      "masteryCriteria": "80% de respostas independentes, em 3 sessões consecutivas, com pelo menos 2 aplicadores diferentes.",
+      "sessionData": [
+        { "label": "S1", "value": 30, "baseline": true },
+        { "label": "S2", "value": 40, "baseline": true },
+        { "label": "S3", "value": 50, "baseline": false },
+        { "label": "S4", "value": 58, "baseline": false },
+        { "label": "S5", "value": 65, "baseline": false },
+        { "label": "S6", "value": 68, "baseline": false },
+        { "label": "S7", "value": 70, "baseline": false },
+        { "label": "S8", "value": 72, "baseline": false }
+      ]
+    }
+  ]
+}

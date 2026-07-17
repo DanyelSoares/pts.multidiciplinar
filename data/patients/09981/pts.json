@@ -1,0 +1,92 @@
+{
+  "identification": {
+    "patient": "Anuoluwapo M. E. Veloso Taiwo",
+    "record": "#09981 · 0890394.00",
+    "unit": "Mais Saúde — Unidade Poço",
+    "version": "3.0",
+    "status": "Revisão em andamento",
+    "validity": "02/07/2026 – 15/07/2027",
+    "nextReview": "15/07/2026",
+    "supervisor": "Dra. Camila Souza"
+  },
+  "synthesis": [
+    { "icon": "fa-comment-dots", "title": "Demanda principal", "text": "Ampliação de repertório comunicativo funcional e segurança em ambientes públicos, segundo relato familiar e observação escolar." },
+    { "icon": "fa-house-chimney", "title": "Contexto de vida", "text": "Reside com mãe, pai e irmã mais velha. Frequenta escola municipal regular no turno da manhã e atendimentos terapêuticos no turno da tarde." },
+    { "icon": "fa-star", "title": "Prioridades da família", "text": "Segurança em vias públicas, ampliação da comunicação e maior autonomia nas atividades de vida diária." },
+    { "icon": "fa-seedling", "title": "Potencialidades e preferências", "text": "Forte interesse por música e sequências numéricas; boa memória visual; vínculo afetivo positivo com familiares próximos." },
+    { "icon": "fa-triangle-exclamation", "title": "Riscos identificados", "text": "Ausência de percepção de perigo em via pública (alerta crítico aberto, ver Mapa de necessidades)." }
+  ],
+  "diagnosis": {
+    "intro": "Consolidação das necessidades identificadas na Entrevista Inicial PTS v1.2 e no Mapa de necessidades, organizadas por domínio funcional, com respectivos ambientes de ocorrência e fontes de informação utilizadas.",
+    "rows": [
+      { "domain": "Comunicação expressiva", "impact": "Alto", "environments": "Casa, escola", "source": "Relato familiar, observação clínica" },
+      { "domain": "Segurança e percepção de risco", "impact": "Crítico", "environments": "Via pública, casa", "source": "Relato familiar" },
+      { "domain": "Interação social", "impact": "Moderado", "environments": "Casa, escola", "source": "Relato familiar" },
+      { "domain": "Autonomia · AVDs", "impact": "Moderado", "environments": "Casa", "source": "Relato familiar, informação escolar" }
+    ],
+    "note": "Hipóteses que ainda precisam de confirmação: avaliação de risco em segurança pendente (T.O. Marcos Vinícius)."
+  },
+  "generalGoals": [
+    { "icon": "fa-comments", "label": "Ampliar comunicação funcional" },
+    { "icon": "fa-shield-halved", "label": "Ampliar segurança em ambientes públicos" },
+    { "icon": "fa-person-walking", "label": "Promover autonomia em AVDs" },
+    { "icon": "fa-people-roof", "label": "Fortalecer participação familiar" },
+    { "icon": "fa-school", "label": "Fortalecer participação escolar" }
+  ],
+  "specificGoals": [
+    {
+      "title": "Solicitar itens ou atividades preferidas por meio da modalidade de comunicação definida pela equipe, em situações naturais de alimentação e brincadeira, com no máximo uma ajuda gestual.",
+      "status": "ok", "statusLabel": "Ativo",
+      "domain": "Comunicação expressiva", "responsible": "Fga. Renata Dias",
+      "goal": "80% das oportunidades, 3 sessões, 2 pessoas diferentes", "deadline": "15/09/2026",
+      "progress": 55, "progressNote": "55% do critério atingido — linha de base 10%"
+    },
+    {
+      "title": "Permanecer na calçada aguardando sinalização de adulto antes de atravessar via pública, em passeios comunitários.",
+      "status": "risk", "statusLabel": "Vinculado a alerta crítico",
+      "domain": "Segurança e percepção de risco", "responsible": "T.O. Marcos Vinícius",
+      "goal": "a definir após avaliação de risco", "deadline": "—",
+      "progress": 0, "progressNote": "Aguardando encaminhamento do alerta antes de iniciar"
+    },
+    {
+      "title": "Vestir e despir peças de roupa de cima com ajuda física parcial, em rotina matinal domiciliar.",
+      "status": "info", "statusLabel": "Em discussão",
+      "domain": "Autonomia · AVDs", "responsible": "T.O. Marcos Vinícius",
+      "goal": "proposta pendente de reunião interdisciplinar", "deadline": "—",
+      "progress": null, "progressNote": null
+    },
+    {
+      "title": "Responder a perguntas simples sobre rotina diária (\"o que você comeu?\", \"para onde vamos?\") com frase de duas a três palavras.",
+      "status": "ok", "statusLabel": "Ativo",
+      "domain": "Comunicação expressiva", "responsible": "Fga. Renata Dias",
+      "goal": "70% das oportunidades em 3 dias não consecutivos", "deadline": "30/10/2026",
+      "progress": 30, "progressNote": "30% do critério atingido — linha de base 5%"
+    }
+  ],
+  "goalChecklist": [
+    { "label": "Observável", "ok": true },
+    { "label": "Possui medida", "ok": true },
+    { "label": "Possui condição", "ok": true },
+    { "label": "Critério de domínio incompleto", "ok": false },
+    { "label": "Possui prazo", "ok": true },
+    { "label": "Possui responsável", "ok": true }
+  ],
+  "plans": [
+    { "goal": "Solicitar itens preferidos", "type": "Programa ABA", "responsible": "Fga. Renata Dias", "environments": "Casa, terapia", "status": "ok", "statusLabel": "Ativo" },
+    { "goal": "Segurança em via pública", "type": "Plano de segurança", "responsible": "T.O. Marcos Vinícius", "environments": "Rua, casa", "status": "warn", "statusLabel": "Aguardando avaliação" },
+    { "goal": "Vestir-se com ajuda parcial", "type": "Plano disciplinar (T.O.)", "responsible": "T.O. Marcos Vinícius", "environments": "Casa", "status": "info", "statusLabel": "Em discussão" },
+    { "goal": "Responder perguntas de rotina", "type": "Orientação familiar", "responsible": "Fga. Renata Dias", "environments": "Casa", "status": "ok", "statusLabel": "Ativo" }
+  ],
+  "monitoring": {
+    "indicator": "% de oportunidades com resposta esperada",
+    "collection": "Registro de sessão + relato familiar",
+    "periodicity": "Quinzenal",
+    "nextAnalysis": "28/07/2026"
+  },
+  "approvals": [
+    { "who": "Dra. Camila Souza", "role": "Supervisora do caso", "status": "ok", "statusLabel": "Aprovado" },
+    { "who": "Dr. Bruno Alencar", "role": "Supervisor ABA", "status": "ok", "statusLabel": "Aprovado" },
+    { "who": "T.O. Marcos Vinícius", "role": "Responsável técnico", "status": "warn", "statusLabel": "Pendente" },
+    { "who": "Família (mãe)", "role": "Ciência da família", "status": "warn", "statusLabel": "Pendente" }
+  ]
+}

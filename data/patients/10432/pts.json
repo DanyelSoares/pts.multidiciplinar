@@ -1,0 +1,69 @@
+{
+  "identification": {
+    "patient": "Anthony Gabriel Costa da Silva",
+    "record": "#10432 · 0838602.02",
+    "unit": "Mais Saúde — Unidade Poço",
+    "version": "2.1",
+    "status": "Ativo",
+    "validity": "10/03/2026 – 10/03/2027",
+    "nextReview": "02/09/2026",
+    "supervisor": "Dra. Camila Souza"
+  },
+  "synthesis": [
+    { "icon": "fa-comment-dots", "title": "Demanda principal", "text": "Ampliação de repertório social em contextos de grupo e manejo de frustração em atividades competitivas." },
+    { "icon": "fa-house-chimney", "title": "Contexto de vida", "text": "Reside com mãe e avó materna. Frequenta escola municipal regular em período integral." },
+    { "icon": "fa-star", "title": "Prioridades da família", "text": "Manutenção do bom desempenho escolar e desenvolvimento de estratégias de autorregulação em jogos." },
+    { "icon": "fa-seedling", "title": "Potencialidades e preferências", "text": "Forte interesse por desenhos animados de super-heróis e jogos de montar; boa coordenação motora fina; comunicação verbal fluente." },
+    { "icon": "fa-triangle-exclamation", "title": "Riscos identificados", "text": "Nenhum alerta crítico aberto nesta versão." }
+  ],
+  "diagnosis": {
+    "intro": "Consolidação das necessidades identificadas na Entrevista Inicial PTS v1.2 e no Mapa de necessidades, organizadas por domínio funcional.",
+    "rows": [
+      { "domain": "Regulação emocional", "impact": "Leve", "environments": "Escola", "source": "Relato familiar" },
+      { "domain": "Interação social", "impact": "Baixo", "environments": "Casa, escola", "source": "Informação escolar" }
+    ],
+    "note": "Nenhuma hipótese pendente de confirmação nesta versão."
+  },
+  "generalGoals": [
+    { "icon": "fa-people-group", "label": "Ampliar repertório social em grupo" },
+    { "icon": "fa-face-smile-beam", "label": "Fortalecer autorregulação emocional" }
+  ],
+  "specificGoals": [
+    {
+      "title": "Aguardar a própria vez em jogos de grupo, aceitando o resultado sem episódios de frustração intensa, em ambiente escolar.",
+      "status": "ok", "statusLabel": "Ativo",
+      "domain": "Regulação emocional", "responsible": "Dra. Camila Souza",
+      "goal": "80% das oportunidades observadas em 4 semanas", "deadline": "20/08/2026",
+      "progress": 72, "progressNote": "72% do critério atingido — linha de base 30%"
+    },
+    {
+      "title": "Convidar colegas para brincadeiras compartilhadas, iniciando a interação de forma espontânea.",
+      "status": "ok", "statusLabel": "Ativo",
+      "domain": "Interação social", "responsible": "Dra. Camila Souza",
+      "goal": "manter frequência observada, sem necessidade de intervenção adicional", "deadline": "02/09/2026",
+      "progress": 90, "progressNote": "90% do critério atingido — objetivo próximo do encerramento"
+    }
+  ],
+  "goalChecklist": [
+    { "label": "Observável", "ok": true },
+    { "label": "Possui medida", "ok": true },
+    { "label": "Possui condição", "ok": true },
+    { "label": "Critério de domínio completo", "ok": true },
+    { "label": "Possui prazo", "ok": true },
+    { "label": "Possui responsável", "ok": true }
+  ],
+  "plans": [
+    { "goal": "Aguardar a própria vez em jogos", "type": "Orientação escolar", "responsible": "Dra. Camila Souza", "environments": "Escola", "status": "ok", "statusLabel": "Ativo" },
+    { "goal": "Convidar colegas para brincadeiras", "type": "Orientação familiar e escolar", "responsible": "Dra. Camila Souza", "environments": "Casa, escola", "status": "ok", "statusLabel": "Ativo" }
+  ],
+  "monitoring": {
+    "indicator": "% de oportunidades com resposta esperada",
+    "collection": "Registro de sessão + relato escolar",
+    "periodicity": "Mensal",
+    "nextAnalysis": "02/08/2026"
+  },
+  "approvals": [
+    { "who": "Dra. Camila Souza", "role": "Supervisora do caso", "status": "ok", "statusLabel": "Aprovado" },
+    { "who": "Família (mãe)", "role": "Ciência da família", "status": "ok", "statusLabel": "Aprovado" }
+  ]
+}

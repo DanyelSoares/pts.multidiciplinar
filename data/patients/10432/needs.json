@@ -1,0 +1,22 @@
+{
+  "sourceQuestionnaire": "Entrevista Inicial PTS v1.2",
+  "pendingConfirmation": 0,
+  "needs": [
+    { "domain": "Comunicação expressiva", "level": "low", "sources": ["family_report", "school_info"], "excerpt": "Comunicação verbal espontânea frequente e funcional em casa e na escola.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Interação social", "level": "low", "sources": ["school_info"], "excerpt": "Boa interação com colegas, inicia brincadeiras compartilhadas com facilidade.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Segurança e percepção de risco", "level": "low", "sources": ["family_report"], "excerpt": "Percepção de risco adequada para a idade em vias públicas e ambiente doméstico.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Autonomia · AVDs", "level": "low", "sources": ["family_report", "school_info"], "excerpt": "Independente para alimentação, vestuário e higiene pessoal.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Regulação emocional", "level": "mid", "sources": ["family_report"], "excerpt": "Episódios pontuais de frustração em jogos competitivos, com boa recuperação.", "priority": "Prioridade sugerida: média" },
+    { "domain": "Potencialidades e preferências", "level": "low", "sources": ["family_report", "patient_report"], "excerpt": "Forte interesse por desenhos animados e jogos de montar; boa coordenação motora fina.", "priority": "Usar como recurso motivacional" }
+  ],
+  "explanation": {
+    "title": "Explicação da sugestão — Regulação emocional",
+    "text": "Esta sugestão foi gerada pelas respostas do domínio Regulação emocional, que indicaram episódios pontuais de frustração em jogos competitivos, com boa recuperação segundo relato familiar. Regra aplicada: RG-REG-011 v1. Necessita confirmação por avaliação profissional antes de compor o PTS.",
+    "rule": "RG-REG-011 v1",
+    "decisions": {
+      "confirmed": { "pill": "ok", "icon": "fa-circle-check", "text": "Confirmado por Dra. Camila Souza (Psicologia) em 14/07/2026. A necessidade passa a compor o mapa oficial e poderá gerar objetivos no PTS." },
+      "review": { "pill": "warn", "icon": "fa-hourglass-half", "text": "Avaliação complementar solicitada. A necessidade permanece como \"pendente de avaliação\" até retorno." },
+      "rejected": { "pill": "risk", "icon": "fa-circle-xmark", "text": "Sugestão rejeitada — justificativa: \"Comportamento esperado para a faixa etária, não configura necessidade.\" Registro mantido no histórico." }
+    }
+  }
+}

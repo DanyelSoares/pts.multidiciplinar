@@ -1,0 +1,35 @@
+{
+  "notice": "Programas ABA são planos de ensino vinculados a um objetivo aprovado do PTS — nunca substituem o PTS nem são gerados automaticamente. Procedimentos restritivos, punitivos ou de extinção não são sugeridos pelo sistema.",
+  "programs": [
+    {
+      "code": "PRG-002",
+      "name": "Dessensibilização sistemática a texturas alimentares",
+      "objectiveLink": "Vinculado ao objetivo: \"Aceitar progressivamente novas texturas de alimentos\" · Perfil sensorial",
+      "status": "ok", "statusLabel": "Concluído · v4",
+      "responsible": "T.O. Marcos Vinícius",
+      "supervisor": "Dr. Bruno Alencar",
+      "environment": "Casa",
+      "frequency": "Diária, nas refeições principais",
+      "operationalDefinition": "A criança aceita provar e consumir ao menos uma porção do alimento de nova textura apresentado, sem recusa ou reação aversiva intensa.",
+      "antecedentResponse": "Alimento de nova textura apresentado junto a alimentos já aceitos → criança experimenta o novo alimento.",
+      "helpHierarchy": [
+        { "n": 1, "label": "Física total", "current": false },
+        { "n": 2, "label": "Física parcial", "current": false },
+        { "n": 3, "label": "Gestual", "current": false },
+        { "n": 4, "label": "Verbal", "current": false },
+        { "n": 5, "label": "Independente", "current": true }
+      ],
+      "masteryCriteria": "Aceitação em 3 refeições consecutivas com pelo menos 2 aplicadores diferentes — critério atingido.",
+      "sessionData": [
+        { "label": "S1", "value": 15, "baseline": true },
+        { "label": "S2", "value": 20, "baseline": true },
+        { "label": "S3", "value": 40, "baseline": false },
+        { "label": "S4", "value": 55, "baseline": false },
+        { "label": "S5", "value": 70, "baseline": false },
+        { "label": "S6", "value": 85, "baseline": false },
+        { "label": "S7", "value": 95, "baseline": false },
+        { "label": "S8", "value": 100, "baseline": false }
+      ]
+    }
+  ]
+}

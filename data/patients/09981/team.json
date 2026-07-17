@@ -1,0 +1,23 @@
+{
+  "members": [
+    { "initials": "CS", "name": "Dra. Camila Souza", "role": "Psicologia · Supervisora do caso", "note": "3 objetivos sob responsabilidade" },
+    { "initials": "RD", "name": "Fga. Renata Dias", "role": "Fonoaudiologia", "note": "2 objetivos sob responsabilidade" },
+    { "initials": "MV", "name": "T.O. Marcos Vinícius", "role": "Terapia Ocupacional", "note": "2 objetivos sob responsabilidade" },
+    { "initials": "BA", "name": "Dr. Bruno Alencar", "role": "Supervisor ABA", "note": "Supervisão de 1 programa" },
+    { "initials": "FL", "name": "Família (mãe)", "role": "Representante familiar", "note": "Ciência confirmada" },
+    { "initials": "EM", "name": "Escola municipal", "role": "Representante escolar autorizado", "note": "Ciência pendente" }
+  ],
+  "responsibilityMatrix": [
+    { "goal": "Solicitar itens preferidos com ajuda gestual", "responsible": "Fga. Renata Dias", "collaborators": "Dra. Camila Souza", "supervisor": "Dr. Bruno Alencar", "familyParticipation": { "status": "ok", "label": "Ativa" }, "schoolParticipation": { "status": "muted", "label": "Não iniciada" }, "status": { "status": "ok", "label": "Ativo" } },
+    { "goal": "Segurança em via pública", "responsible": "T.O. Marcos Vinícius", "collaborators": "Dra. Camila Souza", "supervisor": "—", "familyParticipation": { "status": "ok", "label": "Ativa" }, "schoolParticipation": { "status": "muted", "label": "Não aplicável" }, "status": { "status": "risk", "label": "Vinculado a alerta" } },
+    { "goal": "Vestir-se com ajuda física parcial", "responsible": "T.O. Marcos Vinícius", "collaborators": "Família", "supervisor": "—", "familyParticipation": { "status": "ok", "label": "Ativa" }, "schoolParticipation": { "status": "muted", "label": "Não aplicável" }, "status": { "status": "info", "label": "Em discussão" } },
+    { "goal": "Responder perguntas de rotina", "responsible": "Fga. Renata Dias", "collaborators": "Dra. Camila Souza", "supervisor": "Dr. Bruno Alencar", "familyParticipation": { "status": "ok", "label": "Ativa" }, "schoolParticipation": { "status": "warn", "label": "Pendente" }, "status": { "status": "ok", "label": "Ativo" } }
+  ],
+  "accessLevelIds": ["interdisciplinary", "category_private", "administrative", "family_released", "technical_restricted"],
+  "timeline": [
+    { "date": "02/07/2026", "text": "Fga. Renata Dias incluída como responsável pelo objetivo de comunicação expressiva." },
+    { "date": "28/06/2026", "text": "Reunião interdisciplinar registrada — decisão de encaminhar alerta de segurança para T.O." },
+    { "date": "20/06/2026", "text": "Escola municipal incluída como representante escolar autorizado, mediante autorização da família." },
+    { "date": "14/06/2026", "text": "Dra. Camila Souza confirmada como supervisora do caso." }
+  ]
+}

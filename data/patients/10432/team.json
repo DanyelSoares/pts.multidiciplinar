@@ -1,0 +1,16 @@
+{
+  "members": [
+    { "initials": "CS", "name": "Dra. Camila Souza", "role": "Psicologia · Supervisora do caso", "note": "2 objetivos sob responsabilidade" },
+    { "initials": "BA", "name": "Dr. Bruno Alencar", "role": "Supervisor ABA", "note": "Supervisão de 1 programa" },
+    { "initials": "FL", "name": "Família (mãe)", "role": "Representante familiar", "note": "Ciência confirmada" }
+  ],
+  "responsibilityMatrix": [
+    { "goal": "Aguardar a própria vez em jogos de grupo", "responsible": "Dra. Camila Souza", "collaborators": "Escola", "supervisor": "Dr. Bruno Alencar", "familyParticipation": { "status": "ok", "label": "Ativa" }, "schoolParticipation": { "status": "ok", "label": "Ativa" }, "status": { "status": "ok", "label": "Ativo" } },
+    { "goal": "Convidar colegas para brincadeiras", "responsible": "Dra. Camila Souza", "collaborators": "Família", "supervisor": "—", "familyParticipation": { "status": "ok", "label": "Ativa" }, "schoolParticipation": { "status": "ok", "label": "Ativa" }, "status": { "status": "ok", "label": "Ativo" } }
+  ],
+  "accessLevelIds": ["interdisciplinary", "family_released"],
+  "timeline": [
+    { "date": "02/07/2026", "text": "Revisão periódica confirmada sem alterações de equipe." },
+    { "date": "10/03/2026", "text": "Dra. Camila Souza confirmada como supervisora do caso na versão 2.1." }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "versionTrack": [
+    { "label": "v1.0", "sub": "Em validação", "state": "current" },
+    { "label": "v1.1", "sub": "Futura", "state": "pending" }
+  ],
+  "approvals": [
+    { "approver": "bruno", "who": "Dr. Bruno Alencar", "role": "Supervisor ABA", "approved": false, "pendingLabel": "Pendente — clique para aprovar", "approveLabel": "Aprovado" },
+    { "approver": "familia", "who": "Família (pai)", "role": "Ciência da família", "approved": false, "pendingLabel": "Pendente — clique para registrar ciência", "approveLabel": "Ciência confirmada" }
+  ],
+  "diff": {
+    "from": "Rascunho",
+    "to": "Versão 1.0",
+    "fromLines": [
+      { "type": "same", "text": "Paciente: Luiz Eduardo de Macedo Xavier" }
+    ],
+    "toLines": [
+      { "type": "add", "text": "Objetivo: solicitar pausa em vez de heteroagressão (origem: alerta crítico)" },
+      { "type": "add", "text": "Supervisor do caso: Dr. Bruno Alencar" }
+    ]
+  },
+  "publishRequirements": "Publicar a versão 1.0 exige: avaliação funcional de comportamento concluída, aprovação do supervisor ABA, ciência da família e resolução ou encaminhamento do alerta crítico de heteroagressão aberto."
+}

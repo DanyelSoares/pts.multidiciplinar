@@ -1,0 +1,19 @@
+{
+  "sourceQuestionnaire": "Entrevista Inicial PTS v1.1",
+  "pendingConfirmation": 0,
+  "needs": [
+    { "domain": "Perfil sensorial", "level": "mid", "sources": ["family_report", "school_info"], "excerpt": "Reações intensas a determinadas texturas de roupas e alimentos, já mapeadas e em manejo.", "priority": "Prioridade sugerida: média" },
+    { "domain": "Rotina familiar", "level": "low", "sources": ["family_report"], "excerpt": "Rotina estruturada e consistente mantida pela família.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Potencialidades e preferências", "level": "low", "sources": ["family_report"], "excerpt": "Forte interesse por quebra-cabeças e blocos de encaixe; boa concentração em atividades estruturadas.", "priority": "Usar como recurso motivacional" }
+  ],
+  "explanation": {
+    "title": "Explicação da sugestão — Perfil sensorial",
+    "text": "Esta sugestão foi gerada pelas respostas do domínio Perfil sensorial, que indicaram reações intensas a texturas específicas de roupas e alimentos, segundo relato familiar e informação escolar. Regra aplicada: RG-SENS-004 v1. Necessidade já confirmada em versão anterior do PTS.",
+    "rule": "RG-SENS-004 v1",
+    "decisions": {
+      "confirmed": { "pill": "ok", "icon": "fa-circle-check", "text": "Confirmado por Dr. Bruno Alencar em versão anterior do PTS. A necessidade compõe o mapa oficial." },
+      "review": { "pill": "warn", "icon": "fa-hourglass-half", "text": "Avaliação complementar solicitada. A necessidade permanece como \"pendente de avaliação\" até retorno." },
+      "rejected": { "pill": "risk", "icon": "fa-circle-xmark", "text": "Sugestão rejeitada — justificativa registrada pelo profissional responsável. Registro mantido no histórico." }
+    }
+  }
+}

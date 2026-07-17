@@ -1,0 +1,17 @@
+{
+  "kpis": [
+    { "kind": "rose", "icon": "fa-user-slash", "label": "Sem PTS", "value": 7 },
+    { "kind": "orange", "icon": "fa-clipboard-question", "label": "Entrevistas incompletas", "value": 4 },
+    { "kind": "blue", "icon": "fa-pen-ruler", "label": "Em elaboração", "value": 11 },
+    { "kind": "orange", "icon": "fa-hourglass-half", "label": "Aguardando validação", "value": 3 },
+    { "kind": "green", "icon": "fa-circle-check", "label": "PTS ativos", "value": 58 },
+    { "kind": "rose", "icon": "fa-triangle-exclamation", "label": "PTS vencidos", "value": 2 }
+  ],
+  "patients": [
+    { "id": "#10432", "name": "ANTHONY GABRIEL COSTA DA SILVA", "record": "0838602.02", "unit": "Mais Saúde — Unidade Poço", "supervisor": "Dra. Camila Souza", "version": "v2.1", "statusId": "active", "nextReview": "02/09/2026", "progress": 64, "alertId": null },
+    { "id": "#10877", "name": "LUIZ EDUARDO DE MACEDO XAVIER", "record": "0739365.01", "unit": "Mais Saúde — Unidade Poço", "supervisor": "Dr. Bruno Alencar", "version": "v1.0", "statusId": "awaiting_validation", "nextReview": "—", "progress": 20, "alertId": "critical" },
+    { "id": "#09981", "name": "ANUOLUWAPO MIGUEL EZEKIEL VELOSO TAIWO", "record": "0890394.00", "unit": "Mais Saúde — Unidade Poço", "supervisor": "Dra. Camila Souza", "version": "v3.0", "statusId": "review_in_progress", "nextReview": "15/07/2026", "progress": 81, "alertId": null },
+    { "id": "#11002", "name": "GUSTAVO ARAUJO PALMEIRA FIGUEIREDO", "record": "0761211.01", "unit": "Mais Saúde — Unidade Poço", "supervisor": null, "version": "—", "statusId": "interview_in_progress", "nextReview": "—", "progress": 42, "alertId": null },
+    { "id": "#08765", "name": "HEITOR CAVALCANTI DE MELLO QUEIROZ", "record": "0723606.01", "unit": "Mais Saúde — Unidade Poço", "supervisor": "Dr. Bruno Alencar", "version": "v1.4", "statusId": "active", "nextReview": "29/06/2026", "progress": 100, "alertId": "review_overdue" }
+  ]
+}

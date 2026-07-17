@@ -1,0 +1,26 @@
+{
+  "sourceQuestionnaire": "Entrevista Inicial PTS v1.2",
+  "pendingConfirmation": 3,
+  "needs": [
+    { "domain": "Comunicação expressiva", "level": "high", "sources": ["family_report", "clinical_observation"], "excerpt": "Uso predominante de gestos isolados; poucas tentativas de comunicação verbal espontânea em ambiente escolar.", "priority": "Prioridade sugerida: alta" },
+    { "domain": "Interação social", "level": "mid", "sources": ["family_report"], "excerpt": "Compartilhamento de interesse presente com familiares próximos, reduzido em contextos ampliados.", "priority": "Prioridade sugerida: média" },
+    { "domain": "Segurança e percepção de risco", "level": "high", "sources": ["family_report", "critical_alert"], "excerpt": "Ausência de percepção de perigo relatada em via pública — alerta de triagem aberto, aguardando classificação.", "priority": "Prioridade sugerida: crítica" },
+    { "domain": "Sono", "level": "low", "sources": ["family_report"], "excerpt": "Rotina de sono regular, sem queixas relevantes segundo os respondentes.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Autonomia · AVDs", "level": "mid", "sources": ["family_report", "school_info"], "excerpt": "Necessita apoio parcial para vestuário; independente para alimentação com talheres adaptados.", "priority": "Prioridade sugerida: média" },
+    { "domain": "Regulação emocional", "level": "mid", "sources": ["family_report", "school_info"], "excerpt": "Episódios de frustração intensa em mudanças de rotina não antecipadas; recuperação facilitada com apoio visual.", "priority": "Prioridade sugerida: média" },
+    { "domain": "Perfil sensorial", "level": "mid", "sources": ["clinical_observation"], "excerpt": "Hipersensibilidade auditiva a ruídos súbitos; busca sensorial por estímulos táteis (texturas macias).", "priority": "Prioridade sugerida: média" },
+    { "domain": "Alimentação", "level": "mid", "sources": ["family_report", "school_info"], "excerpt": "Seletividade alimentar moderada; aceita a maioria dos alimentos oferecidos na escola com incentivo.", "priority": "Prioridade sugerida: média" },
+    { "domain": "Rede de apoio", "level": "low", "sources": ["family_report"], "excerpt": "Rede familiar ampliada presente e participativa; escola municipal receptiva às orientações da equipe.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Potencialidades e preferências", "level": "low", "sources": ["family_report", "patient_report"], "excerpt": "Forte interesse por música e sequências numéricas; boa memória visual identificada como potencialidade.", "priority": "Usar como recurso motivacional" }
+  ],
+  "explanation": {
+    "title": "Explicação da sugestão — Segurança e percepção de risco",
+    "text": "Esta sugestão foi gerada pelas respostas às perguntas 12, 14 e 15 do domínio Segurança, que indicaram ausência de percepção de perigo em via pública e em ambiente doméstico, segundo relato familiar. Regra aplicada: RG-SEG-003 v2. Necessita confirmação por avaliação profissional antes de compor o PTS.",
+    "rule": "RG-SEG-003 v2",
+    "decisions": {
+      "confirmed": { "pill": "ok", "icon": "fa-circle-check", "text": "Confirmado por Dra. Camila Souza (Psicologia) em 14/07/2026. A necessidade passa a compor o mapa oficial e poderá gerar objetivos no PTS." },
+      "review": { "pill": "warn", "icon": "fa-hourglass-half", "text": "Avaliação complementar solicitada ao T.O. Marcos Vinícius. A necessidade permanece como \"pendente de avaliação\" até retorno." },
+      "rejected": { "pill": "risk", "icon": "fa-circle-xmark", "text": "Sugestão rejeitada por Dra. Camila Souza — justificativa: \"Comportamento já em acompanhamento por avaliação prévia de mobilidade, não configura necessidade nova.\" Registro mantido no histórico." }
+    }
+  }
+}

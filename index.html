@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PTS · TM Saúde</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/screens.css">
+</head>
+<body>
+
+<div class="main">
+
+  <header class="page-header">
+    <div class="page-header-left">
+      <div class="page-header-logo"><span class="plus">+m</span><span class="sub">SAÚDE</span></div>
+      <div>
+        <h1><i class="fa-solid fa-compass"></i> Projeto Terapêutico Singular</h1>
+        <div class="breadcrumb">
+          <a href="#"><i class="fa-solid fa-house"></i> Ocorrências</a>
+          <span class="sep">&gt;</span>
+          <a href="#">Prontuário Eletrônico</a>
+          <span class="sep">&gt;</span>
+          <a href="#">Módulos</a>
+          <span class="sep">&gt;</span>
+          <span class="current">Projeto Terapêutico Singular</span>
+        </div>
+      </div>
+    </div>
+    <div class="page-header-user">
+      <div class="name"><i class="fa-solid fa-user-shield"></i> DANYEL SILVA</div>
+      <div class="dt" id="header-datetime">Painel Mais Saúde</div>
+    </div>
+  </header>
+
+  <nav class="tab-switcher">
+    <button class="tab-btn active" data-target="s-dashboard"><i class="fa-solid fa-chart-column"></i> Painel geral</button>
+    <button class="tab-btn" data-target="s-interview"><i class="fa-solid fa-clipboard-question"></i> Entrevista</button>
+    <button class="tab-btn" data-target="s-severidade"><i class="fa-solid fa-chart-simple"></i> Perfil de Severidade</button>
+    <button class="tab-btn" data-target="s-needs"><i class="fa-solid fa-map-location-dot"></i> Mapa de necessidades</button>
+    <button class="tab-btn" data-target="s-goals"><i class="fa-solid fa-bullseye"></i> PTS &amp; Objetivos</button>
+    <button class="tab-btn" data-target="s-aba"><i class="fa-solid fa-star-of-life"></i> Programas ABA</button>
+    <button class="tab-btn" data-target="s-team"><i class="fa-solid fa-people-group"></i> Equipe <span class="tab-badge">6</span></button>
+    <button class="tab-btn" data-target="s-validation"><i class="fa-solid fa-check-double"></i> Validação <span class="tab-badge">2</span></button>
+    <div class="tab-switcher-divider"></div>
+    <button class="tab-btn-clear" type="button" id="btn-clear-filters"><i class="fa-solid fa-filter-circle-xmark"></i> Limpar filtros</button>
+  </nav>
+
+  <div class="patient-switcher" id="patient-switcher" style="display:none;"></div>
+
+  <section class="screen active" id="s-dashboard"></section>
+  <section class="screen" id="s-interview"></section>
+  <section class="screen" id="s-severidade"></section>
+  <section class="screen" id="s-needs"></section>
+  <section class="screen" id="s-goals"></section>
+  <section class="screen" id="s-aba"></section>
+  <section class="screen" id="s-team"></section>
+  <section class="screen" id="s-validation"></section>
+
+</div>
+
+<div id="toast-region"></div>
+<div id="new-patient-modal" class="modal-overlay"></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

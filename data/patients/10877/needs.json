@@ -1,0 +1,21 @@
+{
+  "sourceQuestionnaire": "Entrevista Inicial PTS v1.2",
+  "pendingConfirmation": 4,
+  "needs": [
+    { "domain": "Comunicação expressiva", "level": "high", "sources": ["family_report"], "excerpt": "Comunicação verbal limitada a pedidos básicos; raramente inicia comunicação espontânea.", "priority": "Prioridade sugerida: alta" },
+    { "domain": "Regulação emocional e comportamento", "level": "high", "sources": ["family_report", "critical_alert"], "excerpt": "Episódios de heteroagressão relatados em casa e na escola quando contrariado — alerta de triagem aberto, aguardando classificação.", "priority": "Prioridade sugerida: crítica" },
+    { "domain": "Segurança e percepção de risco", "level": "mid", "sources": ["family_report"], "excerpt": "Episódios ocasionais de tentativa de sair de casa sem aviso.", "priority": "Prioridade sugerida: média" },
+    { "domain": "Autonomia · AVDs", "level": "high", "sources": ["family_report"], "excerpt": "Necessita ajuda física parcial para alimentação com talheres.", "priority": "Prioridade sugerida: alta" },
+    { "domain": "Potencialidades e preferências", "level": "low", "sources": ["family_report"], "excerpt": "Forte interesse por carrinhos e veículos; gosta de atividades ao ar livre.", "priority": "Usar como recurso motivacional" }
+  ],
+  "explanation": {
+    "title": "Explicação da sugestão — Regulação emocional e comportamento",
+    "text": "Esta sugestão foi gerada pela resposta à pergunta 13 do domínio Segurança, que indicou episódios de heteroagressão direcionados a outras pessoas quando a criança é contrariada, segundo relato familiar. Regra aplicada: RG-COMP-007 v1. Necessita confirmação por avaliação profissional antes de compor o PTS.",
+    "rule": "RG-COMP-007 v1",
+    "decisions": {
+      "confirmed": { "pill": "ok", "icon": "fa-circle-check", "text": "Confirmado por Dr. Bruno Alencar (Supervisor ABA) em 14/07/2026. A necessidade passa a compor o mapa oficial e poderá gerar avaliação funcional de comportamento." },
+      "review": { "pill": "warn", "icon": "fa-hourglass-half", "text": "Avaliação funcional complementar solicitada. A necessidade permanece como \"pendente de avaliação\" até retorno." },
+      "rejected": { "pill": "risk", "icon": "fa-circle-xmark", "text": "Sugestão rejeitada — justificativa registrada pelo profissional responsável. Registro mantido no histórico." }
+    }
+  }
+}
