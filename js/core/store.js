@@ -7,22 +7,35 @@ const Store = (() => {
     return patientId ? `data/patients/${patientId}/${name}.json` : `data/${name}.json`;
   }
 
+  function applyOverride(name, patientId, json) {
+    const override = LocalData.getOverride(name, patientId);
+    if (!override || !Array.isArray(json.programs)) return json;
+
+    const programs = json.programs.map((program) => {
+      const patch = override[program.code];
+      return patch ? { ...program, ...patch } : program;
+    });
+    return { ...json, programs };
+  }
+
   async function load(name, patientId) {
     const key = patientId ? `${patientId}/${name}` : name;
     if (cache[key]) return cache[key];
 
+    let json;
     if (patientId && LocalData.hasPatient(patientId)) {
-      const local = LocalData.getDoc(name, patientId);
-      if (local) {
-        cache[key] = local;
-        return local;
-      }
+      json = LocalData.getDoc(name, patientId);
     }
 
-    const path = pathFor(name, patientId);
-    const res = await fetch(path);
-    if (!res.ok) throw new Error(`Falha ao carregar ${path} (${res.status})`);
-    const json = await res.json();
+    if (!json) {
+      const path = pathFor(name, patientId);
+      const res = await fetch(path);
+      if (!res.ok) throw new Error(`Falha ao carregar ${path} (${res.status})`);
+      json = await res.json();
+    }
+
+    if (patientId) json = applyOverride(name, patientId, json);
+
     cache[key] = json;
     return json;
   }
@@ -37,7 +50,12 @@ const Store = (() => {
     return [...data.patients, ...LocalData.listDashboardExtra()];
   }
 
-  return { load, loadAll, loadDashboardPatients };
+  function invalidate(name, patientId) {
+    const key = patientId ? `${patientId}/${name}` : name;
+    delete cache[key];
+  }
+
+  return { load, loadAll, loadDashboardPatients, invalidate };
 })();
 
 export default Store;

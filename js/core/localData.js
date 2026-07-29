@@ -27,6 +27,18 @@ function docKey(name, patientId) {
   return `${PREFIX}doc:${patientId}:${name}`;
 }
 
+function overrideKey(name, patientId) {
+  return `${PREFIX}overrides:${patientId}:${name}`;
+}
+
+function getOverride(name, patientId) {
+  return readJSON(overrideKey(name, patientId), null);
+}
+
+function saveOverride(name, patientId, data) {
+  return writeJSON(overrideKey(name, patientId), data);
+}
+
 function listPatientIds() {
   return readJSON(PATIENTS_KEY, []);
 }
@@ -80,6 +92,8 @@ const LocalData = {
   hasPatient,
   getDoc,
   saveDoc,
+  getOverride,
+  saveOverride,
   listDashboardExtra,
   nextId,
   createPatient,

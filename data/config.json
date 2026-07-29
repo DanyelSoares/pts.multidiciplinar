@@ -44,5 +44,31 @@
       "id": "adhd_autism", "label": "TDAH + Autismo", "colorVar": "var(--primary-dark)",
       "values": { "impulsivity": 85, "inattention": 90, "temporal_blindness": 85, "hyperactivity": 80, "emotional_dysregulation": 90, "task_initiation": 90, "hyperfocus": 90, "sensory": 95 }
     }
+  ],
+  "abaAreas": [
+    { "id": "communication", "label": "Comunicação", "description": "Habilidades de solicitar, expressar e trocar informação." },
+    { "id": "play", "label": "Brincar", "description": "Engajamento funcional e simbólico com brinquedos e atividades." },
+    { "id": "self_care", "label": "Autocuidado", "description": "Higiene, alimentação e vestuário independentes." },
+    { "id": "academic", "label": "Acadêmico", "description": "Pré-requisitos escolares: atenção, seguir instruções, pareamento." },
+    { "id": "social", "label": "Social", "description": "Interação, brincadeira compartilhada e regras sociais." }
+  ],
+  "abaStimuli": [
+    { "id": "chair", "label": "Cadeira", "areaId": "play" },
+    { "id": "doll", "label": "Boneca", "areaId": "play" },
+    { "id": "ball", "label": "Bola", "areaId": "play" },
+    { "id": "notebook", "label": "Caderno", "areaId": "academic" },
+    { "id": "pencil", "label": "Lápis", "areaId": "academic" },
+    { "id": "picture_card", "label": "Figura/cartão", "areaId": "communication" },
+    { "id": "preferred_item", "label": "Item preferido", "areaId": "communication" },
+    { "id": "toothbrush", "label": "Escova de dente", "areaId": "self_care" },
+    { "id": "cup", "label": "Copo", "areaId": "self_care" },
+    { "id": "peer_photo", "label": "Foto de colega", "areaId": "social" }
+  ],
+  "abaHelpTypes": [
+    { "id": "independent", "label": "Independente", "order": 1 },
+    { "id": "gestural", "label": "Gestual", "order": 2 },
+    { "id": "verbal", "label": "Verbal", "order": 3 },
+    { "id": "partial_physical", "label": "Física parcial", "order": 4 },
+    { "id": "full_physical", "label": "Física total", "order": 5 }
   ]
 }

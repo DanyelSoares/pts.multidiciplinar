@@ -32,6 +32,24 @@ async function resolveAccessLevel(levelId) {
   return findIn(config.accessLevels, levelId);
 }
 
-const Config = { load, resolveStatus, resolveAlert, resolveInfoSource, resolveAccessLevel };
+async function resolveAbaArea(areaId) {
+  const config = await load();
+  return findIn(config.abaAreas, areaId);
+}
+
+async function resolveAbaStimulus(stimulusId) {
+  const config = await load();
+  return findIn(config.abaStimuli, stimulusId);
+}
+
+async function resolveAbaHelpType(helpTypeId) {
+  const config = await load();
+  return findIn(config.abaHelpTypes, helpTypeId);
+}
+
+const Config = {
+  load, resolveStatus, resolveAlert, resolveInfoSource, resolveAccessLevel,
+  resolveAbaArea, resolveAbaStimulus, resolveAbaHelpType,
+};
 
 export default Config;

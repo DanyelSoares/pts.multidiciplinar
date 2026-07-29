@@ -5,37 +5,496 @@
       "code": "PRG-014",
       "name": "Solicitação de itens preferidos (manding)",
       "objectiveLink": "Vinculado ao objetivo: \"Solicitar itens ou atividades preferidas com no máximo uma ajuda gestual\" · Comunicação expressiva",
-      "status": "ok", "statusLabel": "Ativo · v2",
+      "status": "ok",
+      "statusLabel": "Ativo · v2",
       "responsible": "Fga. Renata Dias",
       "supervisor": "Dr. Bruno Alencar",
       "environment": "Casa e sala de terapia",
       "frequency": "3x por semana, 30 min",
       "operationalDefinition": "A criança emite um pedido (verbal, gestual ou por figura) direcionado a um item ou atividade de seu interesse, na presença do item ou da atividade, dentro de 5 segundos após a oportunidade ser apresentada.",
       "antecedentResponse": "Item preferido visível, porém fora de alcance → criança solicita usando a modalidade de comunicação definida pela equipe.",
-      "helpHierarchy": [
-        { "n": 1, "label": "Física total", "current": false },
-        { "n": 2, "label": "Física parcial", "current": false },
-        { "n": 3, "label": "Gestual", "current": true },
-        { "n": 4, "label": "Verbal", "current": false },
-        { "n": 5, "label": "Independente", "current": false }
-      ],
-      "masteryCriteria": "80% de respostas independentes ou com ajuda gestual, em 3 sessões consecutivas, com pelo menos 2 aplicadores diferentes.",
-      "sessionData": [
-        { "label": "S1", "value": 10, "baseline": true },
-        { "label": "S2", "value": 15, "baseline": true },
-        { "label": "S3", "value": 25, "baseline": false },
-        { "label": "S4", "value": 35, "baseline": false },
-        { "label": "S5", "value": 40, "baseline": false },
-        { "label": "S6", "value": 48, "baseline": false },
-        { "label": "S7", "value": 52, "baseline": false },
-        { "label": "S8", "value": 55, "baseline": false }
+      "config": {
+        "model": "dtt",
+        "promptHierarchyMode": "most_to_least",
+        "helpTypeIds": [
+          "full_physical",
+          "partial_physical",
+          "gestural",
+          "verbal",
+          "independent"
+        ],
+        "stimulusIds": [
+          "preferred_item",
+          "picture_card"
+        ],
+        "attemptsPerStimulus": 5,
+        "masteryCriteriaPercent": 80
+      },
+      "sessions": [
+        {
+          "id": "sess-migrated-1",
+          "date": null,
+          "baseline": true,
+          "attempts": [
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "sess-migrated-2",
+          "date": null,
+          "baseline": true,
+          "attempts": [
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "sess-migrated-3",
+          "date": null,
+          "baseline": false,
+          "attempts": [
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "sess-migrated-4",
+          "date": null,
+          "baseline": false,
+          "attempts": [
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "sess-migrated-5",
+          "date": null,
+          "baseline": false,
+          "attempts": [
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "sess-migrated-6",
+          "date": null,
+          "baseline": false,
+          "attempts": [
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "sess-migrated-7",
+          "date": null,
+          "baseline": false,
+          "attempts": [
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "sess-migrated-8",
+          "date": null,
+          "baseline": false,
+          "attempts": [
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            }
+          ]
+        }
       ]
     },
     {
       "code": "PRG-021",
       "name": "Comportamento que interfere na rotina — resistência a transições",
       "objectiveLink": "Avaliação funcional em andamento · não vinculado a objetivo publicado ainda",
-      "status": "warn", "statusLabel": "Aguardando aprovação do supervisor",
+      "status": "warn",
+      "statusLabel": "Aguardando aprovação do supervisor",
       "responsible": "Dra. Camila Souza",
       "supervisor": "Dr. Bruno Alencar",
       "environment": "Casa e escola",
