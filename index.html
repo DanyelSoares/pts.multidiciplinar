@@ -42,32 +42,31 @@
 
   <nav class="tab-switcher">
     <button class="tab-btn active" data-target="s-dashboard"><i class="fa-solid fa-chart-column"></i> Painel geral</button>
-    <button class="tab-btn" data-target="s-interview"><i class="fa-solid fa-clipboard-question"></i> Entrevista</button>
-    <button class="tab-btn" data-target="s-severidade"><i class="fa-solid fa-chart-simple"></i> Perfil de Severidade</button>
-    <button class="tab-btn" data-target="s-needs"><i class="fa-solid fa-map-location-dot"></i> Mapa de necessidades</button>
-    <button class="tab-btn" data-target="s-goals"><i class="fa-solid fa-bullseye"></i> PTS &amp; Objetivos</button>
-    <button class="tab-btn" data-target="s-aba"><i class="fa-solid fa-star-of-life"></i> Programas ABA</button>
-    <button class="tab-btn" data-target="s-team"><i class="fa-solid fa-people-group"></i> Equipe <span class="tab-badge">6</span></button>
-    <button class="tab-btn" data-target="s-validation"><i class="fa-solid fa-check-double"></i> Validação <span class="tab-badge">2</span></button>
+    <button class="tab-btn" data-target="s-patients"><i class="fa-solid fa-user-group"></i> Pacientes</button>
+    <button class="tab-btn" data-target="s-config"><i class="fa-solid fa-gear"></i> Configurações</button>
     <div class="tab-switcher-divider"></div>
     <button class="tab-btn-clear" type="button" id="btn-clear-filters"><i class="fa-solid fa-filter-circle-xmark"></i> Limpar filtros</button>
   </nav>
 
   <div class="patient-switcher" id="patient-switcher" style="display:none;"></div>
+  <nav class="section-switcher" id="patients-section-switcher" style="display:none;"></nav>
 
   <section class="screen active" id="s-dashboard"></section>
-  <section class="screen" id="s-interview"></section>
+  <section class="screen" id="s-patients"></section>
+  <section class="screen" id="s-anamnese"></section>
   <section class="screen" id="s-severidade"></section>
   <section class="screen" id="s-needs"></section>
   <section class="screen" id="s-goals"></section>
   <section class="screen" id="s-aba"></section>
   <section class="screen" id="s-team"></section>
   <section class="screen" id="s-validation"></section>
+  <section class="screen" id="s-config"></section>
 
 </div>
 
 <div id="toast-region"></div>
 <div id="new-patient-modal" class="modal-overlay"></div>
+<div id="confirm-dialog" class="modal-overlay"></div>
 
 <script type="module" src="js/app.js"></script>
 </body>

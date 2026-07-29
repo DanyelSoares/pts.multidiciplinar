@@ -1,4 +1,3 @@
-const DEFAULT_ID = '09981';
 const listeners = new Set();
 
 function normalize(id) {
@@ -7,7 +6,8 @@ function normalize(id) {
 
 function getCurrentId() {
   const params = new URLSearchParams(location.search);
-  return normalize(params.get('patient') || DEFAULT_ID);
+  const raw = params.get('patient');
+  return raw ? normalize(raw) : null;
 }
 
 function setCurrentId(id) {
@@ -25,6 +25,14 @@ window.addEventListener('popstate', () => {
   listeners.forEach((cb) => cb(getCurrentId()));
 });
 
-const Patient = { getCurrentId, setCurrentId, onPopState, normalize };
+function clearOnBoot() {
+  const params = new URLSearchParams(location.search);
+  if (!params.has('patient')) return;
+  params.delete('patient');
+  const query = params.toString();
+  history.replaceState({}, '', query ? `${location.pathname}?${query}` : location.pathname);
+}
+
+const Patient = { getCurrentId, setCurrentId, onPopState, normalize, clearOnBoot };
 
 export default Patient;

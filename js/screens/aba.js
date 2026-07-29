@@ -1,10 +1,12 @@
 import Store from '../core/store.js';
 import Patient from '../core/patient.js';
 import Config from '../core/config.js';
+import Catalog from '../core/catalog.js';
 import LocalData from '../core/localData.js';
 import Toast from '../core/toast.js';
 import { calcularSerieSessoes } from '../core/abaEngine.js';
 import { escapeHtml, qs, qsa, emptyState } from '../core/dom.js';
+import { PROGRAM_FREQUENCIES, PROGRAM_STATUSES } from '../core/programOptions.js';
 
 let estado = null; // { patientId, config, stimulusById, helpTypeById, areaById }
 
@@ -39,24 +41,54 @@ function promptModeLabel(mode) {
   return 'mais para menos';
 }
 
+function frequencyLabel(c) {
+  const freq = PROGRAM_FREQUENCIES.find((f) => f.id === c.frequencyId);
+  if (!freq) return null;
+  if (freq.id === 'custom' && c.frequencyNote) return `${freq.label} — ${c.frequencyNote}`;
+  return freq.label;
+}
+
+function statusLabelFromConfig(c) {
+  const status = PROGRAM_STATUSES.find((s) => s.id === c.statusId);
+  return status ? status.label : null;
+}
+
+const STATUS_PILL_CLASS = {
+  not_started: 'muted',
+  in_progress: 'info',
+  generalized: 'ok',
+};
+
+function statusPillClass(c) {
+  return STATUS_PILL_CLASS[c.statusId] || 'muted';
+}
+
 function activeProgram(p) {
-  const helpSteps = helpHierarchyFromConfig(p.config || {});
+  const c = p.config;
+  const helpSteps = helpHierarchyFromConfig(c || {});
   const series = calcularSerieSessoes(p);
+  const displayName = c?.name || p.name;
+  const statusLabel = statusLabelFromConfig(c) || '—';
+  const freq = frequencyLabel(c) || '—';
+  const { areaById } = estado;
+  const area = c.areaId ? areaById.get(c.areaId) : null;
 
   return `
     <div class="aba-card">
       <div class="aba-card-head">
         <div>
-          <div class="name">${escapeHtml(p.code)} · ${escapeHtml(p.name)}</div>
+          <div class="name">${escapeHtml(p.code)} · ${escapeHtml(displayName)}</div>
           <div class="obj-link"><i class="fa-solid fa-link"></i> ${escapeHtml(p.objectiveLink)}</div>
         </div>
-        <span class="pill ${p.status}">${escapeHtml(p.statusLabel)}</span>
+        <span class="pill ${statusPillClass(c)}">${escapeHtml(statusLabel)}</span>
       </div>
       <div class="kv-grid">
         ${kv('Responsável', p.responsible)}
         ${kv('Supervisor', p.supervisor)}
         ${kv('Ambiente', p.environment)}
-        ${kv('Frequência', p.frequency)}
+        ${kv('Frequência de aplicação', freq)}
+        ${area ? kv('Área', area.label) : ''}
+        ${c.helpsCount !== null && c.helpsCount !== undefined ? kv('Quantidade de ajudas', String(c.helpsCount)) : ''}
       </div>
       <div class="aba-field" style="margin-top:14px;">
         <div class="k">Definição operacional</div>
@@ -72,14 +104,14 @@ function activeProgram(p) {
       </div>
       <div class="aba-field">
         <div class="k">Critério de domínio</div>
-        <div class="v">${p.config ? `${escapeHtml(String(p.config.masteryCriteriaPercent))}% de acerto` : '—'}</div>
+        <div class="v">${p.config ? escapeHtml(p.config.masteryCriteriaNote || `${p.config.masteryCriteriaPercent}% de acerto`) : '—'}</div>
       </div>
 
       <div class="panel-header" style="padding:0;margin:16px 0 10px;border:none;"><h3 style="font-size:12.5px;">Resultados — últimas ${series.length} sessões</h3></div>
       <div class="chart-bars">${chartBars(series)}</div>
       <div class="chart-legend">
         <span><span class="dot" style="background:var(--border);"></span> Linha de base</span>
-        <span><span class="dot" style="background:var(--primary);"></span> % de respostas corretas</span>
+        <span><span class="dot" style="background:var(--primary);"></span> % de respostas com ajuda gestual ou independentes</span>
       </div>
       <div class="footnote" style="margin-top:12px;"><i class="fa-solid fa-circle-info"></i>As sessões exibidas acima são registradas na evolução do paciente, no sistema de prontuário. Aqui a configuração define o que aquele registro deve apresentar.</div>
 
@@ -121,16 +153,67 @@ function draftProgram(p) {
 // ── Configuração do programa ──
 
 function renderConfigForm(program) {
-  const { config: cfg } = estado;
+  const { stimuli, areas } = estado;
   const c = program.config || { model: 'dtt', promptHierarchyMode: 'most_to_least', helpTypeIds: [], stimulusIds: [], attemptsPerStimulus: 5, masteryCriteriaPercent: 80 };
 
-  const stimulusOptions = cfg.abaStimuli
+  const name = c.name ?? program.name;
+  const areaId = c.areaId ?? '';
+  const frequencyId = c.frequencyId ?? 'daily';
+  const frequencyNote = c.frequencyNote ?? '';
+  const statusId = c.statusId ?? 'not_started';
+  const helpsCount = c.helpsCount ?? null;
+  const helpsCountRequired = helpsCount !== null;
+
+  const stimulusOptions = stimuli
     .map((s) => `<option value="${escapeHtml(s.id)}" ${c.stimulusIds.includes(s.id) ? 'selected' : ''}>${escapeHtml(s.label)}</option>`)
+    .join('');
+
+  const areaOptions = areas
+    .map((a) => `<option value="${escapeHtml(a.id)}" ${a.id === areaId ? 'selected' : ''}>${escapeHtml(a.label)}</option>`)
+    .join('');
+
+  const frequencyOptions = PROGRAM_FREQUENCIES
+    .map((f) => `<option value="${f.id}" ${f.id === frequencyId ? 'selected' : ''}>${escapeHtml(f.label)}</option>`)
+    .join('');
+
+  const statusOptions = PROGRAM_STATUSES
+    .map((s) => `<option value="${s.id}" ${s.id === statusId ? 'selected' : ''}>${escapeHtml(s.label)}</option>`)
     .join('');
 
   return `
     <div class="panel" style="margin-top:12px;box-shadow:none;border:1px dashed var(--border);">
       <div class="panel-body" style="padding:16px;">
+        <div class="filter-row" style="margin-bottom:12px;">
+          <div class="field-group" style="flex:1;min-width:220px;">
+            <label>Nome do programa</label>
+            <input class="search-input" id="cfg-name" value="${escapeHtml(name)}" style="width:100%;padding:0 13px;">
+          </div>
+          <div class="field-group">
+            <label>Área</label>
+            <select class="select-input" id="cfg-area">
+              <option value="">Não definida</option>
+              ${areaOptions}
+            </select>
+          </div>
+        </div>
+        <div class="filter-row" style="margin-bottom:12px;">
+          <div class="field-group">
+            <label>Frequência de aplicação</label>
+            <select class="select-input" id="cfg-frequency">
+              ${frequencyOptions}
+            </select>
+          </div>
+          <div class="field-group" id="cfg-frequency-note-wrap" style="${frequencyId === 'custom' ? '' : 'display:none;'}">
+            <label>Descrição da frequência</label>
+            <input class="search-input" id="cfg-frequency-note" value="${escapeHtml(frequencyNote)}" style="width:100%;padding:0 13px;" placeholder="Ex.: 2x por semana, em dias alternados">
+          </div>
+          <div class="field-group">
+            <label>Status do programa</label>
+            <select class="select-input" id="cfg-status">
+              ${statusOptions}
+            </select>
+          </div>
+        </div>
         <div class="filter-row" style="margin-bottom:12px;">
           <div class="field-group">
             <label>Modelo</label>
@@ -157,6 +240,12 @@ function renderConfigForm(program) {
           </div>
         </div>
         <div class="field-group" style="margin-bottom:12px;">
+          <label style="flex-direction:row;align-items:center;gap:8px;">
+            <input type="checkbox" id="cfg-helps-count-enabled" ${helpsCountRequired ? 'checked' : ''}> Definir quantidade de ajudas
+          </label>
+          <input type="number" min="1" max="10" class="search-input" id="cfg-helps-count" value="${helpsCount ?? ''}" style="width:100px;margin-top:6px;" ${helpsCountRequired ? '' : 'disabled'}>
+        </div>
+        <div class="field-group" style="margin-bottom:12px;">
           <label>Estímulos a apresentar (define o que a tela de evolução oferece para registro)</label>
           <select class="select-input" id="cfg-stimuli" multiple size="5" style="height:auto;padding:8px;">
             ${stimulusOptions}
@@ -170,14 +259,31 @@ function renderConfigForm(program) {
 }
 
 function bindConfigForm(program) {
+  const frequencySelect = qs('#cfg-frequency');
+  frequencySelect.addEventListener('change', () => {
+    qs('#cfg-frequency-note-wrap').style.display = frequencySelect.value === 'custom' ? '' : 'none';
+  });
+
+  const helpsCountEnabled = qs('#cfg-helps-count-enabled');
+  const helpsCountInput = qs('#cfg-helps-count');
+  helpsCountEnabled.addEventListener('change', () => {
+    helpsCountInput.disabled = !helpsCountEnabled.checked;
+  });
+
   qs('#cfg-save').addEventListener('click', () => {
     const stimulusIds = Array.from(qs('#cfg-stimuli').selectedOptions).map((o) => o.value);
     if (!stimulusIds.length) {
       Toast.show('Selecione ao menos um estímulo.', { kind: 'warning' });
       return;
     }
+    const name = qs('#cfg-name').value.trim();
+    if (!name) {
+      Toast.show('Preencha o nome do programa.', { kind: 'warning' });
+      return;
+    }
+
     const promptMode = qs('#cfg-prompt-mode').value;
-    const helpTypeIds = estado.config.abaHelpTypes
+    const helpTypeIds = estado.helpTypes
       .map((h) => h.id)
       .sort((a, b) => {
         const ha = estado.helpTypeById.get(a).order;
@@ -187,14 +293,25 @@ function bindConfigForm(program) {
         return hb - ha;
       });
 
+    const helpsCount = helpsCountEnabled.checked ? (parseInt(helpsCountInput.value, 10) || 1) : null;
+
     const newConfig = {
+      name,
+      areaId: qs('#cfg-area').value || null,
+      frequencyId: qs('#cfg-frequency').value,
+      frequencyNote: qs('#cfg-frequency-note').value.trim(),
+      statusId: qs('#cfg-status').value,
       model: qs('#cfg-model').value,
       promptHierarchyMode: promptMode,
       helpTypeIds,
       stimulusIds,
       attemptsPerStimulus: parseInt(qs('#cfg-attempts').value, 10) || 1,
       masteryCriteriaPercent: parseInt(qs('#cfg-mastery').value, 10) || 80,
+      helpsCount,
     };
+    if (program.config?.masteryCriteriaNote) {
+      newConfig.masteryCriteriaNote = program.config.masteryCriteriaNote;
+    }
 
     saveOverride(program.code, { config: newConfig });
     Toast.show('Configuração do programa salva.', { kind: 'success' });
@@ -233,7 +350,14 @@ async function refreshScreen() {
 
 export async function mount() {
   const patientId = Patient.getCurrentId();
-  const [aba, patient, config] = await Promise.all([Store.load('aba', patientId), Store.load('patient', patientId), Config.load()]);
+  const [aba, patient, config, areas, stimuli, helpTypes] = await Promise.all([
+    Store.load('aba', patientId),
+    Store.load('patient', patientId),
+    Config.load(),
+    Catalog.listAreas(),
+    Catalog.listStimuli(),
+    Catalog.listHelpTypes(),
+  ]);
   const root = qs('#s-aba');
 
   if (aba.empty) {
@@ -248,9 +372,12 @@ export async function mount() {
   estado = {
     patientId,
     config,
-    stimulusById: new Map(config.abaStimuli.map((s) => [s.id, s])),
-    helpTypeById: new Map(config.abaHelpTypes.map((h) => [h.id, h])),
-    areaById: new Map(config.abaAreas.map((a) => [a.id, a])),
+    areas,
+    stimuli,
+    helpTypes,
+    stimulusById: new Map(stimuli.map((s) => [s.id, s])),
+    helpTypeById: new Map(helpTypes.map((h) => [h.id, h])),
+    areaById: new Map(areas.map((a) => [a.id, a])),
   };
 
   const cards = aba.programs.map((p) => (p.config ? activeProgram(p) : draftProgram(p))).join('');

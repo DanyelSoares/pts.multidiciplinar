@@ -28,8 +28,14 @@
           "ball",
           "peer_photo"
         ],
-        "attemptsPerStimulus": 5,
-        "masteryCriteriaPercent": 80
+        "attemptsPerStimulus": 8,
+        "masteryCriteriaPercent": 80,
+        "masteryCriteriaNote": "80% de respostas independentes, em 3 sessões consecutivas, com pelo menos 2 aplicadores diferentes.",
+        "name": "Tolerância à espera em jogos de grupo",
+        "areaId": null,
+        "statusId": "in_progress",
+        "frequencyId": "custom",
+        "frequencyNote": "2x por semana, 30 min"
       },
       "sessions": [
         {
@@ -39,8 +45,8 @@
           "attempts": [
             {
               "stimulusId": "chair",
-              "helpTypeId": "independent",
-              "correct": true
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "chair",
@@ -49,8 +55,8 @@
             },
             {
               "stimulusId": "chair",
-              "helpTypeId": "independent",
-              "correct": true
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "chair",
@@ -59,6 +65,41 @@
             },
             {
               "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "ball",
               "helpTypeId": "independent",
               "correct": true
             },
@@ -73,19 +114,19 @@
               "correct": false
             },
             {
-              "stimulusId": "ball",
+              "stimulusId": "peer_photo",
               "helpTypeId": "full_physical",
               "correct": false
             },
             {
-              "stimulusId": "ball",
+              "stimulusId": "peer_photo",
               "helpTypeId": "full_physical",
               "correct": false
             },
             {
-              "stimulusId": "ball",
-              "helpTypeId": "full_physical",
-              "correct": false
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "peer_photo",
@@ -99,18 +140,8 @@
             },
             {
               "stimulusId": "peer_photo",
-              "helpTypeId": "full_physical",
-              "correct": false
-            },
-            {
-              "stimulusId": "peer_photo",
-              "helpTypeId": "full_physical",
-              "correct": false
-            },
-            {
-              "stimulusId": "peer_photo",
-              "helpTypeId": "full_physical",
-              "correct": false
+              "helpTypeId": "independent",
+              "correct": true
             }
           ]
         },
@@ -121,8 +152,18 @@
           "attempts": [
             {
               "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
               "helpTypeId": "independent",
               "correct": true
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "chair",
@@ -136,11 +177,21 @@
             },
             {
               "stimulusId": "chair",
-              "helpTypeId": "independent",
-              "correct": true
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
               "helpTypeId": "independent",
               "correct": true
             },
@@ -161,13 +212,13 @@
             },
             {
               "stimulusId": "ball",
-              "helpTypeId": "full_physical",
-              "correct": false
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "ball",
-              "helpTypeId": "full_physical",
-              "correct": false
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "peer_photo",
@@ -183,6 +234,11 @@
               "stimulusId": "peer_photo",
               "helpTypeId": "full_physical",
               "correct": false
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "peer_photo",
@@ -203,8 +259,23 @@
           "attempts": [
             {
               "stimulusId": "chair",
-              "helpTypeId": "independent",
-              "correct": true
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "chair",
@@ -248,8 +319,28 @@
             },
             {
               "stimulusId": "ball",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "ball",
               "helpTypeId": "full_physical",
               "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "peer_photo",
@@ -285,8 +376,38 @@
           "attempts": [
             {
               "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
               "helpTypeId": "independent",
               "correct": true
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "chair",
@@ -305,8 +426,98 @@
             },
             {
               "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
               "helpTypeId": "independent",
               "correct": true
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "ball",
@@ -335,8 +546,58 @@
             },
             {
               "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
               "helpTypeId": "full_physical",
               "correct": false
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "peer_photo",
@@ -350,8 +611,13 @@
             },
             {
               "stimulusId": "peer_photo",
-              "helpTypeId": "full_physical",
-              "correct": false
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "peer_photo",
@@ -391,9 +657,14 @@
               "correct": true
             },
             {
-              "stimulusId": "ball",
+              "stimulusId": "chair",
               "helpTypeId": "independent",
               "correct": true
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "ball",
@@ -407,6 +678,16 @@
             },
             {
               "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
               "helpTypeId": "independent",
               "correct": true
             },
@@ -416,7 +697,7 @@
               "correct": true
             },
             {
-              "stimulusId": "peer_photo",
+              "stimulusId": "ball",
               "helpTypeId": "full_physical",
               "correct": false
             },
@@ -437,8 +718,18 @@
             },
             {
               "stimulusId": "peer_photo",
-              "helpTypeId": "full_physical",
-              "correct": false
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
             }
           ]
         },
@@ -473,6 +764,36 @@
               "correct": true
             },
             {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
               "stimulusId": "ball",
               "helpTypeId": "independent",
               "correct": true
@@ -489,8 +810,13 @@
             },
             {
               "stimulusId": "ball",
-              "helpTypeId": "independent",
-              "correct": true
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "ball",
@@ -504,8 +830,13 @@
             },
             {
               "stimulusId": "peer_photo",
-              "helpTypeId": "full_physical",
-              "correct": false
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "peer_photo",
@@ -514,8 +845,18 @@
             },
             {
               "stimulusId": "peer_photo",
-              "helpTypeId": "full_physical",
-              "correct": false
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "peer_photo",
@@ -531,6 +872,11 @@
           "attempts": [
             {
               "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "chair",
               "helpTypeId": "independent",
               "correct": true
             },
@@ -538,6 +884,11 @@
               "stimulusId": "chair",
               "helpTypeId": "independent",
               "correct": true
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "chair",
@@ -568,6 +919,16 @@
               "stimulusId": "ball",
               "helpTypeId": "independent",
               "correct": true
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "ball",
@@ -591,8 +952,8 @@
             },
             {
               "stimulusId": "peer_photo",
-              "helpTypeId": "full_physical",
-              "correct": false
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "peer_photo",
@@ -601,8 +962,13 @@
             },
             {
               "stimulusId": "peer_photo",
-              "helpTypeId": "full_physical",
-              "correct": false
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
             }
           ]
         },
@@ -613,8 +979,8 @@
           "attempts": [
             {
               "stimulusId": "chair",
-              "helpTypeId": "independent",
-              "correct": true
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "chair",
@@ -637,9 +1003,24 @@
               "correct": true
             },
             {
-              "stimulusId": "ball",
+              "stimulusId": "chair",
               "helpTypeId": "independent",
               "correct": true
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "chair",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "ball",
@@ -658,6 +1039,31 @@
             },
             {
               "stimulusId": "ball",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "ball",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
               "helpTypeId": "independent",
               "correct": true
             },
@@ -678,13 +1084,23 @@
             },
             {
               "stimulusId": "peer_photo",
-              "helpTypeId": "full_physical",
-              "correct": false
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "peer_photo",
               "helpTypeId": "full_physical",
               "correct": false
+            },
+            {
+              "stimulusId": "peer_photo",
+              "helpTypeId": "independent",
+              "correct": true
             }
           ]
         }

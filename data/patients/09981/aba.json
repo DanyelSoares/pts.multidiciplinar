@@ -27,8 +27,14 @@
           "preferred_item",
           "picture_card"
         ],
-        "attemptsPerStimulus": 5,
-        "masteryCriteriaPercent": 80
+        "attemptsPerStimulus": 10,
+        "masteryCriteriaPercent": 80,
+        "masteryCriteriaNote": "80% de respostas independentes ou com ajuda gestual, em 3 sessões consecutivas, com pelo menos 2 aplicadores diferentes.",
+        "name": "Solicitação de itens preferidos (manding)",
+        "areaId": "communication",
+        "statusId": "in_progress",
+        "frequencyId": "custom",
+        "frequencyNote": "3x por semana, 30 min"
       },
       "sessions": [
         {
@@ -38,48 +44,48 @@
           "attempts": [
             {
               "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
               "helpTypeId": "independent",
               "correct": true
-            },
-            {
-              "stimulusId": "preferred_item",
-              "helpTypeId": "full_physical",
-              "correct": false
-            },
-            {
-              "stimulusId": "preferred_item",
-              "helpTypeId": "full_physical",
-              "correct": false
-            },
-            {
-              "stimulusId": "preferred_item",
-              "helpTypeId": "full_physical",
-              "correct": false
-            },
-            {
-              "stimulusId": "preferred_item",
-              "helpTypeId": "full_physical",
-              "correct": false
-            },
-            {
-              "stimulusId": "picture_card",
-              "helpTypeId": "full_physical",
-              "correct": false
-            },
-            {
-              "stimulusId": "picture_card",
-              "helpTypeId": "full_physical",
-              "correct": false
-            },
-            {
-              "stimulusId": "picture_card",
-              "helpTypeId": "full_physical",
-              "correct": false
-            },
-            {
-              "stimulusId": "picture_card",
-              "helpTypeId": "full_physical",
-              "correct": false
             },
             {
               "stimulusId": "picture_card",
@@ -95,8 +101,38 @@
           "attempts": [
             {
               "stimulusId": "preferred_item",
-              "helpTypeId": "independent",
-              "correct": true
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "preferred_item",
@@ -114,9 +150,24 @@
               "correct": false
             },
             {
-              "stimulusId": "preferred_item",
+              "stimulusId": "picture_card",
               "helpTypeId": "full_physical",
               "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "picture_card",
@@ -132,6 +183,11 @@
               "stimulusId": "picture_card",
               "helpTypeId": "full_physical",
               "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "picture_card",
@@ -152,8 +208,13 @@
           "attempts": [
             {
               "stimulusId": "preferred_item",
-              "helpTypeId": "independent",
-              "correct": true
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "preferred_item",
@@ -176,6 +237,21 @@
               "correct": false
             },
             {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
               "stimulusId": "picture_card",
               "helpTypeId": "full_physical",
               "correct": false
@@ -189,6 +265,16 @@
               "stimulusId": "picture_card",
               "helpTypeId": "full_physical",
               "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "picture_card",
@@ -209,8 +295,13 @@
           "attempts": [
             {
               "stimulusId": "preferred_item",
-              "helpTypeId": "independent",
-              "correct": true
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "preferred_item",
@@ -231,6 +322,51 @@
               "stimulusId": "preferred_item",
               "helpTypeId": "full_physical",
               "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "picture_card",
@@ -276,8 +412,23 @@
             },
             {
               "stimulusId": "preferred_item",
-              "helpTypeId": "independent",
-              "correct": true
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "preferred_item",
@@ -286,8 +437,8 @@
             },
             {
               "stimulusId": "preferred_item",
-              "helpTypeId": "full_physical",
-              "correct": false
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "picture_card",
@@ -301,6 +452,11 @@
             },
             {
               "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
               "helpTypeId": "full_physical",
               "correct": false
             },
@@ -308,6 +464,11 @@
               "stimulusId": "picture_card",
               "helpTypeId": "full_physical",
               "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "picture_card",
@@ -328,8 +489,18 @@
             },
             {
               "stimulusId": "preferred_item",
-              "helpTypeId": "independent",
-              "correct": true
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "preferred_item",
@@ -343,6 +514,51 @@
             },
             {
               "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
               "helpTypeId": "independent",
               "correct": true
             },
@@ -363,8 +579,28 @@
             },
             {
               "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
               "helpTypeId": "full_physical",
               "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "picture_card",
@@ -380,8 +616,18 @@
           "attempts": [
             {
               "stimulusId": "preferred_item",
-              "helpTypeId": "independent",
-              "correct": true
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "preferred_item",
@@ -400,6 +646,36 @@
             },
             {
               "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
               "helpTypeId": "independent",
               "correct": true
             },
@@ -410,8 +686,23 @@
             },
             {
               "stimulusId": "picture_card",
-              "helpTypeId": "full_physical",
-              "correct": false
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "picture_card",
@@ -420,8 +711,28 @@
             },
             {
               "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
               "helpTypeId": "full_physical",
               "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "picture_card",
@@ -442,8 +753,33 @@
             },
             {
               "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
               "helpTypeId": "independent",
               "correct": true
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "preferred_item",
+              "helpTypeId": "full_physical",
+              "correct": false
             },
             {
               "stimulusId": "preferred_item",
@@ -462,6 +798,16 @@
             },
             {
               "stimulusId": "picture_card",
+              "helpTypeId": "full_physical",
+              "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
               "helpTypeId": "independent",
               "correct": true
             },
@@ -472,13 +818,28 @@
             },
             {
               "stimulusId": "picture_card",
-              "helpTypeId": "full_physical",
-              "correct": false
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "picture_card",
               "helpTypeId": "full_physical",
               "correct": false
+            },
+            {
+              "stimulusId": "picture_card",
+              "helpTypeId": "independent",
+              "correct": true
             },
             {
               "stimulusId": "picture_card",

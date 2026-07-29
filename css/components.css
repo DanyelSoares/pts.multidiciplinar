@@ -58,6 +58,8 @@
 .btn-ghost:hover{background:var(--border);color:var(--text);}
 .btn-primary-soft{background:var(--primary-soft);color:var(--primary);border:1.5px solid var(--primary-light);}
 .btn-primary-soft:hover{background:var(--primary);color:#fff;}
+.btn-danger{background:var(--danger);color:#fff;box-shadow:0 4px 14px rgba(255,77,79,.3);}
+.btn-danger:hover{background:#e64345;transform:translateY(-1px);}
 .btn-sm{height:32px;padding:0 13px;font-size:12px;}
 
 /* ── PANEL / TABLE ── */

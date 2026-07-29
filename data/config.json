@@ -1,74 +1,3289 @@
 {
   "patientStatuses": [
-    { "id": "active", "label": "Ativo", "kind": "ok" },
-    { "id": "awaiting_validation", "label": "Aguardando validação", "kind": "warn" },
-    { "id": "review_in_progress", "label": "Revisão em andamento", "kind": "info" },
-    { "id": "interview_in_progress", "label": "Entrevista em andamento", "kind": "risk" }
+    {
+      "id": "active",
+      "label": "Ativo",
+      "kind": "ok"
+    },
+    {
+      "id": "awaiting_validation",
+      "label": "Aguardando validação",
+      "kind": "warn"
+    },
+    {
+      "id": "review_in_progress",
+      "label": "Revisão em andamento",
+      "kind": "info"
+    },
+    {
+      "id": "interview_in_progress",
+      "label": "Entrevista em andamento",
+      "kind": "risk"
+    }
   ],
   "alerts": [
-    { "id": "critical", "label": "1 crítico", "kind": "risk" },
-    { "id": "review_overdue", "label": "Revisão vencida", "kind": "warn" }
+    {
+      "id": "critical",
+      "label": "1 crítico",
+      "kind": "risk"
+    },
+    {
+      "id": "review_overdue",
+      "label": "Revisão vencida",
+      "kind": "warn"
+    }
   ],
   "infoSources": [
-    { "id": "family_report", "label": "Relato familiar" },
-    { "id": "clinical_observation", "label": "Observação clínica" },
-    { "id": "school_info", "label": "Informação escolar" },
-    { "id": "patient_report", "label": "Relato do paciente" },
-    { "id": "critical_alert", "label": "Alerta crítico" },
-    { "id": "env_home", "label": "Ambiente: casa" },
-    { "id": "env_school", "label": "Ambiente: escola" },
-    { "id": "env_street", "label": "Ambiente: rua" }
+    {
+      "id": "family_report",
+      "label": "Relato familiar"
+    },
+    {
+      "id": "clinical_observation",
+      "label": "Observação clínica"
+    },
+    {
+      "id": "school_info",
+      "label": "Informação escolar"
+    },
+    {
+      "id": "patient_report",
+      "label": "Relato do paciente"
+    },
+    {
+      "id": "critical_alert",
+      "label": "Alerta crítico"
+    },
+    {
+      "id": "env_home",
+      "label": "Ambiente: casa"
+    },
+    {
+      "id": "env_school",
+      "label": "Ambiente: escola"
+    },
+    {
+      "id": "env_street",
+      "label": "Ambiente: rua"
+    }
   ],
   "accessLevels": [
-    { "id": "interdisciplinary", "label": "Interdisciplinar — toda a equipe", "icon": "fa-users-rectangle", "kind": "info" },
-    { "id": "category_private", "label": "Privativo por categoria", "icon": "fa-lock", "kind": "risk" },
-    { "id": "administrative", "label": "Administrativo", "icon": "fa-file-shield", "kind": "muted" },
-    { "id": "family_released", "label": "Liberado à família", "icon": "fa-house-user", "kind": "ok" },
-    { "id": "technical_restricted", "label": "Restrito ao responsável técnico", "icon": "fa-user-doctor", "kind": "warn" }
+    {
+      "id": "interdisciplinary",
+      "label": "Interdisciplinar — toda a equipe",
+      "icon": "fa-users-rectangle",
+      "kind": "info"
+    },
+    {
+      "id": "category_private",
+      "label": "Privativo por categoria",
+      "icon": "fa-lock",
+      "kind": "risk"
+    },
+    {
+      "id": "administrative",
+      "label": "Administrativo",
+      "icon": "fa-file-shield",
+      "kind": "muted"
+    },
+    {
+      "id": "family_released",
+      "label": "Liberado à família",
+      "icon": "fa-house-user",
+      "kind": "ok"
+    },
+    {
+      "id": "technical_restricted",
+      "label": "Restrito ao responsável técnico",
+      "icon": "fa-user-doctor",
+      "kind": "warn"
+    }
   ],
   "referenceProfilesDisclaimer": "Estes perfis são referências visuais configuráveis para comparação e discussão clínica — não constituem padrões diagnósticos nem indicam presença ou ausência de TEA, TDAH ou outra condição. Uma criança sem TEA ou TDAH pode apresentar pontuações elevadas em domínios específicos.",
   "referenceProfiles": [
     {
-      "id": "neurotypical", "label": "Neurotípico", "colorVar": "var(--success)",
-      "values": { "impulsivity": 20, "inattention": 20, "temporal_blindness": 15, "hyperactivity": 20, "emotional_dysregulation": 20, "task_initiation": 15, "hyperfocus": 25, "sensory": 15 }
+      "id": "neurotypical",
+      "label": "Neurotípico",
+      "colorVar": "var(--success)",
+      "values": {
+        "impulsivity": 20,
+        "inattention": 20,
+        "temporal_blindness": 15,
+        "hyperactivity": 20,
+        "emotional_dysregulation": 20,
+        "task_initiation": 15,
+        "hyperfocus": 25,
+        "sensory": 15
+      }
     },
     {
-      "id": "adhd", "label": "TDAH", "colorVar": "var(--warning)",
-      "values": { "impulsivity": 80, "inattention": 85, "temporal_blindness": 80, "hyperactivity": 75, "emotional_dysregulation": 65, "task_initiation": 80, "hyperfocus": 70, "sensory": 35 }
+      "id": "adhd",
+      "label": "TDAH",
+      "colorVar": "var(--warning)",
+      "values": {
+        "impulsivity": 80,
+        "inattention": 85,
+        "temporal_blindness": 80,
+        "hyperactivity": 75,
+        "emotional_dysregulation": 65,
+        "task_initiation": 80,
+        "hyperfocus": 70,
+        "sensory": 35
+      }
     },
     {
-      "id": "autism", "label": "Autismo", "colorVar": "var(--danger)",
-      "values": { "impulsivity": 35, "inattention": 40, "temporal_blindness": 45, "hyperactivity": 30, "emotional_dysregulation": 75, "task_initiation": 65, "hyperfocus": 90, "sensory": 90 }
+      "id": "autism",
+      "label": "Autismo",
+      "colorVar": "var(--danger)",
+      "values": {
+        "impulsivity": 35,
+        "inattention": 40,
+        "temporal_blindness": 45,
+        "hyperactivity": 30,
+        "emotional_dysregulation": 75,
+        "task_initiation": 65,
+        "hyperfocus": 90,
+        "sensory": 90
+      }
     },
     {
-      "id": "adhd_autism", "label": "TDAH + Autismo", "colorVar": "var(--primary-dark)",
-      "values": { "impulsivity": 85, "inattention": 90, "temporal_blindness": 85, "hyperactivity": 80, "emotional_dysregulation": 90, "task_initiation": 90, "hyperfocus": 90, "sensory": 95 }
+      "id": "adhd_autism",
+      "label": "TDAH + Autismo",
+      "colorVar": "var(--primary-dark)",
+      "values": {
+        "impulsivity": 85,
+        "inattention": 90,
+        "temporal_blindness": 85,
+        "hyperactivity": 80,
+        "emotional_dysregulation": 90,
+        "task_initiation": 90,
+        "hyperfocus": 90,
+        "sensory": 95
+      }
     }
   ],
   "abaAreas": [
-    { "id": "communication", "label": "Comunicação", "description": "Habilidades de solicitar, expressar e trocar informação." },
-    { "id": "play", "label": "Brincar", "description": "Engajamento funcional e simbólico com brinquedos e atividades." },
-    { "id": "self_care", "label": "Autocuidado", "description": "Higiene, alimentação e vestuário independentes." },
-    { "id": "academic", "label": "Acadêmico", "description": "Pré-requisitos escolares: atenção, seguir instruções, pareamento." },
-    { "id": "social", "label": "Social", "description": "Interação, brincadeira compartilhada e regras sociais." }
+    {
+      "id": "communication",
+      "label": "Comunicação",
+      "description": "Habilidades de solicitar, expressar e trocar informação."
+    },
+    {
+      "id": "play",
+      "label": "Brincar",
+      "description": "Engajamento funcional e simbólico com brinquedos e atividades."
+    },
+    {
+      "id": "self_care",
+      "label": "Autocuidado",
+      "description": "Higiene, alimentação e vestuário independentes."
+    },
+    {
+      "id": "academic",
+      "label": "Acadêmico",
+      "description": "Pré-requisitos escolares: atenção, seguir instruções, pareamento."
+    },
+    {
+      "id": "social",
+      "label": "Social",
+      "description": "Interação, brincadeira compartilhada e regras sociais."
+    }
   ],
   "abaStimuli": [
-    { "id": "chair", "label": "Cadeira", "areaId": "play" },
-    { "id": "doll", "label": "Boneca", "areaId": "play" },
-    { "id": "ball", "label": "Bola", "areaId": "play" },
-    { "id": "notebook", "label": "Caderno", "areaId": "academic" },
-    { "id": "pencil", "label": "Lápis", "areaId": "academic" },
-    { "id": "picture_card", "label": "Figura/cartão", "areaId": "communication" },
-    { "id": "preferred_item", "label": "Item preferido", "areaId": "communication" },
-    { "id": "toothbrush", "label": "Escova de dente", "areaId": "self_care" },
-    { "id": "cup", "label": "Copo", "areaId": "self_care" },
-    { "id": "peer_photo", "label": "Foto de colega", "areaId": "social" }
+    {
+      "id": "chair",
+      "label": "Cadeira",
+      "areaIds": [
+        "play"
+      ]
+    },
+    {
+      "id": "doll",
+      "label": "Boneca",
+      "areaIds": [
+        "play"
+      ]
+    },
+    {
+      "id": "ball",
+      "label": "Bola",
+      "areaIds": [
+        "play"
+      ]
+    },
+    {
+      "id": "notebook",
+      "label": "Caderno",
+      "areaIds": [
+        "academic"
+      ]
+    },
+    {
+      "id": "pencil",
+      "label": "Lápis",
+      "areaIds": [
+        "academic"
+      ]
+    },
+    {
+      "id": "picture_card",
+      "label": "Figura/cartão",
+      "areaIds": [
+        "communication"
+      ]
+    },
+    {
+      "id": "preferred_item",
+      "label": "Item preferido",
+      "areaIds": [
+        "communication"
+      ]
+    },
+    {
+      "id": "toothbrush",
+      "label": "Escova de dente",
+      "areaIds": [
+        "self_care"
+      ]
+    },
+    {
+      "id": "cup",
+      "label": "Copo",
+      "areaIds": [
+        "self_care"
+      ]
+    },
+    {
+      "id": "peer_photo",
+      "label": "Foto de colega",
+      "areaIds": [
+        "social"
+      ]
+    }
   ],
   "abaHelpTypes": [
-    { "id": "independent", "label": "Independente", "order": 1 },
-    { "id": "gestural", "label": "Gestual", "order": 2 },
-    { "id": "verbal", "label": "Verbal", "order": 3 },
-    { "id": "partial_physical", "label": "Física parcial", "order": 4 },
-    { "id": "full_physical", "label": "Física total", "order": 5 }
+    {
+      "id": "independent",
+      "label": "Independente",
+      "order": 1
+    },
+    {
+      "id": "gestural",
+      "label": "Gestual",
+      "order": 2
+    },
+    {
+      "id": "verbal",
+      "label": "Verbal",
+      "order": 3
+    },
+    {
+      "id": "partial_physical",
+      "label": "Física parcial",
+      "order": 4
+    },
+    {
+      "id": "full_physical",
+      "label": "Física total",
+      "order": 5
+    }
+  ],
+  "anamneseTemplates": [
+    {
+      "id": "anamnese_impulsivity",
+      "name": "Impulsividade",
+      "categories": [
+        {
+          "id": "cat_impulsivity",
+          "name": "Impulsividade",
+          "questions": [
+            {
+              "id": "d0q1",
+              "text": "A criança inicia uma ação antes de ouvir ou compreender toda a orientação?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d0q2",
+              "text": "A criança responde antes que perguntas ou instruções sejam concluídas?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d0q3",
+              "text": "A criança apresenta dificuldade para esperar sua vez?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d0q4",
+              "text": "A criança interrompe conversas, brincadeiras ou atividades de outras pessoas?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d0q5",
+              "text": "A criança pega objetos ou utiliza materiais sem solicitar autorização?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d0q6",
+              "text": "A criança abandona uma atividade para iniciar outra imediatamente, sem avaliar a situação?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d0q7",
+              "text": "A criança toma decisões rápidas sem considerar riscos ou consequências?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d0q8",
+              "text": "A criança se coloca em situações de risco por agir antes de pensar?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anamnese_inattention",
+      "name": "Desatenção",
+      "categories": [
+        {
+          "id": "cat_inattention",
+          "name": "Desatenção",
+          "questions": [
+            {
+              "id": "d1q1",
+              "text": "A criança apresenta dificuldade para manter a atenção em atividades compatíveis com sua idade?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d1q2",
+              "text": "A criança se distrai facilmente com sons, objetos, pessoas ou acontecimentos ao redor?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d1q3",
+              "text": "A criança precisa que comandos ou orientações sejam repetidos?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d1q4",
+              "text": "A criança abandona atividades antes de concluí-las?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d1q5",
+              "text": "A criança apresenta dificuldade para acompanhar instruções com mais de uma etapa?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d1q6",
+              "text": "A dificuldade de atenção interfere na rotina escolar, familiar ou terapêutica?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anamnese_temporal_blindness",
+      "name": "Percepção e gestão do tempo",
+      "categories": [
+        {
+          "id": "cat_temporal_blindness",
+          "name": "Percepção e gestão do tempo",
+          "questions": [
+            {
+              "id": "d2q1",
+              "text": "A criança apresenta dificuldade para perceber quanto tempo passou durante uma atividade?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d2q2",
+              "text": "A criança apresenta dificuldade para estimar quanto tempo precisará para concluir uma tarefa?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d2q3",
+              "text": "A criança perde a noção do tempo quando está envolvida em uma atividade de interesse?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d2q4",
+              "text": "A criança precisa ser lembrada repetidamente de que uma atividade está próxima de terminar?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d2q5",
+              "text": "A criança apresenta dificuldade para se preparar dentro do tempo disponível?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d2q6",
+              "text": "A criança se atrasa para iniciar ou concluir atividades, mesmo após receber orientação prévia?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d2q7",
+              "text": "A criança apresenta dificuldade para organizar uma sequência de atividades dentro de um período determinado?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d2q8",
+              "text": "A criança demonstra surpresa ou desregulação quando percebe que o tempo de uma atividade terminou?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anamnese_hyperactivity",
+      "name": "Hiperatividade",
+      "categories": [
+        {
+          "id": "cat_hyperactivity",
+          "name": "Hiperatividade",
+          "questions": [
+            {
+              "id": "d3q1",
+              "text": "A criança movimenta mãos, pés ou corpo excessivamente quando deveria permanecer sentada?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d3q2",
+              "text": "A criança se levanta ou se desloca em situações nas quais deveria permanecer no local?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d3q3",
+              "text": "A criança corre, pula ou escala objetos em momentos inadequados?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d3q4",
+              "text": "A criança apresenta dificuldade para participar de atividades tranquilas?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d3q5",
+              "text": "A criança parece estar constantemente em movimento?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d3q6",
+              "text": "A criança fala excessivamente em comparação com o esperado para sua idade e contexto?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d3q7",
+              "text": "A criança apresenta necessidade frequente de movimento mesmo após receber orientação?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d3q8",
+              "text": "O excesso de atividade motora prejudica sua participação em casa, na escola ou durante as terapias?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anamnese_emotional_dysregulation",
+      "name": "Desregulação emocional",
+      "categories": [
+        {
+          "id": "cat_emotional_dysregulation",
+          "name": "Desregulação emocional",
+          "questions": [
+            {
+              "id": "d4q1",
+              "text": "A criança apresenta reações emocionais intensas diante de frustrações?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d4q2",
+              "text": "A criança apresenta dificuldade para se acalmar após ficar irritada, ansiosa ou frustrada?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d4q3",
+              "text": "A criança apresenta choro, gritos, agitação ou oposição diante de mudanças?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d4q4",
+              "text": "A criança apresenta crises quando uma atividade é interrompida?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d4q5",
+              "text": "A criança necessita da ajuda de um adulto para recuperar a estabilidade emocional?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d4q6",
+              "text": "As crises prejudicam sua participação em casa, na escola, na clínica ou em outros ambientes?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d4q7",
+              "text": "Durante as crises, a criança apresenta comportamento autoagressivo?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d4q8",
+              "text": "Durante as crises, a criança apresenta agressividade contra outras pessoas?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d4q9",
+              "text": "Durante as crises, a criança arremessa ou danifica objetos?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anamnese_task_initiation",
+      "name": "Dificuldade de iniciação e conclusão de tarefas",
+      "categories": [
+        {
+          "id": "cat_task_initiation",
+          "name": "Dificuldade de iniciação e conclusão de tarefas",
+          "questions": [
+            {
+              "id": "d5q1",
+              "text": "A criança apresenta dificuldade para iniciar uma tarefa, mesmo sabendo o que precisa fazer?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d5q2",
+              "text": "A criança permanece parada ou sem reação quando recebe uma solicitação?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d5q3",
+              "text": "A criança precisa de ajuda verbal, visual ou física para começar uma atividade?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d5q4",
+              "text": "A criança apresenta dificuldade para retomar uma tarefa após uma interrupção?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d5q5",
+              "text": "A criança apresenta dificuldade para concluir atividades iniciadas?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d5q6",
+              "text": "A dificuldade para iniciar ou concluir tarefas interfere em sua autonomia?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anamnese_hyperfocus",
+      "name": "Hiperfoco",
+      "categories": [
+        {
+          "id": "cat_hyperfocus",
+          "name": "Hiperfoco",
+          "questions": [
+            {
+              "id": "d6q1",
+              "text": "A criança permanece excessivamente concentrada em um único assunto, objeto ou atividade?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d6q2",
+              "text": "A criança apresenta dificuldade para interromper uma atividade de grande interesse?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d6q3",
+              "text": "A criança reage negativamente quando precisa mudar de atividade?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d6q4",
+              "text": "A criança deixa de atender necessidades básicas ou orientações por estar concentrada em uma atividade?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d6q5",
+              "text": "O interesse intenso restringe sua participação em outras atividades?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d6q6",
+              "text": "A criança apresenta dificuldade diante de mudanças na rotina?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anamnese_sensory",
+      "name": "Alterações sensoriais",
+      "categories": [
+        {
+          "id": "cat_sensory",
+          "name": "Alterações sensoriais",
+          "questions": [
+            {
+              "id": "d7q1",
+              "text": "A criança demonstra incômodo intenso com sons comuns do ambiente?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d7q2",
+              "text": "A criança demonstra incômodo com luzes, cores ou ambientes visualmente carregados?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d7q3",
+              "text": "A criança evita determinados tecidos, roupas, texturas ou contato físico?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d7q4",
+              "text": "A criança apresenta seletividade relacionada à textura, temperatura ou consistência dos alimentos?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d7q5",
+              "text": "A criança reage de maneira intensa a cheiros?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d7q6",
+              "text": "A criança procura estímulos sensoriais repetitivos, como girar, balançar, pular ou tocar objetos?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d7q7",
+              "text": "A criança parece não perceber adequadamente dor, frio, calor ou pequenos machucados?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d7q8",
+              "text": "As reações sensoriais prejudicam atividades escolares, sociais, terapêuticas ou de autocuidado?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anamnese_interacao_social",
+      "name": "Interação social",
+      "categories": [
+        {
+          "id": "cat_interacao_social",
+          "name": "Interação social",
+          "questions": [
+            {
+              "id": "d8q1",
+              "text": "A criança apresenta dificuldade para iniciar interação com outras crianças?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d8q2",
+              "text": "A criança apresenta dificuldade para manter uma interação ou brincadeira compartilhada?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d8q3",
+              "text": "A criança deixa de responder quando outra pessoa tenta interagir com ela?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d8q4",
+              "text": "A criança compartilha interesses, objetos ou acontecimentos com outras pessoas?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d8q5",
+              "text": "A criança apresenta dificuldade para esperar sua vez em atividades compartilhadas?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d8q6",
+              "text": "A criança compreende regras sociais compatíveis com sua idade?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d8q7",
+              "text": "A criança prefere permanecer isolada mesmo quando há oportunidades de interação?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d8q8",
+              "text": "As dificuldades sociais prejudicam sua participação na escola, na família ou na comunidade?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anamnese_pessoa_de_referencia_e_separacao",
+      "name": "Pessoa de referência e separação",
+      "categories": [
+        {
+          "id": "cat_pessoa_de_referencia_e_separacao",
+          "name": "Pessoa de referência e separação",
+          "questions": [
+            {
+              "id": "d9q1",
+              "text": "A criança apresenta dificuldade para permanecer com outros profissionais ou cuidadores sem a presença da pessoa de referência?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d9q2",
+              "text": "A criança apresenta sofrimento intenso ao se separar da pessoa de referência?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d9q3",
+              "text": "A criança recusa atividades quando sua pessoa de referência não está presente?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d9q4",
+              "text": "A presença da pessoa de referência é necessária para que a criança participe das atividades?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            },
+            {
+              "id": "d9q5",
+              "text": "A dependência da pessoa de referência prejudica sua autonomia?",
+              "type": "freq3",
+              "frequency": {
+                "options": [
+                  "Nunca",
+                  "Raramente",
+                  "Às vezes",
+                  "Frequentemente",
+                  "Sempre",
+                  "Não foi possível avaliar",
+                  "Não se aplica"
+                ],
+                "selected": null
+              },
+              "impact": {
+                "options": [
+                  "Nenhum",
+                  "Leve",
+                  "Moderado",
+                  "Intenso",
+                  "Não avaliado"
+                ],
+                "selected": null
+              },
+              "setting": {
+                "options": [
+                  "Casa",
+                  "Escola",
+                  "Clínica",
+                  "Comunidade",
+                  "Múltiplos ambientes"
+                ],
+                "selected": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anamnese_episodios_visuais",
+      "name": "Episódios visuais",
+      "categories": [
+        {
+          "id": "cat_episodios_visuais",
+          "name": "Episódios visuais",
+          "questions": [
+            {
+              "id": "d10q1",
+              "text": "A criança já apresentou perda total ou parcial da visão por um período?",
+              "type": "single",
+              "options": [
+                "Sim",
+                "Não",
+                "Não informado"
+              ],
+              "selected": null
+            },
+            {
+              "id": "d10q2",
+              "text": "Durante o episódio, a alteração ocorreu em apenas um olho?",
+              "type": "single",
+              "options": [
+                "Sim",
+                "Não",
+                "Não informado"
+              ],
+              "selected": null
+            },
+            {
+              "id": "d10q3",
+              "text": "O episódio foi avaliado por médico?",
+              "type": "single",
+              "options": [
+                "Sim",
+                "Não",
+                "Não informado"
+              ],
+              "selected": null
+            },
+            {
+              "id": "d10q4",
+              "text": "Houve recorrência do episódio?",
+              "type": "single",
+              "options": [
+                "Sim",
+                "Não",
+                "Não informado"
+              ],
+              "selected": null
+            },
+            {
+              "id": "d10q5",
+              "text": "Existe diagnóstico médico relacionado à alteração visual?",
+              "type": "single",
+              "options": [
+                "Sim",
+                "Não",
+                "Não informado"
+              ],
+              "selected": null
+            },
+            {
+              "id": "d10q6",
+              "text": "Há laudo ou relatório médico disponível?",
+              "type": "single",
+              "options": [
+                "Sim",
+                "Não",
+                "Não informado"
+              ],
+              "selected": null
+            },
+            {
+              "id": "d10q1a",
+              "text": "Duração predominante do episódio:",
+              "type": "single",
+              "options": [
+                "Menos de 1 minuto",
+                "De 1 a 5 minutos",
+                "De 6 a 30 minutos",
+                "Mais de 30 minutos",
+                "Não informado"
+              ],
+              "selected": null
+            },
+            {
+              "id": "d10q1b",
+              "text": "Situação assistencial:",
+              "type": "single",
+              "options": [
+                "Em acompanhamento",
+                "Avaliação agendada",
+                "Avaliado e recebeu alta",
+                "Sem avaliação médica",
+                "Não informado"
+              ],
+              "selected": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anamnese_diagnosticos_e_investigacao",
+      "name": "Diagnósticos e investigação",
+      "categories": [
+        {
+          "id": "cat_diagnosticos_e_investigacao",
+          "name": "Diagnósticos e investigação",
+          "questions": [
+            {
+              "id": "d11q1",
+              "text": "A criança possui diagnóstico formal de Transtorno do Espectro Autista — TEA?",
+              "type": "single",
+              "options": [
+                "Sim",
+                "Não",
+                "Em investigação",
+                "Não informado"
+              ],
+              "selected": null
+            },
+            {
+              "id": "d11q2",
+              "text": "A criança possui diagnóstico formal de Transtorno do Déficit de Atenção e Hiperatividade — TDAH?",
+              "type": "single",
+              "options": [
+                "Sim",
+                "Não",
+                "Em investigação",
+                "Não informado"
+              ],
+              "selected": null
+            },
+            {
+              "id": "d11q3",
+              "text": "A criança está em investigação diagnóstica para TEA?",
+              "type": "single",
+              "options": [
+                "Sim",
+                "Não",
+                "Em investigação",
+                "Não informado"
+              ],
+              "selected": null
+            },
+            {
+              "id": "d11q4",
+              "text": "A criança está em investigação diagnóstica para TDAH?",
+              "type": "single",
+              "options": [
+                "Sim",
+                "Não",
+                "Em investigação",
+                "Não informado"
+              ],
+              "selected": null
+            },
+            {
+              "id": "d11q5",
+              "text": "Há laudo médico disponível?",
+              "type": "single",
+              "options": [
+                "Sim",
+                "Não",
+                "Em investigação",
+                "Não informado"
+              ],
+              "selected": null
+            },
+            {
+              "id": "d11q6",
+              "text": "Há outros diagnósticos do neurodesenvolvimento?",
+              "type": "single",
+              "options": [
+                "Sim",
+                "Não",
+                "Em investigação",
+                "Não informado"
+              ],
+              "selected": null
+            },
+            {
+              "id": "d11q7",
+              "text": "A criança utiliza medicamento relacionado ao comportamento, atenção ou regulação emocional?",
+              "type": "single",
+              "options": [
+                "Sim",
+                "Não",
+                "Em investigação",
+                "Não informado"
+              ],
+              "selected": null
+            },
+            {
+              "id": "d11q8",
+              "text": "A criança está em acompanhamento médico especializado?",
+              "type": "single",
+              "options": [
+                "Sim",
+                "Não",
+                "Em investigação",
+                "Não informado"
+              ],
+              "selected": null
+            }
+          ]
+        }
+      ]
+    }
   ]
 }

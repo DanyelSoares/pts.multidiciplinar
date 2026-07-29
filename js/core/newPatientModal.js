@@ -5,11 +5,11 @@ import Toast from './toast.js';
 import { escapeHtml, qs, qsa } from './dom.js';
 
 const EMPTY_REASONS = {
-  needs: 'Este paciente ainda não possui Mapa de necessidades — conclua a entrevista para gerá-lo.',
-  pts: 'Este paciente ainda não possui um PTS — a minuta será gerada após a conclusão da entrevista inicial e do Mapa de necessidades.',
+  needs: 'Este paciente ainda não possui Mapa de necessidades — conclua a anamnese para gerá-lo.',
+  pts: 'Este paciente ainda não possui um PTS — a minuta será gerada após a conclusão da anamnese inicial e do Mapa de necessidades.',
   aba: 'Este paciente ainda não possui Programas ABA — eles são vinculados a objetivos aprovados do PTS, que ainda não existe.',
-  team: 'Este paciente ainda não possui equipe definida — nenhum supervisor de caso foi atribuído até a conclusão da entrevista inicial.',
-  validation: 'Este paciente ainda não possui versões de PTS para validar — a primeira versão será criada após a conclusão da entrevista inicial.',
+  team: 'Este paciente ainda não possui equipe definida — nenhum supervisor de caso foi atribuído até a conclusão da anamnese inicial.',
+  validation: 'Este paciente ainda não possui versões de PTS para validar — a primeira versão será criada após a conclusão da anamnese inicial.',
 };
 
 const FIELDS = [
@@ -28,49 +28,6 @@ function fieldGroup(field) {
       <label>${escapeHtml(field.label)}${field.required ? ' *' : ''}</label>
       <input class="search-input" id="np-${field.id}" placeholder="${escapeHtml(field.placeholder)}" style="width:100%;padding:0 13px;">
     </div>`;
-}
-
-const FREQ_OPTIONS = ['Nunca', 'Raramente', 'Às vezes', 'Frequentemente', 'Sempre', 'Não foi possível avaliar', 'Não se aplica'];
-const IMPACT_OPTIONS = ['Nenhum', 'Leve', 'Moderado', 'Intenso', 'Não avaliado'];
-const SETTING_OPTIONS = ['Casa', 'Escola', 'Clínica', 'Comunidade', 'Múltiplos ambientes'];
-
-function buildFirstQuestion() {
-  return {
-    id: 'd0q1',
-    domain: 0,
-    type: 'freq3',
-    meta: 'Impulsividade · pergunta 1 de 8',
-    text: 'A criança inicia uma ação antes de ouvir ou compreender toda a orientação?',
-    frequency: { options: FREQ_OPTIONS, selected: null },
-    impact: { options: IMPACT_OPTIONS, selected: null },
-    setting: { options: SETTING_OPTIONS, selected: null },
-    tags: [],
-    note: 'Entrevista recém-iniciada — nenhuma resposta registrada ainda.',
-  };
-}
-
-function buildDomains() {
-  const dominios = [
-    { name: 'Impulsividade', slug: 'impulsivity' },
-    { name: 'Desatenção', slug: 'inattention' },
-    { name: 'Percepção e gestão do tempo', slug: 'temporal_blindness', minRespostas: 4 },
-    { name: 'Hiperatividade', slug: 'hyperactivity' },
-    { name: 'Desregulação emocional', slug: 'emotional_dysregulation' },
-    { name: 'Dificuldade de iniciação e conclusão de tarefas', slug: 'task_initiation' },
-    { name: 'Hiperfoco', slug: 'hyperfocus' },
-    { name: 'Alterações sensoriais', slug: 'sensory' },
-    { name: 'Interação social', kind: 'context' },
-    { name: 'Pessoa de referência e separação', kind: 'context' },
-    { name: 'Episódios visuais', kind: 'alert' },
-    { name: 'Diagnósticos e investigação', kind: 'context' },
-  ];
-  return dominios.map((d, id) => {
-    const domain = { id, name: d.name, status: id === 0 ? 'current' : 'pending', inRadar: id <= 7 };
-    if (d.slug) domain.slug = d.slug;
-    if (d.minRespostas) domain.minRespostas = d.minRespostas;
-    if (d.kind) domain.kind = d.kind;
-    return domain;
-  });
 }
 
 function formatNow() {
@@ -117,12 +74,11 @@ function createPatient(values) {
     interviewer: values.interviewer,
   };
 
-  const interview = {
-    questionnaire: 'Entrevista Inicial PTS v1.2',
+  const anamnese = {
+    selectedTemplateIds: [],
+    answers: {},
     startedAt: formatNow(),
-    domains: buildDomains(),
-    questions: [buildFirstQuestion()],
-    pendingAlert: null,
+    currentIndex: 0,
   };
 
   const dashboardRow = {
@@ -138,7 +94,7 @@ function createPatient(values) {
     alertId: null,
   };
 
-  return LocalData.createPatient({ patient, interview, dashboardRow, emptyReasons: EMPTY_REASONS });
+  return LocalData.createPatient({ patient, anamnese, dashboardRow, emptyReasons: EMPTY_REASONS });
 }
 
 function close() {
@@ -157,11 +113,11 @@ function bindEvents() {
     if (!validate(values)) return;
 
     const newId = createPatient(values);
-    Toast.show('Paciente criado com sucesso — iniciando entrevista.', { kind: 'success' });
+    Toast.show('Paciente criado com sucesso — selecione as anamneses a aplicar.', { kind: 'success' });
     close();
     Patient.setCurrentId(newId);
     Router.resetAll();
-    Router.go('s-interview');
+    Router.go('s-anamnese');
   });
 }
 
@@ -191,10 +147,10 @@ function open(units = []) {
         ${fieldGroup(FIELDS[2])}
         ${fieldGroup(FIELDS[3])}
         ${fieldGroup(FIELDS[4])}
-        <div class="footnote"><i class="fa-solid fa-circle-info"></i>Apenas os dados de identificação são coletados aqui. Diagnóstico, objetivos e equipe são construídos ao longo da entrevista e do PTS.</div>
+        <div class="footnote"><i class="fa-solid fa-circle-info"></i>Apenas os dados de identificação são coletados aqui. Diagnóstico, objetivos e equipe são construídos ao longo da anamnese e do PTS.</div>
         <div style="display:flex;justify-content:flex-end;gap:10px;margin-top:16px;">
           <button class="btn btn-ghost np-cancel-btn" type="button">Cancelar</button>
-          <button class="btn btn-primary" type="button" id="np-submit"><i class="fa-solid fa-arrow-right"></i> Criar e iniciar entrevista</button>
+          <button class="btn btn-primary" type="button" id="np-submit"><i class="fa-solid fa-arrow-right"></i> Criar e selecionar anamneses</button>
         </div>
       </div>
     </div>`;

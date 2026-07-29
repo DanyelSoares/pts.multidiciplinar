@@ -1,7 +1,8 @@
 import Store from '../core/store.js';
 import Patient from '../core/patient.js';
 import Config from '../core/config.js';
-import { calcularSeveridade, obterAlertaDominio8 } from '../core/severidade.js';
+import Catalog from '../core/catalog.js';
+import { calcularSeveridade, obterAlertaDominio8, montarShapeLegado } from '../core/severidade.js';
 import { renderizarRadarSVG, renderizarLegenda } from '../core/graficoRadar.js';
 import { escapeHtml, qs, emptyState } from '../core/dom.js';
 
@@ -87,9 +88,15 @@ function renderRadarArea() {
 
 export async function mount() {
   const id = Patient.getCurrentId();
-  const [interview, patient, config] = await Promise.all([Store.load('interview', id), Store.load('patient', id), Config.load()]);
+  const [anamneseDoc, patient, config, templates] = await Promise.all([
+    Store.load('anamnese', id),
+    Store.load('patient', id),
+    Config.load(),
+    Catalog.listAnamneseTemplates(),
+  ]);
   const root = qs('#s-severidade');
 
+  const interview = montarShapeLegado(anamneseDoc, templates);
   const resultado = calcularSeveridade(interview);
   const alertaD8 = obterAlertaDominio8(interview);
 
@@ -97,7 +104,7 @@ export async function mount() {
     root.innerHTML = `
       <div class="screen-title"><i class="fa-solid fa-chart-simple"></i> Perfil de Severidade</div>
       <div class="screen-desc">${escapeHtml(patient.id)} · ${escapeHtml(patient.fullName)}</div>
-      ${emptyState('Complete os 8 domínios da entrevista para gerar o perfil de severidade.')}
+      ${emptyState('Complete as anamneses do radar de severidade (8 domínios) para gerar o perfil.')}
     `;
     return;
   }
@@ -121,7 +128,7 @@ export async function mount() {
 
   root.innerHTML = `
     <div class="screen-title"><i class="fa-solid fa-chart-simple"></i> Perfil de Severidade</div>
-    <div class="screen-desc">${escapeHtml(patient.id)} · ${escapeHtml(patient.fullName)} · gerado a partir das respostas da Entrevista Inicial</div>
+    <div class="screen-desc">${escapeHtml(patient.id)} · ${escapeHtml(patient.fullName)} · gerado a partir das respostas das anamneses aplicadas</div>
 
     ${alertaHtml}
 
@@ -149,7 +156,7 @@ export async function mount() {
 
     ${contextoDominios(interview, dominiosContexto)}
 
-    <div class="footnote"><i class="fa-solid fa-circle-info"></i>Este perfil é uma leitura quantitativa das respostas da entrevista, apresentada como recomendação pendente de validação profissional — não constitui diagnóstico.</div>
+    <div class="footnote"><i class="fa-solid fa-circle-info"></i>Este perfil é uma leitura quantitativa das respostas das anamneses, apresentada como recomendação pendente de validação profissional — não constitui diagnóstico.</div>
   `;
 
   renderRadarArea();

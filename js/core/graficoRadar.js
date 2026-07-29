@@ -79,7 +79,7 @@ function poligonoCamada(valores, totalEixos, raioMax, centro, corVar, tracejado,
 
 export function renderizarRadarSVG(camadas, rotulosEixos, options = {}) {
   const tamanho = options.size || 420;
-  const margem = 110;
+  const margem = 65;
   const viewBoxSize = tamanho + margem * 2;
   const centro = viewBoxSize / 2;
   const raioMax = tamanho / 2 - 20;

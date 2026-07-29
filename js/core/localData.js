@@ -59,6 +59,18 @@ function listDashboardExtra() {
   return readJSON(DASHBOARD_EXTRA_KEY, []);
 }
 
+function catalogKey(catalogName) {
+  return `${PREFIX}catalog:${catalogName}`;
+}
+
+function getCatalogLocalItems(catalogName) {
+  return readJSON(catalogKey(catalogName), []);
+}
+
+function saveCatalogLocalItems(catalogName, items) {
+  return writeJSON(catalogKey(catalogName), items);
+}
+
 function nextId() {
   const current = readJSON(SEQ_KEY, SEQ_START);
   const next = current + 1;
@@ -66,14 +78,14 @@ function nextId() {
   return String(next);
 }
 
-function createPatient({ patient, interview, dashboardRow, emptyReasons }) {
+function createPatient({ patient, anamnese, dashboardRow, emptyReasons }) {
   const id = patient.id.replace('#', '');
   const ids = listPatientIds();
   ids.push(id);
   writeJSON(PATIENTS_KEY, ids);
 
   saveDoc('patient', id, patient);
-  saveDoc('interview', id, interview);
+  saveDoc('anamnese', id, anamnese);
   saveDoc('needs', id, { empty: true, reason: emptyReasons.needs });
   saveDoc('pts', id, { empty: true, reason: emptyReasons.pts });
   saveDoc('aba', id, { empty: true, reason: emptyReasons.aba });
@@ -97,6 +109,8 @@ const LocalData = {
   listDashboardExtra,
   nextId,
   createPatient,
+  getCatalogLocalItems,
+  saveCatalogLocalItems,
 };
 
 export default LocalData;

@@ -4,13 +4,16 @@ import PatientSwitcher from './core/patientSwitcher.js';
 import NewPatientModal from './core/newPatientModal.js';
 import { qs } from './core/dom.js';
 import * as dashboard from './screens/dashboard.js';
-import * as interview from './screens/interview.js';
+import * as patients from './screens/patients.js';
+import { initRouterHighlight } from './screens/patients.js';
+import * as anamneseAplicacao from './screens/anamneseAplicacao.js';
 import * as severidade from './screens/severidade.js';
 import * as needs from './screens/needs.js';
 import * as pts from './screens/pts.js';
 import * as aba from './screens/aba.js';
 import * as team from './screens/team.js';
 import * as validation from './screens/validation.js';
+import * as config from './screens/config.js';
 
 function renderDateTime() {
   const el = qs('#header-datetime');
@@ -30,25 +33,29 @@ function bindClearFilters() {
   });
 }
 
+Patient.clearOnBoot();
+
 Router.register('s-dashboard', dashboard);
-Router.register('s-interview', interview);
+Router.register('s-patients', patients);
+Router.register('s-anamnese', anamneseAplicacao);
 Router.register('s-severidade', severidade);
 Router.register('s-needs', needs);
 Router.register('s-goals', pts);
 Router.register('s-aba', aba);
 Router.register('s-team', team);
 Router.register('s-validation', validation);
+Router.register('s-config', config);
 
 Router.initTabs();
 renderDateTime();
 bindClearFilters();
+initRouterHighlight();
 PatientSwitcher.init();
 NewPatientModal.init();
 
 Patient.onPopState(() => {
-  Router.resetAll(['s-dashboard']);
+  Router.resetAll(['s-dashboard', 's-config']);
   Router.go(Router.current() || 's-dashboard');
 });
 
-const hasPatientInUrl = new URLSearchParams(location.search).has('patient');
-Router.go(hasPatientInUrl ? 's-goals' : 's-dashboard');
+Router.go('s-dashboard');

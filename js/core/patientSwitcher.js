@@ -4,7 +4,7 @@ import Router from './router.js';
 import Config from './config.js';
 import { escapeHtml, qs, qsa } from './dom.js';
 
-const PATIENT_SCREENS = ['s-interview', 's-severidade', 's-needs', 's-goals', 's-aba', 's-team', 's-validation'];
+const PATIENT_SCREENS = ['s-patients', 's-anamnese', 's-severidade', 's-needs', 's-goals', 's-aba', 's-team', 's-validation'];
 
 let allPatients = [];
 let statusById = new Map();
@@ -17,7 +17,8 @@ function statusPill(p) {
 }
 
 function optionRow(p) {
-  const active = Patient.normalize(p.id) === Patient.getCurrentId();
+  const currentId = Patient.getCurrentId();
+  const active = currentId !== null && Patient.normalize(p.id) === currentId;
   return `
     <div class="patient-switch-option${active ? ' active' : ''}" data-id="${escapeHtml(p.id)}">
       <div>
@@ -60,7 +61,7 @@ function selectPatient(id) {
   Patient.setCurrentId(id);
   Router.resetAll(['s-dashboard']);
   closePanel();
-  Router.go(PATIENT_SCREENS.includes(current) ? current : 's-goals');
+  Router.go(PATIENT_SCREENS.includes(current) ? current : 's-patients');
 }
 
 function openPanel() {
@@ -89,9 +90,13 @@ function togglePanel() {
 
 async function renderCurrentLabel() {
   const id = Patient.getCurrentId();
-  const patient = allPatients.find((p) => Patient.normalize(p.id) === id);
   const label = qs('#patient-switch-label');
   if (!label) return;
+  if (!id) {
+    label.textContent = 'Selecionar paciente';
+    return;
+  }
+  const patient = allPatients.find((p) => Patient.normalize(p.id) === id);
   if (patient) {
     label.innerHTML = `<b>${escapeHtml(patient.name)}</b> <span class="dim">${escapeHtml(patient.id)}</span>`;
   } else {
