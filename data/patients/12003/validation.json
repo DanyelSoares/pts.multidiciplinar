@@ -1,0 +1,24 @@
+{
+  "versionTrack": [
+    { "label": "V1", "sub": "Em validação", "state": "current" },
+    { "label": "V2", "sub": "Futura", "state": "pending" }
+  ],
+  "approvals": [
+    { "approver": "camila", "who": "Dra. Camila Souza", "role": "Supervisora do caso", "approved": true, "approveLabel": "Aprovado" },
+    { "approver": "marcos", "who": "T.O. Marcos Vinícius", "role": "Responsável técnico", "approved": false, "pendingLabel": "Pendente — clique para aprovar", "approveLabel": "Aprovado" },
+    { "approver": "familia", "who": "Família (mãe)", "role": "Ciência da família", "approved": false, "pendingLabel": "Pendente — clique para registrar ciência", "approveLabel": "Ciência confirmada" }
+  ],
+  "diff": {
+    "from": "Rascunho",
+    "to": "V1",
+    "fromLines": [
+      { "type": "same", "text": "Paciente: Larissa F. Barbosa Moreira" }
+    ],
+    "toLines": [
+      { "type": "add", "text": "Objetivo: concluir tarefa iniciada com apoio mínimo" },
+      { "type": "add", "text": "Objetivo: atividade motora como recompensa natural (aproveitando ponto forte motor)" },
+      { "type": "add", "text": "Supervisora do caso: Dra. Camila Souza" }
+    ]
+  },
+  "publishRequirements": "Publicar a versão V1 exige: supervisor do caso definido, vigência registrada, todos os objetivos com responsável principal, aprovações dos perfis obrigatórios e ciência da família."
+}

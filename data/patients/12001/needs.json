@@ -1,0 +1,24 @@
+{
+  "sourceQuestionnaire": "Entrevista Inicial PTS v1.2",
+  "pendingConfirmation": 1,
+  "needs": [
+    { "domain": "Comunicação expressiva", "level": "low", "sources": ["family_report", "clinical_observation"], "excerpt": "Vocabulário em expansão, compatível com a faixa etária; frases de 2 a 3 palavras presentes, com boa iniciativa comunicativa.", "priority": "Prioridade sugerida: baixa — reforço de vocabulário" },
+    { "domain": "Interação social", "level": "low", "sources": ["family_report", "school_info"], "excerpt": "Interage bem com adultos de referência; ainda em processo de ampliar brincadeiras compartilhadas com pares na escola.", "priority": "Prioridade sugerida: baixa — estimular brincadeira com pares" },
+    { "domain": "Autonomia · AVDs", "level": "low", "sources": ["family_report"], "excerpt": "Independente para alimentação e boa parte do vestuário; em desenvolvimento a habilidade de calçar sapatos sozinha.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Sono", "level": "low", "sources": ["family_report"], "excerpt": "Rotina de sono regular e sem queixas relatadas pelos responsáveis.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Regulação emocional", "level": "low", "sources": ["family_report"], "excerpt": "Episódios pontuais de birra em situações de frustração, com recuperação rápida e resposta positiva a acolhimento verbal.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Perfil sensorial", "level": "low", "sources": ["clinical_observation"], "excerpt": "Sem sinais relevantes de hiper ou hiporresponsividade sensorial nas observações realizadas.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Rede de apoio", "level": "low", "sources": ["family_report"], "excerpt": "Rede familiar presente e ativa; escola de educação infantil parceira e receptiva às orientações.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Potencialidades e preferências", "level": "low", "sources": ["family_report", "patient_report"], "excerpt": "Gosta muito de brincar com bonecas, desenhar e ouvir histórias; boa expressão facial e engajamento afetivo.", "priority": "Usar como recurso motivacional" }
+  ],
+  "explanation": {
+    "title": "Explicação da sugestão — Interação social",
+    "text": "Esta sugestão foi gerada pelas respostas ao domínio Interação social, que indicaram desenvolvimento típico com oportunidade de ampliação de brincadeiras compartilhadas com pares em ambiente escolar. Regra aplicada: RG-SOC-001 v2. Necessita confirmação por avaliação profissional antes de compor o PTS.",
+    "rule": "RG-SOC-001 v2",
+    "decisions": {
+      "confirmed": { "pill": "ok", "icon": "fa-circle-check", "text": "Confirmado por Dra. Camila Souza (Psicologia) em 18/06/2026. A necessidade passa a compor o mapa oficial e poderá gerar objetivos no PTS." },
+      "review": { "pill": "warn", "icon": "fa-hourglass-half", "text": "Avaliação complementar solicitada. A necessidade permanece como \"pendente de avaliação\" até retorno." },
+      "rejected": { "pill": "risk", "icon": "fa-circle-xmark", "text": "Sugestão rejeitada — justificativa registrada no histórico do caso." }
+    }
+  }
+}

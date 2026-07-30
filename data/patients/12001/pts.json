@@ -1,0 +1,81 @@
+{
+  "identification": {
+    "patient": "Beatriz A. Nogueira Costa",
+    "record": "#12001 · 0912045.00",
+    "unit": "Mais Saúde — Unidade Poço",
+    "version": "V1",
+    "status": "Revisão em andamento",
+    "validity": "10/06/2026 – 10/06/2027",
+    "nextReview": "10/08/2026",
+    "supervisor": "Dra. Camila Souza"
+  },
+  "synthesis": [
+    { "icon": "fa-comment-dots", "title": "Demanda principal", "text": "Ampliação de vocabulário expressivo e de brincadeiras compartilhadas com pares, dentro de um quadro de desenvolvimento típico." },
+    { "icon": "fa-house-chimney", "title": "Contexto de vida", "text": "Reside com mãe, pai e irmão mais novo. Frequenta escola de educação infantil no turno da manhã." },
+    { "icon": "fa-star", "title": "Prioridades da família", "text": "Ampliar o vocabulário e estimular a socialização com colegas da mesma idade." },
+    { "icon": "fa-seedling", "title": "Potencialidades e preferências", "text": "Gosta muito de brincar com bonecas, desenhar e ouvir histórias; boa expressão afetiva e engajamento nas interações." },
+    { "icon": "fa-triangle-exclamation", "title": "Riscos identificados", "text": "Nenhum alerta crítico identificado até o momento." }
+  ],
+  "diagnosis": {
+    "intro": "Consolidação das necessidades identificadas na Entrevista Inicial PTS v1.2 e no Mapa de necessidades, organizadas por domínio funcional, com respectivos ambientes de ocorrência e fontes de informação utilizadas.",
+    "rows": [
+      { "domain": "Comunicação expressiva", "impact": "Leve", "environments": "Casa, escola", "source": "Relato familiar, observação clínica" },
+      { "domain": "Interação social", "impact": "Leve", "environments": "Escola", "source": "Relato familiar, informação escolar" },
+      { "domain": "Autonomia · AVDs", "impact": "Leve", "environments": "Casa", "source": "Relato familiar" }
+    ],
+    "note": "Sem hipóteses diagnósticas em investigação — acompanhamento preventivo de desenvolvimento típico."
+  },
+  "generalGoals": [
+    { "icon": "fa-comments", "label": "Ampliar vocabulário expressivo" },
+    { "icon": "fa-people-group", "label": "Estimular socialização com pares" },
+    { "icon": "fa-person-walking", "label": "Reforçar autonomia em AVDs" }
+  ],
+  "specificGoals": [
+    {
+      "title": "Nomear ao menos 10 novas palavras relacionadas a rotina e brincadeiras, em contexto natural de casa e escola.",
+      "status": "ok", "statusLabel": "Ativo",
+      "domain": "Comunicação expressiva", "responsible": "Fga. Renata Dias",
+      "goal": "10 palavras novas em uso espontâneo, observadas em 2 ambientes diferentes", "deadline": "15/09/2026",
+      "progress": 40, "progressNote": "40% do critério atingido — linha de base 15%"
+    },
+    {
+      "title": "Participar de brincadeira compartilhada com pelo menos 1 colega por até 5 minutos, com apoio pontual do adulto.",
+      "status": "ok", "statusLabel": "Ativo",
+      "domain": "Interação social", "responsible": "Dra. Camila Souza",
+      "goal": "3 registros de brincadeira compartilhada em 2 semanas", "deadline": "30/09/2026",
+      "progress": 25, "progressNote": "25% do critério atingido — linha de base 0%"
+    },
+    {
+      "title": "Calçar sapatos sem cadarço de forma independente na rotina matinal.",
+      "status": "info", "statusLabel": "Em discussão",
+      "domain": "Autonomia · AVDs", "responsible": "T.O. Marcos Vinícius",
+      "goal": "proposta a ser detalhada na próxima reunião interdisciplinar", "deadline": "—",
+      "progress": null, "progressNote": null
+    }
+  ],
+  "goalChecklist": [
+    { "label": "Observável", "ok": true },
+    { "label": "Possui medida", "ok": true },
+    { "label": "Possui condição", "ok": true },
+    { "label": "Critério de domínio incompleto", "ok": false },
+    { "label": "Possui prazo", "ok": true },
+    { "label": "Possui responsável", "ok": true }
+  ],
+  "plans": [
+    { "goal": "Ampliar vocabulário expressivo", "type": "Orientação familiar", "responsible": "Fga. Renata Dias", "environments": "Casa, escola", "status": "ok", "statusLabel": "Ativo" },
+    { "goal": "Brincadeira compartilhada com pares", "type": "Orientação escolar", "responsible": "Dra. Camila Souza", "environments": "Escola", "status": "ok", "statusLabel": "Ativo" },
+    { "goal": "Calçar sapatos de forma independente", "type": "Plano disciplinar (T.O.)", "responsible": "T.O. Marcos Vinícius", "environments": "Casa", "status": "info", "statusLabel": "Em discussão" }
+  ],
+  "monitoring": {
+    "indicator": "Nº de palavras novas em uso espontâneo e nº de interações sociais registradas",
+    "collection": "Relato familiar + observação escolar",
+    "periodicity": "Mensal",
+    "nextAnalysis": "10/08/2026"
+  },
+  "approvals": [
+    { "who": "Dra. Camila Souza", "role": "Supervisora do caso", "status": "ok", "statusLabel": "Aprovado" },
+    { "who": "Fga. Renata Dias", "role": "Fonoaudiologia", "status": "ok", "statusLabel": "Aprovado" },
+    { "who": "T.O. Marcos Vinícius", "role": "Responsável técnico", "status": "warn", "statusLabel": "Pendente" },
+    { "who": "Família (mãe)", "role": "Ciência da família", "status": "ok", "statusLabel": "Ciência confirmada" }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "notice": "Programas ABA são planos de ensino vinculados a um objetivo aprovado do PTS — nunca substituem o PTS nem são gerados automaticamente. Procedimentos restritivos, punitivos ou de extinção não são sugeridos pelo sistema.",
+  "programs": [
+    {
+      "code": "PRG-051",
+      "name": "Iniciação de tarefas com apoio visual sequencial",
+      "objectiveLink": "Avaliação funcional em andamento · não vinculado a objetivo publicado ainda",
+      "status": "warn",
+      "statusLabel": "Aguardando aprovação do supervisor",
+      "responsible": "T.O. Marcos Vinícius",
+      "supervisor": "Dr. Bruno Alencar",
+      "environment": "Escola e sala de terapia",
+      "frequency": "Diária, por 10 dias (avaliação)",
+      "functionHypothesis": "Fuga de demanda cognitivamente exigente — hipótese a ser confirmada por avaliação funcional formal antes de qualquer intervenção estruturada.",
+      "substituteSkills": "Uso de checklist visual com figuras para segmentar a tarefa em etapas menores e reduzir a sobrecarga cognitiva inicial.",
+      "warning": "Nenhum procedimento restritivo, punitivo ou de extinção é sugerido automaticamente. Este programa permanece como rascunho até avaliação funcional completa e aprovação do supervisor ABA."
+    }
+  ]
+}

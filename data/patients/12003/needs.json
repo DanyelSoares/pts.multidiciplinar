@@ -1,0 +1,24 @@
+{
+  "sourceQuestionnaire": "Entrevista Inicial PTS v1.2",
+  "pendingConfirmation": 1,
+  "needs": [
+    { "domain": "Cognição · Iniciação e conclusão de tarefas", "level": "high", "sources": ["family_report", "school_info", "clinical_observation"], "excerpt": "Dificuldade acentuada para iniciar e concluir atividades propostas, mesmo com orientação prévia; necessita apoio constante para retomar tarefas interrompidas.", "priority": "Prioridade sugerida: alta" },
+    { "domain": "Atenção", "level": "mid", "sources": ["family_report", "school_info"], "excerpt": "Distração frequente diante de estímulos do ambiente, com necessidade de repetição de comandos.", "priority": "Prioridade sugerida: média" },
+    { "domain": "Motricidade global e fina", "level": "low", "sources": ["clinical_observation", "family_report"], "excerpt": "Desempenho motor compatível ou acima do esperado para a idade — boa coordenação em atividades de corrida, salto e manuseio de objetos pequenos.", "priority": "Ponto forte — usar como recurso" },
+    { "domain": "Autonomia · AVDs", "level": "low", "sources": ["family_report"], "excerpt": "Independente para alimentação, higiene das mãos e grande parte do vestuário — desempenho acima da média para a idade nessa área.", "priority": "Ponto forte — usar como recurso" },
+    { "domain": "Comunicação expressiva", "level": "low", "sources": ["family_report"], "excerpt": "Vocabulário adequado para a idade, com boas habilidades narrativas em situações estruturadas.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Regulação emocional", "level": "mid", "sources": ["family_report", "school_info"], "excerpt": "Frustração acentuada diante de tarefas cognitivamente exigentes, com tendência a desistir ou evitar a atividade.", "priority": "Prioridade sugerida: média" },
+    { "domain": "Rede de apoio", "level": "low", "sources": ["family_report", "school_info"], "excerpt": "Família estruturada e participativa; escola parceira, disposta a adaptar demandas cognitivas conforme orientação da equipe.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Potencialidades e preferências", "level": "low", "sources": ["family_report", "patient_report"], "excerpt": "Gosta muito de atividades físicas, dança e jogos de movimento; forte engajamento em tarefas motoras.", "priority": "Usar como recurso motivacional" }
+  ],
+  "explanation": {
+    "title": "Explicação da sugestão — Cognição · Iniciação e conclusão de tarefas",
+    "text": "Esta sugestão foi gerada pelas respostas ao domínio de iniciação e conclusão de tarefas, que indicaram dificuldade acentuada e consistente em casa e na escola, contrastando com o bom desempenho motor e de autocuidado. Regra aplicada: RG-COG-004 v1. Necessita confirmação por avaliação profissional antes de compor o PTS.",
+    "rule": "RG-COG-004 v1",
+    "decisions": {
+      "confirmed": { "pill": "ok", "icon": "fa-circle-check", "text": "Confirmado por Dra. Camila Souza (Psicologia) em 30/06/2026. A necessidade passa a compor o mapa oficial e poderá gerar objetivos no PTS." },
+      "review": { "pill": "warn", "icon": "fa-hourglass-half", "text": "Avaliação complementar solicitada. A necessidade permanece como \"pendente de avaliação\" até retorno." },
+      "rejected": { "pill": "risk", "icon": "fa-circle-xmark", "text": "Sugestão rejeitada — justificativa registrada no histórico do caso." }
+    }
+  }
+}

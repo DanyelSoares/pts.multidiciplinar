@@ -43,9 +43,9 @@
 .portage-tabela-area .portage-tabela-total { font-weight: 700; background: var(--primary-soft); }
 .portage-tabela-area .portage-tabela-total td { color: var(--primary); }
 
-.portage-graficos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-.portage-grafico-area { padding: 14px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: #fff; }
-.portage-grafico-titulo { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 10px; }
+.portage-graficos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 20px; }
+.portage-grafico-area { padding: 18px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: #fff; }
+.portage-grafico-titulo { font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 14px; }
 
 .pei-objetivo-card { border: 1px solid var(--border); border-radius: var(--radius-sm); background: #fff; padding: 16px 18px; margin-bottom: 14px; }
 .pei-objetivo-card .pei-objetivo-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 10px; }

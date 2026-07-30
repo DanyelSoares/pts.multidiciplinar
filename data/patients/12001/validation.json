@@ -1,0 +1,25 @@
+{
+  "versionTrack": [
+    { "label": "V1", "sub": "Em validação", "state": "current" },
+    { "label": "V2", "sub": "Futura", "state": "pending" }
+  ],
+  "approvals": [
+    { "approver": "camila", "who": "Dra. Camila Souza", "role": "Supervisora do caso", "approved": true, "approveLabel": "Aprovado" },
+    { "approver": "renata", "who": "Fga. Renata Dias", "role": "Fonoaudiologia", "approved": true, "approveLabel": "Aprovado" },
+    { "approver": "marcos", "who": "T.O. Marcos Vinícius", "role": "Responsável técnico", "approved": false, "pendingLabel": "Pendente — clique para aprovar", "approveLabel": "Aprovado" },
+    { "approver": "familia", "who": "Família (mãe)", "role": "Ciência da família", "approved": true, "approveLabel": "Ciência confirmada" }
+  ],
+  "diff": {
+    "from": "Rascunho",
+    "to": "V1",
+    "fromLines": [
+      { "type": "same", "text": "Paciente: Beatriz A. Nogueira Costa" }
+    ],
+    "toLines": [
+      { "type": "add", "text": "Objetivo: ampliar vocabulário expressivo" },
+      { "type": "add", "text": "Objetivo: brincadeira compartilhada com pares" },
+      { "type": "add", "text": "Supervisora do caso: Dra. Camila Souza" }
+    ]
+  },
+  "publishRequirements": "Publicar a versão V1 exige: supervisor do caso definido, vigência registrada, todos os objetivos com responsável principal, aprovações dos perfis obrigatórios e ciência da família."
+}

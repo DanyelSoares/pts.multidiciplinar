@@ -1,0 +1,33 @@
+{
+  "notice": "Programas ABA são planos de ensino vinculados a um objetivo aprovado do PTS — nunca substituem o PTS nem são gerados automaticamente. Procedimentos restritivos, punitivos ou de extinção não são sugeridos pelo sistema.",
+  "programs": [
+    {
+      "code": "PRG-032",
+      "name": "Ampliação de vocabulário expressivo (nomeação)",
+      "objectiveLink": "Vinculado ao objetivo: \"Nomear ao menos 10 novas palavras relacionadas a rotina e brincadeiras\" · Comunicação expressiva",
+      "status": "ok",
+      "statusLabel": "Ativo · v1",
+      "responsible": "Fga. Renata Dias",
+      "supervisor": "Dr. Bruno Alencar",
+      "environment": "Casa e sala de terapia",
+      "frequency": "2x por semana, 30 min",
+      "operationalDefinition": "A criança nomeia verbalmente um objeto, figura ou ação apresentada pelo aplicador, dentro de 5 segundos após a apresentação do estímulo.",
+      "antecedentResponse": "Objeto ou figura apresentado com a pergunta \"o que é isso?\" → criança nomeia o item corretamente.",
+      "config": {
+        "model": "dtt",
+        "promptHierarchyMode": "most_to_least",
+        "helpTypeIds": ["verbal", "gestural", "independent"],
+        "stimulusIds": ["picture_card", "doll"],
+        "attemptsPerStimulus": 10,
+        "masteryCriteriaPercent": 80,
+        "masteryCriteriaNote": "80% de respostas independentes em 3 sessões consecutivas, com pelo menos 2 aplicadores diferentes.",
+        "name": "Ampliação de vocabulário expressivo (nomeação)",
+        "areaId": "communication",
+        "statusId": "in_progress",
+        "frequencyId": "custom",
+        "frequencyNote": "2x por semana, 30 min"
+      },
+      "sessions": []
+    }
+  ]
+}

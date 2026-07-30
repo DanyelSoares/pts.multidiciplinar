@@ -1,0 +1,317 @@
+{
+  "selectedTemplateIds": [
+    "anamnese_impulsivity",
+    "anamnese_inattention",
+    "anamnese_interacao_social",
+    "anamnese_pessoa_de_referencia_e_separacao"
+  ],
+  "answers": {
+    "anamnese_impulsivity": {
+      "d0q1": {
+        "frequency": {
+          "selected": 1
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d0q2": {
+        "frequency": {
+          "selected": 1
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d0q3": {
+        "frequency": {
+          "selected": 1
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d0q4": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d0q5": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d0q6": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d0q7": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d0q8": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      }
+    },
+    "anamnese_inattention": {
+      "d1q1": {
+        "frequency": {
+          "selected": 1
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d1q2": {
+        "frequency": {
+          "selected": 1
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d1q3": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d1q4": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d1q5": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d1q6": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      }
+    },
+    "anamnese_interacao_social": {
+      "d8q1": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d8q2": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d8q3": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d8q4": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d8q5": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d8q6": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d8q7": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d8q8": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      }
+    },
+    "anamnese_pessoa_de_referencia_e_separacao": {
+      "d9q1": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d9q2": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d9q3": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d9q4": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      },
+      "d9q5": {
+        "frequency": {
+          "selected": null
+        },
+        "impact": {
+          "selected": null
+        },
+        "setting": {
+          "selected": null
+        }
+      }
+    }
+  },
+  "startedAt": "24/07/2026 11:15",
+  "currentIndex": 1
+}

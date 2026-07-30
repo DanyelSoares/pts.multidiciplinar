@@ -1,0 +1,61 @@
+{
+  "notice": "Programas ABA são planos de ensino vinculados a um objetivo aprovado do PTS — nunca substituem o PTS nem são gerados automaticamente. Procedimentos restritivos, punitivos ou de extinção não são sugeridos pelo sistema.",
+  "programs": [
+    {
+      "code": "PRG-045",
+      "name": "Comunicação funcional por troca de figuras (PECS)",
+      "objectiveLink": "Vinculado ao objetivo: \"Utilizar sistema de comunicação por figuras para solicitar ajuda em sala de aula\" · Comunicação funcional em ambiente escolar",
+      "status": "ok",
+      "statusLabel": "Ativo · v1",
+      "responsible": "Fga. Renata Dias",
+      "supervisor": "Dr. Bruno Alencar",
+      "environment": "Sala de aula e sala de terapia",
+      "frequency": "3x por semana, 30 min",
+      "operationalDefinition": "A criança entrega ao adulto uma figura correspondente ao item ou ajuda desejada, dentro de 10 segundos após a oportunidade ser apresentada.",
+      "antecedentResponse": "Situação de necessidade não verbalizada (ex.: material fora de alcance) → criança entrega a figura correspondente ao adulto de referência.",
+      "config": {
+        "model": "dtt",
+        "promptHierarchyMode": "most_to_least",
+        "helpTypeIds": ["full_physical", "partial_physical", "gestural", "independent"],
+        "stimulusIds": ["picture_card", "preferred_item"],
+        "attemptsPerStimulus": 10,
+        "masteryCriteriaPercent": 70,
+        "masteryCriteriaNote": "70% de respostas independentes ou com ajuda gestual, em 2 semanas consecutivas, em sala de aula.",
+        "name": "Comunicação funcional por troca de figuras (PECS)",
+        "areaId": "communication",
+        "statusId": "in_progress",
+        "frequencyId": "custom",
+        "frequencyNote": "3x por semana, 30 min"
+      },
+      "sessions": []
+    },
+    {
+      "code": "PRG-046",
+      "name": "Nomeação e apontamento de figuras para expressar necessidades",
+      "objectiveLink": "Vinculado ao objetivo: \"Nomear ou apontar figuras para expressar desejos e necessidades básicas\" · Comunicação expressiva",
+      "status": "ok",
+      "statusLabel": "Ativo · v1",
+      "responsible": "Fga. Renata Dias",
+      "supervisor": "Dr. Bruno Alencar",
+      "environment": "Sala de terapia",
+      "frequency": "2x por semana, 30 min",
+      "operationalDefinition": "A criança nomeia ou aponta a figura correspondente a um desejo ou necessidade apresentada, dentro de 5 segundos após a oportunidade.",
+      "antecedentResponse": "Conjunto de figuras apresentado com a pergunta \"o que você quer?\" → criança aponta ou nomeia a figura correta.",
+      "config": {
+        "model": "dtt",
+        "promptHierarchyMode": "most_to_least",
+        "helpTypeIds": ["gestural", "verbal", "independent"],
+        "stimulusIds": ["picture_card"],
+        "attemptsPerStimulus": 10,
+        "masteryCriteriaPercent": 80,
+        "masteryCriteriaNote": "80% de respostas independentes em 3 sessões consecutivas.",
+        "name": "Nomeação e apontamento de figuras para expressar necessidades",
+        "areaId": "communication",
+        "statusId": "in_progress",
+        "frequencyId": "custom",
+        "frequencyNote": "2x por semana, 30 min"
+      },
+      "sessions": []
+    }
+  ]
+}

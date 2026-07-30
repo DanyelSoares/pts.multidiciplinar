@@ -1,0 +1,884 @@
+{
+  "selectedTemplateIds": [
+    "anamnese_impulsivity",
+    "anamnese_inattention",
+    "anamnese_temporal_blindness",
+    "anamnese_hyperactivity",
+    "anamnese_emotional_dysregulation",
+    "anamnese_task_initiation",
+    "anamnese_hyperfocus",
+    "anamnese_sensory",
+    "anamnese_interacao_social",
+    "anamnese_pessoa_de_referencia_e_separacao",
+    "anamnese_episodios_visuais",
+    "anamnese_diagnosticos_e_investigacao"
+  ],
+  "answers": {
+    "anamnese_impulsivity": {
+      "d0q1": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d0q2": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d0q3": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d0q4": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d0q5": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d0q6": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d0q7": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d0q8": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      }
+    },
+    "anamnese_inattention": {
+      "d1q1": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d1q2": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d1q3": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d1q4": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d1q5": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d1q6": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      }
+    },
+    "anamnese_temporal_blindness": {
+      "d2q1": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d2q2": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d2q3": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d2q4": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d2q5": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d2q6": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d2q7": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d2q8": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 1
+        },
+        "setting": {
+          "selected": 0
+        }
+      }
+    },
+    "anamnese_hyperactivity": {
+      "d3q1": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d3q2": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d3q3": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d3q4": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d3q5": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d3q6": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d3q7": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d3q8": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      }
+    },
+    "anamnese_emotional_dysregulation": {
+      "d4q1": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d4q2": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d4q3": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d4q4": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d4q5": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d4q6": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d4q7": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d4q8": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d4q9": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      }
+    },
+    "anamnese_task_initiation": {
+      "d5q1": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 2
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d5q2": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 2
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d5q3": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 2
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d5q4": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 2
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d5q5": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 2
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d5q6": {
+        "frequency": {
+          "selected": 2
+        },
+        "impact": {
+          "selected": 2
+        },
+        "setting": {
+          "selected": 0
+        }
+      }
+    },
+    "anamnese_hyperfocus": {
+      "d6q1": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d6q2": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d6q3": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d6q4": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d6q5": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d6q6": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      }
+    },
+    "anamnese_sensory": {
+      "d7q1": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d7q2": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d7q3": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d7q4": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d7q5": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d7q6": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d7q7": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d7q8": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      }
+    },
+    "anamnese_interacao_social": {
+      "d8q1": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d8q2": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d8q3": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d8q4": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d8q5": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d8q6": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d8q7": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d8q8": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      }
+    },
+    "anamnese_pessoa_de_referencia_e_separacao": {
+      "d9q1": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d9q2": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d9q3": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d9q4": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      },
+      "d9q5": {
+        "frequency": {
+          "selected": 0
+        },
+        "impact": {
+          "selected": 0
+        },
+        "setting": {
+          "selected": 0
+        }
+      }
+    },
+    "anamnese_episodios_visuais": {
+      "d10q1": {
+        "selected": 0
+      },
+      "d10q2": {
+        "selected": null
+      },
+      "d10q3": {
+        "selected": null
+      },
+      "d10q4": {
+        "selected": null
+      },
+      "d10q5": {
+        "selected": null
+      },
+      "d10q6": {
+        "selected": null
+      },
+      "d10q1a": {
+        "selected": null
+      },
+      "d10q1b": {
+        "selected": null
+      }
+    },
+    "anamnese_diagnosticos_e_investigacao": {
+      "d11q1": {
+        "selected": 1
+      },
+      "d11q2": {
+        "selected": 1
+      },
+      "d11q3": {
+        "selected": 2
+      },
+      "d11q4": {
+        "selected": 2
+      },
+      "d11q5": {
+        "selected": 1
+      },
+      "d11q6": {
+        "selected": 1
+      },
+      "d11q7": {
+        "selected": 2
+      },
+      "d11q8": {
+        "selected": 1
+      }
+    }
+  },
+  "startedAt": "20/06/2026 09:40",
+  "currentIndex": 0
+}

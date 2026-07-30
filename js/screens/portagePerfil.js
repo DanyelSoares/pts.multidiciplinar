@@ -109,13 +109,14 @@ function percentualPorFaixa(contagemFaixa) {
 }
 
 function graficoBarrasArea(area, inventario, resultado) {
-  const larguraBarra = 44;
-  const gap = 14;
-  const altura = 130;
-  const margemEsquerda = 34;
-  const margemBaixo = 34;
+  const larguraBarra = 48;
+  const gap = 18;
+  const altura = 150;
+  const margemEsquerda = 20;
+  const margemTopo = 24;
+  const margemBaixo = 26;
   const largura = margemEsquerda + inventario.faixas.length * (larguraBarra + gap);
-  const alturaTotal = altura + margemBaixo + 10;
+  const alturaTotal = margemTopo + altura + margemBaixo;
 
   const barras = inventario.faixas
     .map((faixa, i) => {
@@ -124,14 +125,14 @@ function graficoBarrasArea(area, inventario, resultado) {
       const x = margemEsquerda + i * (larguraBarra + gap);
       const semDado = pct === null;
       const alturaBarra = semDado ? 0 : (pct / 100) * altura;
-      const y = 10 + (altura - alturaBarra);
+      const y = margemTopo + (altura - alturaBarra);
       const rotuloValor = semDado ? 'sem dado' : `${pct.toFixed(0)}%`;
       const corBarra = semDado ? 'var(--border)' : 'var(--primary)';
       return `
         <g>
           <rect x="${x}" y="${y}" width="${larguraBarra}" height="${Math.max(alturaBarra, semDado ? 2 : 0)}" fill="${corBarra}" rx="4"/>
-          <text x="${x + larguraBarra / 2}" y="${y - 6}" text-anchor="middle" font-size="10.5" font-weight="700" fill="${semDado ? 'var(--muted)' : 'var(--primary)'}">${rotuloValor}</text>
-          <text x="${x + larguraBarra / 2}" y="${altura + 24}" text-anchor="middle" font-size="10" fill="var(--muted)">${escapeHtml(faixa.rotulo.replace(' a ', '-').replace(' anos', '').replace(' ano', ''))}</text>
+          <text x="${x + larguraBarra / 2}" y="${y - 8}" text-anchor="middle" font-size="11.5" font-weight="700" fill="${semDado ? 'var(--muted)' : 'var(--primary)'}">${rotuloValor}</text>
+          <text x="${x + larguraBarra / 2}" y="${margemTopo + altura + 18}" text-anchor="middle" font-size="11" fill="var(--muted)">${escapeHtml(faixa.rotulo.replace(' a ', '-').replace(' anos', '').replace(' ano', ''))}</text>
         </g>`;
     })
     .join('');
@@ -139,8 +140,8 @@ function graficoBarrasArea(area, inventario, resultado) {
   return `
     <div class="portage-grafico-area">
       <div class="portage-grafico-titulo">${escapeHtml(area.nome)}</div>
-      <svg viewBox="0 0 ${largura} ${alturaTotal}" width="100%" style="max-width:${largura}px;">
-        <line x1="${margemEsquerda - 6}" y1="${10 + altura}" x2="${largura}" y2="${10 + altura}" stroke="var(--border)" stroke-width="1"/>
+      <svg viewBox="0 0 ${largura} ${alturaTotal}" width="100%" style="display:block;">
+        <line x1="${margemEsquerda - 6}" y1="${margemTopo + altura}" x2="${largura}" y2="${margemTopo + altura}" stroke="var(--border)" stroke-width="1"/>
         ${barras}
       </svg>
     </div>`;

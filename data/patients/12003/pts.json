@@ -1,0 +1,82 @@
+{
+  "identification": {
+    "patient": "Larissa F. Barbosa Moreira",
+    "record": "#12003 · 0934190.00",
+    "unit": "Mais Saúde — Unidade Poço",
+    "version": "V1",
+    "status": "Aguardando validação",
+    "validity": "05/07/2026 – 05/07/2027",
+    "nextReview": "—",
+    "supervisor": "Dra. Camila Souza"
+  },
+  "synthesis": [
+    { "icon": "fa-comment-dots", "title": "Demanda principal", "text": "Apoio à iniciação e conclusão de tarefas cognitivamente exigentes, aproveitando o bom desempenho motor e de autocuidado como recurso." },
+    { "icon": "fa-house-chimney", "title": "Contexto de vida", "text": "Reside com mãe, pai e avó paterna. Frequenta escola municipal regular no turno da tarde." },
+    { "icon": "fa-star", "title": "Prioridades da família", "text": "Reduzir a dependência de apoio constante para iniciar e concluir tarefas escolares e domésticas." },
+    { "icon": "fa-seedling", "title": "Potencialidades e preferências", "text": "Excelente desempenho motor global e fino; independência avançada em AVDs; forte interesse por atividades físicas e dança." },
+    { "icon": "fa-triangle-exclamation", "title": "Riscos identificados", "text": "Nenhum alerta crítico identificado até o momento." }
+  ],
+  "diagnosis": {
+    "intro": "Consolidação das necessidades identificadas na Entrevista Inicial PTS v1.2 e no Mapa de necessidades, organizadas por domínio funcional, com respectivos ambientes de ocorrência e fontes de informação utilizadas. Perfil misto: forças evidentes em motricidade e autocuidado, com fragilidade concentrada em funções cognitivas de iniciação e conclusão de tarefas.",
+    "rows": [
+      { "domain": "Cognição · Iniciação e conclusão de tarefas", "impact": "Alto", "environments": "Casa, escola", "source": "Relato familiar, informação escolar, observação clínica" },
+      { "domain": "Atenção", "impact": "Moderado", "environments": "Casa, escola", "source": "Relato familiar, informação escolar" },
+      { "domain": "Regulação emocional", "impact": "Moderado", "environments": "Escola", "source": "Relato familiar, informação escolar" },
+      { "domain": "Motricidade global e fina", "impact": "Ponto forte", "environments": "Casa, escola", "source": "Observação clínica, relato familiar" },
+      { "domain": "Autonomia · AVDs", "impact": "Ponto forte", "environments": "Casa", "source": "Relato familiar" }
+    ],
+    "note": "Hipóteses que ainda precisam de confirmação: avaliação neuropsicológica complementar do perfil cognitivo, ainda não agendada."
+  },
+  "generalGoals": [
+    { "icon": "fa-list-check", "label": "Apoiar iniciação e conclusão de tarefas" },
+    { "icon": "fa-brain", "label": "Fortalecer sustentação da atenção" },
+    { "icon": "fa-person-running", "label": "Usar potencial motor como recurso motivacional" }
+  ],
+  "specificGoals": [
+    {
+      "title": "Iniciar uma tarefa escolar de até 3 etapas em até 1 minuto após a instrução, com apoio de apoio visual sequencial (checklist com figuras).",
+      "status": "info", "statusLabel": "Em discussão",
+      "domain": "Cognição · Iniciação e conclusão de tarefas", "responsible": "T.O. Marcos Vinícius",
+      "goal": "proposta a ser detalhada em reunião interdisciplinar", "deadline": "—",
+      "progress": null, "progressNote": null
+    },
+    {
+      "title": "Concluir uma tarefa iniciada sem abandono, em até 10 minutos, com no máximo um lembrete verbal.",
+      "status": "ok", "statusLabel": "Ativo",
+      "domain": "Cognição · Iniciação e conclusão de tarefas", "responsible": "Dra. Camila Souza",
+      "goal": "60% das oportunidades em 2 semanas, 2 ambientes diferentes", "deadline": "15/10/2026",
+      "progress": 15, "progressNote": "15% do critério atingido — linha de base 5%"
+    },
+    {
+      "title": "Utilizar atividade motora estruturada (dança ou circuito) como recompensa natural após conclusão de tarefa cognitiva.",
+      "status": "ok", "statusLabel": "Ativo",
+      "domain": "Regulação emocional", "responsible": "T.O. Marcos Vinícius",
+      "goal": "Registro de uso em pelo menos 3 sessões por semana", "deadline": "30/09/2026",
+      "progress": 30, "progressNote": "30% do critério atingido — linha de base 0%"
+    }
+  ],
+  "goalChecklist": [
+    { "label": "Observável", "ok": true },
+    { "label": "Possui medida", "ok": false },
+    { "label": "Possui condição", "ok": true },
+    { "label": "Critério de domínio incompleto", "ok": false },
+    { "label": "Possui prazo", "ok": false },
+    { "label": "Possui responsável", "ok": true }
+  ],
+  "plans": [
+    { "goal": "Iniciar tarefa escolar com apoio visual sequencial", "type": "Plano disciplinar (T.O.)", "responsible": "T.O. Marcos Vinícius", "environments": "Escola", "status": "info", "statusLabel": "Em discussão" },
+    { "goal": "Concluir tarefa iniciada com apoio mínimo", "type": "Orientação familiar e escolar", "responsible": "Dra. Camila Souza", "environments": "Casa, escola", "status": "ok", "statusLabel": "Ativo" },
+    { "goal": "Atividade motora como recompensa natural", "type": "Plano disciplinar (T.O.)", "responsible": "T.O. Marcos Vinícius", "environments": "Terapia", "status": "ok", "statusLabel": "Ativo" }
+  ],
+  "monitoring": {
+    "indicator": "% de tarefas iniciadas e concluídas com apoio mínimo",
+    "collection": "Registro de sessão + relato familiar e escolar",
+    "periodicity": "Quinzenal",
+    "nextAnalysis": "19/08/2026"
+  },
+  "approvals": [
+    { "who": "Dra. Camila Souza", "role": "Supervisora do caso", "status": "ok", "statusLabel": "Aprovado" },
+    { "who": "T.O. Marcos Vinícius", "role": "Responsável técnico", "status": "warn", "statusLabel": "Pendente" },
+    { "who": "Família (mãe)", "role": "Ciência da família", "status": "warn", "statusLabel": "Pendente" }
+  ]
+}

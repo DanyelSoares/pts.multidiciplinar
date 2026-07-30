@@ -1,0 +1,27 @@
+{
+  "versionTrack": [
+    { "label": "V1", "sub": "PTS inicial", "state": "done" },
+    { "label": "V2", "sub": "Em vigência", "state": "current" },
+    { "label": "V3", "sub": "Futura", "state": "pending" }
+  ],
+  "approvals": [
+    { "approver": "bruno", "who": "Dr. Bruno Alencar", "role": "Supervisor ABA", "approved": true, "approveLabel": "Aprovado" },
+    { "approver": "renata", "who": "Fga. Renata Dias", "role": "Fonoaudiologia", "approved": true, "approveLabel": "Aprovado" },
+    { "approver": "familia", "who": "Família (mãe)", "role": "Ciência da família", "approved": true, "approveLabel": "Ciência confirmada" },
+    { "approver": "escola", "who": "Escola municipal", "role": "Ciência escolar", "approved": false, "pendingLabel": "Pendente — clique para registrar ciência", "approveLabel": "Ciência confirmada" }
+  ],
+  "diff": {
+    "from": "V1",
+    "to": "V2",
+    "fromLines": [
+      { "type": "rem", "text": "Objetivo: nomear ou apontar figuras para expressar necessidades básicas" },
+      { "type": "same", "text": "Responsável: Fga. Renata Dias" }
+    ],
+    "toLines": [
+      { "type": "add", "text": "Novo objetivo: comunicação funcional por PECS em sala de aula (origem: alerta escolar)" },
+      { "type": "same", "text": "Responsável: Fga. Renata Dias" },
+      { "type": "add", "text": "Novo objetivo: participação em atividade em dupla com colega" }
+    ]
+  },
+  "publishRequirements": "Publicar a versão V2 exige: supervisor do caso definido, vigência registrada, todos os objetivos com responsável principal, aprovações dos perfis obrigatórios, ciência da família e resolução ou encaminhamento dos alertas abertos relacionados à comunicação escolar."
+}

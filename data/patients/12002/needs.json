@@ -1,0 +1,24 @@
+{
+  "sourceQuestionnaire": "Entrevista Inicial PTS v1.2",
+  "pendingConfirmation": 2,
+  "needs": [
+    { "domain": "Comunicação expressiva", "level": "high", "sources": ["family_report", "school_info", "clinical_observation"], "excerpt": "Vocabulário reduzido para a idade; uso predominante de gestos e ecolalia para se comunicar em ambiente escolar.", "priority": "Prioridade sugerida: alta" },
+    { "domain": "Comunicação funcional em ambiente escolar", "level": "high", "sources": ["school_info", "critical_alert"], "excerpt": "Escola relata dificuldade recorrente da criança em se fazer entender por professores e colegas, gerando frustração e isolamento — alerta de triagem aberto, aguardando classificação.", "priority": "Prioridade sugerida: crítica" },
+    { "domain": "Interação social", "level": "high", "sources": ["family_report", "school_info"], "excerpt": "Pouca iniciativa para brincadeiras compartilhadas; prefere brincar sozinho na maior parte do tempo na escola.", "priority": "Prioridade sugerida: alta" },
+    { "domain": "Regulação emocional", "level": "mid", "sources": ["family_report", "school_info"], "excerpt": "Frustração acentuada quando não consegue se comunicar, com episódios de choro e afastamento do grupo.", "priority": "Prioridade sugerida: média" },
+    { "domain": "Perfil sensorial", "level": "low", "sources": ["clinical_observation"], "excerpt": "Sensibilidade leve a ambientes muito barulhentos, sem impacto funcional relevante relatado.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Autonomia · AVDs", "level": "low", "sources": ["family_report"], "excerpt": "Independente para a maioria das atividades de vida diária compatíveis com a idade.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Rede de apoio", "level": "low", "sources": ["family_report", "school_info"], "excerpt": "Família presente e engajada; escola municipal receptiva e disposta a aplicar estratégias de comunicação orientadas pela equipe.", "priority": "Prioridade sugerida: baixa" },
+    { "domain": "Potencialidades e preferências", "level": "low", "sources": ["family_report", "patient_report"], "excerpt": "Forte interesse por dinossauros e quebra-cabeças; boa memória para rotinas visuais.", "priority": "Usar como recurso motivacional" }
+  ],
+  "explanation": {
+    "title": "Explicação da sugestão — Comunicação funcional em ambiente escolar",
+    "text": "Esta sugestão foi gerada pelas respostas da escola e da família nos domínios de comunicação e interação social, que indicaram dificuldade recorrente de comunicação funcional em sala de aula, com impacto em frustração e isolamento. Regra aplicada: RG-COM-007 v1. Necessita confirmação por avaliação profissional antes de compor o PTS.",
+    "rule": "RG-COM-007 v1",
+    "decisions": {
+      "confirmed": { "pill": "ok", "icon": "fa-circle-check", "text": "Confirmado por Dr. Bruno Alencar (ABA) em 05/07/2026. A necessidade passa a compor o mapa oficial e poderá gerar objetivos no PTS." },
+      "review": { "pill": "warn", "icon": "fa-hourglass-half", "text": "Avaliação complementar solicitada à Fonoaudiologia. A necessidade permanece como \"pendente de avaliação\" até retorno." },
+      "rejected": { "pill": "risk", "icon": "fa-circle-xmark", "text": "Sugestão rejeitada — justificativa registrada no histórico do caso." }
+    }
+  }
+}

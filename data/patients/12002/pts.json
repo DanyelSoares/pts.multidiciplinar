@@ -1,0 +1,82 @@
+{
+  "identification": {
+    "patient": "Gabriel H. Ramos Teixeira",
+    "record": "#12002 · 0928817.01",
+    "unit": "Mais Saúde — Unidade Poço",
+    "version": "V2",
+    "status": "Ativo",
+    "validity": "15/05/2026 – 15/05/2027",
+    "nextReview": "20/08/2026",
+    "supervisor": "Dr. Bruno Alencar"
+  },
+  "synthesis": [
+    { "icon": "fa-comment-dots", "title": "Demanda principal", "text": "Ampliação de comunicação funcional e expressiva em ambiente escolar, com foco em reduzir a frustração por não se fazer entender." },
+    { "icon": "fa-house-chimney", "title": "Contexto de vida", "text": "Reside com mãe e avó materna. Frequenta escola municipal regular no turno da manhã e atendimentos terapêuticos no turno da tarde." },
+    { "icon": "fa-star", "title": "Prioridades da família", "text": "Comunicação funcional em sala de aula e ampliação de interações com colegas." },
+    { "icon": "fa-seedling", "title": "Potencialidades e preferências", "text": "Forte interesse por dinossauros e quebra-cabeças; boa memória para rotinas visuais." },
+    { "icon": "fa-triangle-exclamation", "title": "Riscos identificados", "text": "Dificuldade de comunicação funcional em ambiente escolar, com impacto em frustração e isolamento (alerta aberto, ver Mapa de necessidades)." }
+  ],
+  "diagnosis": {
+    "intro": "Consolidação das necessidades identificadas na Entrevista Inicial PTS v1.2 e no Mapa de necessidades, organizadas por domínio funcional, com respectivos ambientes de ocorrência e fontes de informação utilizadas.",
+    "rows": [
+      { "domain": "Comunicação expressiva", "impact": "Alto", "environments": "Casa, escola", "source": "Relato familiar, informação escolar, observação clínica" },
+      { "domain": "Comunicação funcional em ambiente escolar", "impact": "Crítico", "environments": "Escola", "source": "Informação escolar" },
+      { "domain": "Interação social", "impact": "Alto", "environments": "Escola", "source": "Relato familiar, informação escolar" },
+      { "domain": "Regulação emocional", "impact": "Moderado", "environments": "Escola", "source": "Relato familiar, informação escolar" }
+    ],
+    "note": "Hipóteses que ainda precisam de confirmação: avaliação fonoaudiológica complementar solicitada."
+  },
+  "generalGoals": [
+    { "icon": "fa-comments", "label": "Ampliar comunicação expressiva funcional" },
+    { "icon": "fa-school", "label": "Fortalecer comunicação em ambiente escolar" },
+    { "icon": "fa-people-group", "label": "Ampliar habilidades sociais com pares" }
+  ],
+  "specificGoals": [
+    {
+      "title": "Utilizar sistema de comunicação por figuras (PECS) para solicitar ajuda ou expressar necessidade em sala de aula, com no máximo uma ajuda gestual.",
+      "status": "risk", "statusLabel": "Vinculado a alerta",
+      "domain": "Comunicação funcional em ambiente escolar", "responsible": "Fga. Renata Dias",
+      "goal": "70% das oportunidades em sala de aula, 2 semanas consecutivas", "deadline": "30/09/2026",
+      "progress": 35, "progressNote": "35% do critério atingido — linha de base 5%"
+    },
+    {
+      "title": "Nomear ou apontar figuras para expressar desejos e necessidades básicas em situações estruturadas de terapia.",
+      "status": "ok", "statusLabel": "Ativo",
+      "domain": "Comunicação expressiva", "responsible": "Fga. Renata Dias",
+      "goal": "80% das oportunidades, 3 sessões consecutivas", "deadline": "15/09/2026",
+      "progress": 60, "progressNote": "60% do critério atingido — linha de base 20%"
+    },
+    {
+      "title": "Participar de atividade em dupla com colega escolhido pela professora, por ao menos 5 minutos, com apoio visual.",
+      "status": "ok", "statusLabel": "Ativo",
+      "domain": "Interação social", "responsible": "Dr. Bruno Alencar",
+      "goal": "3 registros de participação em 2 semanas", "deadline": "30/10/2026",
+      "progress": 20, "progressNote": "20% do critério atingido — linha de base 0%"
+    }
+  ],
+  "goalChecklist": [
+    { "label": "Observável", "ok": true },
+    { "label": "Possui medida", "ok": true },
+    { "label": "Possui condição", "ok": true },
+    { "label": "Critério de domínio incompleto", "ok": false },
+    { "label": "Possui prazo", "ok": true },
+    { "label": "Possui responsável", "ok": true }
+  ],
+  "plans": [
+    { "goal": "Comunicação funcional em sala de aula (PECS)", "type": "Programa ABA", "responsible": "Fga. Renata Dias", "environments": "Escola, terapia", "status": "risk", "statusLabel": "Vinculado a alerta" },
+    { "goal": "Nomear/apontar figuras para expressar necessidades", "type": "Programa ABA", "responsible": "Fga. Renata Dias", "environments": "Terapia", "status": "ok", "statusLabel": "Ativo" },
+    { "goal": "Participação em atividade em dupla", "type": "Orientação escolar", "responsible": "Dr. Bruno Alencar", "environments": "Escola", "status": "ok", "statusLabel": "Ativo" }
+  ],
+  "monitoring": {
+    "indicator": "% de oportunidades com comunicação funcional bem-sucedida",
+    "collection": "Registro de sessão + relato escolar",
+    "periodicity": "Quinzenal",
+    "nextAnalysis": "12/08/2026"
+  },
+  "approvals": [
+    { "who": "Dr. Bruno Alencar", "role": "Supervisor ABA", "status": "ok", "statusLabel": "Aprovado" },
+    { "who": "Fga. Renata Dias", "role": "Fonoaudiologia", "status": "ok", "statusLabel": "Aprovado" },
+    { "who": "Família (mãe)", "role": "Ciência da família", "status": "ok", "statusLabel": "Ciência confirmada" },
+    { "who": "Escola municipal", "role": "Ciência escolar", "status": "warn", "statusLabel": "Pendente" }
+  ]
+}

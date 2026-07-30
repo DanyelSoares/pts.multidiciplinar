@@ -1,0 +1,20 @@
+{
+  "members": [
+    { "initials": "CS", "name": "Dra. Camila Souza", "role": "Psicologia · Supervisora do caso", "note": "1 objetivo sob responsabilidade" },
+    { "initials": "MV", "name": "T.O. Marcos Vinícius", "role": "Terapia Ocupacional", "note": "2 objetivos sob responsabilidade" },
+    { "initials": "BA", "name": "Dr. Bruno Alencar", "role": "Supervisor ABA", "note": "Supervisão de 1 programa" },
+    { "initials": "FL", "name": "Família (mãe)", "role": "Representante familiar", "note": "Ciência pendente" },
+    { "initials": "EM", "name": "Escola municipal", "role": "Representante escolar autorizado", "note": "Ciência pendente" }
+  ],
+  "responsibilityMatrix": [
+    { "goal": "Iniciar tarefa escolar com apoio visual sequencial", "responsible": "T.O. Marcos Vinícius", "collaborators": "Escola", "supervisor": "Dr. Bruno Alencar", "familyParticipation": { "status": "warn", "label": "Pendente" }, "schoolParticipation": { "status": "warn", "label": "Pendente" }, "status": { "status": "info", "label": "Em discussão" } },
+    { "goal": "Concluir tarefa iniciada com apoio mínimo", "responsible": "Dra. Camila Souza", "collaborators": "Escola, Família", "supervisor": "—", "familyParticipation": { "status": "warn", "label": "Pendente" }, "schoolParticipation": { "status": "warn", "label": "Pendente" }, "status": { "status": "ok", "label": "Ativo" } },
+    { "goal": "Atividade motora como recompensa natural", "responsible": "T.O. Marcos Vinícius", "collaborators": "—", "supervisor": "Dr. Bruno Alencar", "familyParticipation": { "status": "muted", "label": "Não iniciada" }, "schoolParticipation": { "status": "muted", "label": "Não aplicável" }, "status": { "status": "ok", "label": "Ativo" } }
+  ],
+  "accessLevelIds": ["interdisciplinary", "administrative", "technical_restricted"],
+  "timeline": [
+    { "date": "05/07/2026", "text": "Dra. Camila Souza confirmada como supervisora do caso." },
+    { "date": "08/07/2026", "text": "T.O. Marcos Vinícius incluído como responsável pelos objetivos cognitivos e motores." },
+    { "date": "30/06/2026", "text": "Reunião interdisciplinar registrada — identificação do perfil misto entre forças motoras e fragilidade cognitiva." }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "members": [
+    { "initials": "CS", "name": "Dra. Camila Souza", "role": "Psicologia · Supervisora do caso", "note": "2 objetivos sob responsabilidade" },
+    { "initials": "RD", "name": "Fga. Renata Dias", "role": "Fonoaudiologia", "note": "1 objetivo sob responsabilidade" },
+    { "initials": "MV", "name": "T.O. Marcos Vinícius", "role": "Terapia Ocupacional", "note": "1 objetivo sob responsabilidade" },
+    { "initials": "FL", "name": "Família (mãe)", "role": "Representante familiar", "note": "Ciência confirmada" },
+    { "initials": "EI", "name": "Escola de educação infantil", "role": "Representante escolar autorizado", "note": "Ciência pendente" }
+  ],
+  "responsibilityMatrix": [
+    { "goal": "Ampliar vocabulário expressivo", "responsible": "Fga. Renata Dias", "collaborators": "Dra. Camila Souza", "supervisor": "Dr. Bruno Alencar", "familyParticipation": { "status": "ok", "label": "Ativa" }, "schoolParticipation": { "status": "warn", "label": "Pendente" }, "status": { "status": "ok", "label": "Ativo" } },
+    { "goal": "Brincadeira compartilhada com pares", "responsible": "Dra. Camila Souza", "collaborators": "Escola", "supervisor": "—", "familyParticipation": { "status": "ok", "label": "Ativa" }, "schoolParticipation": { "status": "warn", "label": "Pendente" }, "status": { "status": "ok", "label": "Ativo" } },
+    { "goal": "Calçar sapatos de forma independente", "responsible": "T.O. Marcos Vinícius", "collaborators": "Família", "supervisor": "—", "familyParticipation": { "status": "ok", "label": "Ativa" }, "schoolParticipation": { "status": "muted", "label": "Não aplicável" }, "status": { "status": "info", "label": "Em discussão" } }
+  ],
+  "accessLevelIds": ["interdisciplinary", "family_released"],
+  "timeline": [
+    { "date": "10/06/2026", "text": "Dra. Camila Souza confirmada como supervisora do caso." },
+    { "date": "12/06/2026", "text": "Fga. Renata Dias incluída como responsável pelo objetivo de comunicação expressiva." },
+    { "date": "18/06/2026", "text": "Reunião interdisciplinar registrada — definição das prioridades da família." }
+  ]
+}
