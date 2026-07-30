@@ -1,9 +1,9 @@
 {
   "versionTrack": [
-    { "label": "v1.0", "sub": "PTS inicial", "state": "done" },
-    { "label": "v2.0", "sub": "Revisão periódica", "state": "done" },
-    { "label": "v3.0", "sub": "Em validação", "state": "current" },
-    { "label": "v3.1", "sub": "Futura", "state": "pending" }
+    { "label": "V1", "sub": "PTS inicial", "state": "done" },
+    { "label": "V2", "sub": "Revisão periódica", "state": "done" },
+    { "label": "V3", "sub": "Em validação", "state": "current" },
+    { "label": "V4", "sub": "Futura", "state": "pending" }
   ],
   "approvals": [
     { "approver": "camila", "who": "Dra. Camila Souza", "role": "Supervisora do caso", "approved": true, "approveLabel": "Aprovado" },
@@ -12,8 +12,8 @@
     { "approver": "familia", "who": "Família (mãe)", "role": "Ciência da família", "approved": false, "pendingLabel": "Pendente — clique para registrar ciência", "approveLabel": "Ciência confirmada" }
   ],
   "diff": {
-    "from": "Versão 2.0",
-    "to": "Versão 3.0",
+    "from": "V2",
+    "to": "V3",
     "fromLines": [
       { "type": "rem", "text": "Objetivo: iniciar comunicação por troca de figuras" },
       { "type": "same", "text": "Responsável: Fga. Renata Dias" },
@@ -25,5 +25,5 @@
       { "type": "add", "text": "Novo objetivo: segurança em via pública (origem: alerta crítico)" }
     ]
   },
-  "publishRequirements": "Publicar a versão 3.0 exige: supervisor do caso definido, vigência registrada, todos os objetivos com responsável principal, aprovações dos perfis obrigatórios, ciência da família e resolução ou encaminhamento dos alertas críticos abertos. A versão 2.0 permanece disponível e não será apagada."
+  "publishRequirements": "Publicar a versão V3 exige: supervisor do caso definido, vigência registrada, todos os objetivos com responsável principal, aprovações dos perfis obrigatórios, ciência da família e resolução ou encaminhamento dos alertas críticos abertos. A versão V2 permanece disponível e não será apagada."
 }

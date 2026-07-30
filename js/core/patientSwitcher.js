@@ -4,7 +4,7 @@ import Router from './router.js';
 import Config from './config.js';
 import { escapeHtml, qs, qsa } from './dom.js';
 
-const PATIENT_SCREENS = ['s-patients', 's-anamnese', 's-severidade', 's-needs', 's-goals', 's-aba', 's-team', 's-validation'];
+const PATIENT_SCREENS = ['s-patients', 's-anamnese', 's-severidade', 's-needs', 's-goals', 's-aba', 's-team', 's-validation', 's-portage', 's-portage-perfil', 's-pei'];
 
 let allPatients = [];
 let statusById = new Map();

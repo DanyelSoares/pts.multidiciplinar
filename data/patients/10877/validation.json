@@ -1,7 +1,7 @@
 {
   "versionTrack": [
-    { "label": "v1.0", "sub": "Em validação", "state": "current" },
-    { "label": "v1.1", "sub": "Futura", "state": "pending" }
+    { "label": "V1", "sub": "Em validação", "state": "current" },
+    { "label": "V2", "sub": "Futura", "state": "pending" }
   ],
   "approvals": [
     { "approver": "bruno", "who": "Dr. Bruno Alencar", "role": "Supervisor ABA", "approved": false, "pendingLabel": "Pendente — clique para aprovar", "approveLabel": "Aprovado" },
@@ -9,7 +9,7 @@
   ],
   "diff": {
     "from": "Rascunho",
-    "to": "Versão 1.0",
+    "to": "V1",
     "fromLines": [
       { "type": "same", "text": "Paciente: Luiz Eduardo de Macedo Xavier" }
     ],
@@ -18,5 +18,5 @@
       { "type": "add", "text": "Supervisor do caso: Dr. Bruno Alencar" }
     ]
   },
-  "publishRequirements": "Publicar a versão 1.0 exige: avaliação funcional de comportamento concluída, aprovação do supervisor ABA, ciência da família e resolução ou encaminhamento do alerta crítico de heteroagressão aberto."
+  "publishRequirements": "Publicar a versão V1 exige: avaliação funcional de comportamento concluída, aprovação do supervisor ABA, ciência da família e resolução ou encaminhamento do alerta crítico de heteroagressão aberto."
 }

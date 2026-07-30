@@ -87,6 +87,8 @@ function createPatient({ patient, anamnese, dashboardRow, emptyReasons }) {
   saveDoc('patient', id, patient);
   saveDoc('anamnese', id, anamnese);
   saveDoc('needs', id, { empty: true, reason: emptyReasons.needs });
+  saveDoc('portage', id, { empty: true, reason: emptyReasons.portage });
+  saveDoc('pei', id, { empty: true, reason: emptyReasons.pei });
   saveDoc('pts', id, { empty: true, reason: emptyReasons.pts });
   saveDoc('aba', id, { empty: true, reason: emptyReasons.aba });
   saveDoc('team', id, { empty: true, reason: emptyReasons.team });

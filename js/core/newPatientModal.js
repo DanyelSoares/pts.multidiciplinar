@@ -6,6 +6,8 @@ import { escapeHtml, qs, qsa } from './dom.js';
 
 const EMPTY_REASONS = {
   needs: 'Este paciente ainda não possui Mapa de necessidades — conclua a anamnese para gerá-lo.',
+  portage: 'Este paciente ainda não possui aplicação do Inventário Portage — inicie uma aplicação para gerar o perfil de desenvolvimento.',
+  pei: 'Este paciente ainda não possui um PEI — gere um a partir de uma aplicação concluída do Inventário Portage.',
   pts: 'Este paciente ainda não possui um PTS — a minuta será gerada após a conclusão da anamnese inicial e do Mapa de necessidades.',
   aba: 'Este paciente ainda não possui Programas ABA — eles são vinculados a objetivos aprovados do PTS, que ainda não existe.',
   team: 'Este paciente ainda não possui equipe definida — nenhum supervisor de caso foi atribuído até a conclusão da anamnese inicial.',

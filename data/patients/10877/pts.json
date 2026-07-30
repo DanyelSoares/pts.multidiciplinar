@@ -3,7 +3,7 @@
     "patient": "Luiz Eduardo de Macedo Xavier",
     "record": "#10877 · 0739365.01",
     "unit": "Mais Saúde — Unidade Poço",
-    "version": "1.0",
+    "version": "V1",
     "status": "Aguardando validação",
     "validity": "01/07/2026 – 01/07/2027",
     "nextReview": "—",
@@ -17,7 +17,7 @@
     { "icon": "fa-triangle-exclamation", "title": "Riscos identificados", "text": "Episódios de heteroagressão relatados em casa e na escola (alerta crítico aberto, ver Mapa de necessidades)." }
   ],
   "diagnosis": {
-    "intro": "Consolidação inicial das necessidades identificadas na Entrevista Inicial PTS v1.2 e no Mapa de necessidades — versão 1.0, ainda em validação.",
+    "intro": "Consolidação inicial das necessidades identificadas na Entrevista Inicial PTS v1.2 e no Mapa de necessidades — versão V1, ainda em validação.",
     "rows": [
       { "domain": "Regulação emocional e comportamento", "impact": "Crítico", "environments": "Casa, escola", "source": "Relato familiar" },
       { "domain": "Comunicação expressiva", "impact": "Alto", "environments": "Casa", "source": "Relato familiar" }

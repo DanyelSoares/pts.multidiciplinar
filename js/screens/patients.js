@@ -11,6 +11,9 @@ const SECTIONS = [
   { id: 's-team', label: 'Equipe', icon: 'fa-people-group' },
   { id: 's-anamnese', label: 'Anamnese', icon: 'fa-clipboard-question' },
   { id: 's-validation', label: 'Validação', icon: 'fa-check-double' },
+  { id: 's-portage', label: 'Inventário Portage', icon: 'fa-list-check', breakBefore: true },
+  { id: 's-pei', label: 'PEI', icon: 'fa-file-pen' },
+  { id: 's-portage-perfil', label: 'Perfil de Desenvolvimento', icon: 'fa-chart-line' },
 ];
 
 const PATIENT_SECTION_IDS = ['s-patients', ...SECTIONS.map((s) => s.id)];
@@ -20,7 +23,8 @@ function hasPatientInUrl() {
 }
 
 function switcherButton(section, activeId) {
-  return `<button type="button" class="tab-btn${section.id === activeId ? ' active' : ''}" data-section="${section.id}">
+  const breakEl = section.breakBefore ? '<span class="section-switcher-break"></span>' : '';
+  return `${breakEl}<button type="button" class="tab-btn${section.id === activeId ? ' active' : ''}" data-section="${section.id}">
     <i class="fa-solid ${section.icon}"></i> ${escapeHtml(section.label)}
   </button>`;
 }

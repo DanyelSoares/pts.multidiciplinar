@@ -1,0 +1,4425 @@
+{
+ "instrumento": "Guia Portage de Educação Pré-Escolar / IPO",
+ "referencia": "Bluma, Shearer, Frohman & Hilliard (1976); operacionalização br.: Williams & Aiello (2001/2018)",
+ "origemDados": "PORTAGE-PEI_COMPLETO.xlsx, aba \"AV 1\"",
+ "escopo": "5 áreas, 0-6 anos. NÃO inclui a área Estimulação Infantil (0-4 meses, 45 itens) do IPO completo.",
+ "escala": [
+  {
+   "valor": "adquirido",
+   "rotulo": "Sim",
+   "pontos": 1
+  },
+  {
+   "valor": "emergente",
+   "rotulo": "Às vezes",
+   "pontos": 0.5
+  },
+  {
+   "valor": "nao_adquirido",
+   "rotulo": "Não",
+   "pontos": 0
+  },
+  {
+   "valor": "nao_avaliado",
+   "rotulo": "NA",
+   "pontos": null
+  }
+ ],
+ "faixas": [
+  {
+   "id": "0-1",
+   "rotulo": "0 a 1 ano",
+   "inicioMeses": 0,
+   "fimMeses": 12
+  },
+  {
+   "id": "1-2",
+   "rotulo": "1 a 2 anos",
+   "inicioMeses": 12,
+   "fimMeses": 24
+  },
+  {
+   "id": "2-3",
+   "rotulo": "2 a 3 anos",
+   "inicioMeses": 24,
+   "fimMeses": 36
+  },
+  {
+   "id": "3-4",
+   "rotulo": "3 a 4 anos",
+   "inicioMeses": 36,
+   "fimMeses": 48
+  },
+  {
+   "id": "4-5",
+   "rotulo": "4 a 5 anos",
+   "inicioMeses": 48,
+   "fimMeses": 60
+  },
+  {
+   "id": "5-6",
+   "rotulo": "5 a 6 anos",
+   "inicioMeses": 60,
+   "fimMeses": 72
+  }
+ ],
+ "areas": [
+  {
+   "id": "socializacao",
+   "nome": "Socialização",
+   "prefixo": "SOC",
+   "ordem": 1,
+   "totalItens": 83,
+   "itensPorFaixa": {
+    "0-1": 28,
+    "1-2": 15,
+    "2-3": 8,
+    "3-4": 12,
+    "4-5": 9,
+    "5-6": 11
+   }
+  },
+  {
+   "id": "linguagem",
+   "nome": "Linguagem",
+   "prefixo": "LIN",
+   "ordem": 2,
+   "totalItens": 99,
+   "itensPorFaixa": {
+    "0-1": 10,
+    "1-2": 18,
+    "2-3": 30,
+    "3-4": 12,
+    "4-5": 15,
+    "5-6": 14
+   }
+  },
+  {
+   "id": "cognicao",
+   "nome": "Cognição",
+   "prefixo": "COG",
+   "ordem": 3,
+   "totalItens": 108,
+   "itensPorFaixa": {
+    "0-1": 14,
+    "1-2": 10,
+    "2-3": 16,
+    "3-4": 24,
+    "4-5": 22,
+    "5-6": 22
+   }
+  },
+  {
+   "id": "autocuidados",
+   "nome": "Autocuidados",
+   "prefixo": "AUT",
+   "ordem": 4,
+   "totalItens": 105,
+   "itensPorFaixa": {
+    "0-1": 13,
+    "1-2": 12,
+    "2-3": 27,
+    "3-4": 15,
+    "4-5": 23,
+    "5-6": 15
+   }
+  },
+  {
+   "id": "motor",
+   "nome": "Desenvolvimento Motor",
+   "prefixo": "MOT",
+   "ordem": 5,
+   "totalItens": 140,
+   "itensPorFaixa": {
+    "0-1": 45,
+    "1-2": 18,
+    "2-3": 17,
+    "3-4": 15,
+    "4-5": 16,
+    "5-6": 29
+   }
+  }
+ ],
+ "itens": [
+  {
+   "id": "SOC-001",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 1,
+   "ordem": 1,
+   "titulo": "Observa uma pessoa movimentando-se em seu campo visual."
+  },
+  {
+   "id": "SOC-002",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 2,
+   "ordem": 2,
+   "titulo": "Sorri em resposta à atenção do adulto"
+  },
+  {
+   "id": "SOC-003",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 3,
+   "ordem": 3,
+   "titulo": "Vocaliza em resposta à atenção"
+  },
+  {
+   "id": "SOC-004",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 4,
+   "ordem": 4,
+   "titulo": "Olha para sua própria mão, sorrindo ou vocalizando"
+  },
+  {
+   "id": "SOC-005",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 5,
+   "ordem": 5,
+   "titulo": "Responde a seu círculo familiar, sorrindo, vocalizando ou parando de chorar"
+  },
+  {
+   "id": "SOC-006",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 6,
+   "ordem": 6,
+   "titulo": "Sorri em resposta à expressão facial dos outros."
+  },
+  {
+   "id": "SOC-007",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 7,
+   "ordem": 7,
+   "titulo": "Sorri e vocaliza ao ver sua imagem no espelho"
+  },
+  {
+   "id": "SOC-008",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 8,
+   "ordem": 8,
+   "titulo": "Acaricia ou toca no rosto de adultos (puxa cabelo, nariz, óculos, etc.)."
+  },
+  {
+   "id": "SOC-009",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 9,
+   "ordem": 9,
+   "titulo": "Estende a mão em direção a um objeto oferecido."
+  },
+  {
+   "id": "SOC-010",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 10,
+   "ordem": 10,
+   "titulo": "Estende os braços em direção a pessoas familiares"
+  },
+  {
+   "id": "SOC-011",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 11,
+   "ordem": 11,
+   "titulo": "Estende a mão e toca sua imagem refletida no espelho."
+  },
+  {
+   "id": "SOC-012",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 12,
+   "ordem": 12,
+   "titulo": "Segura e examina por 1 minuto um objeto que lhe foi dado."
+  },
+  {
+   "id": "SOC-013",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 13,
+   "ordem": 13,
+   "titulo": "Sacode ou aperta um objeto colocado em sua mão, produzindo sons involuntários."
+  },
+  {
+   "id": "SOC-014",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 14,
+   "ordem": 14,
+   "titulo": "Brinca sozinho por 10 minutos."
+  },
+  {
+   "id": "SOC-015",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 15,
+   "ordem": 15,
+   "titulo": "Procura contato visual quando alguém lhe dá atenção por 2 a 3 minutos."
+  },
+  {
+   "id": "SOC-016",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 16,
+   "ordem": 16,
+   "titulo": "Brinca sozinho sem reclamar por 15 a 20 minutos, próximo de um adulto."
+  },
+  {
+   "id": "SOC-017",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 17,
+   "ordem": 17,
+   "titulo": "Vocaliza para obter atenção"
+  },
+  {
+   "id": "SOC-018",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 18,
+   "ordem": 18,
+   "titulo": "Imita adulto em brincadeiras de esconde-esconde"
+  },
+  {
+   "id": "SOC-019",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 19,
+   "ordem": 19,
+   "titulo": "Bate palmas, imitando um adulto"
+  },
+  {
+   "id": "SOC-020",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 20,
+   "ordem": 20,
+   "titulo": "Acena a mão, imitando um adulto."
+  },
+  {
+   "id": "SOC-021",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 21,
+   "ordem": 21,
+   "titulo": "Ergue os braços para expressar “grande”, imitando um adulto"
+  },
+  {
+   "id": "SOC-022",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 22,
+   "ordem": 22,
+   "titulo": "Oferece algo, mas nem sempre entrega."
+  },
+  {
+   "id": "SOC-023",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 23,
+   "ordem": 23,
+   "titulo": "Abraça, acaricia e beija familiares."
+  },
+  {
+   "id": "SOC-024",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 24,
+   "ordem": 24,
+   "titulo": "Responde ao próprio nome, olhando ou estendendo o braço para ser pego."
+  },
+  {
+   "id": "SOC-025",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 25,
+   "ordem": 25,
+   "titulo": "Aperta ou sacode um brinquedo para produzir sons, em imitação."
+  },
+  {
+   "id": "SOC-026",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 26,
+   "ordem": 26,
+   "titulo": "Manipula brinquedo ou objeto."
+  },
+  {
+   "id": "SOC-027",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 27,
+   "ordem": 27,
+   "titulo": "Estende um brinquedo ou objeto a um adulto e o entrega."
+  },
+  {
+   "id": "SOC-028",
+   "area": "socializacao",
+   "faixa": "0-1",
+   "numero": 28,
+   "ordem": 28,
+   "titulo": "Imita movimentos de outras crianças ao brincar."
+  },
+  {
+   "id": "SOC-029",
+   "area": "socializacao",
+   "faixa": "1-2",
+   "numero": 29,
+   "ordem": 1,
+   "titulo": "Imita um adulto em uma tarefa simples."
+  },
+  {
+   "id": "SOC-030",
+   "area": "socializacao",
+   "faixa": "1-2",
+   "numero": 30,
+   "ordem": 2,
+   "titulo": "Brinca ao lado de outra criança, cada uma realizando tarefas diferentes."
+  },
+  {
+   "id": "SOC-031",
+   "area": "socializacao",
+   "faixa": "1-2",
+   "numero": 31,
+   "ordem": 3,
+   "titulo": "Toma parte em uma brincadeira com outra criança por 2 a 5 minutos."
+  },
+  {
+   "id": "SOC-032",
+   "area": "socializacao",
+   "faixa": "1-2",
+   "numero": 32,
+   "ordem": 4,
+   "titulo": "Aceita a ausência dos pais, embora possa reclamar."
+  },
+  {
+   "id": "SOC-033",
+   "area": "socializacao",
+   "faixa": "1-2",
+   "numero": 33,
+   "ordem": 5,
+   "titulo": "Explora ativamente seu meio ambiente."
+  },
+  {
+   "id": "SOC-034",
+   "area": "socializacao",
+   "faixa": "1-2",
+   "numero": 34,
+   "ordem": 6,
+   "titulo": "Realiza atividade manipulativa com outra pessoa."
+  },
+  {
+   "id": "SOC-035",
+   "area": "socializacao",
+   "faixa": "1-2",
+   "numero": 35,
+   "ordem": 7,
+   "titulo": "Abraça e carrega uma boneca ou brinquedo macio."
+  },
+  {
+   "id": "SOC-036",
+   "area": "socializacao",
+   "faixa": "1-2",
+   "numero": 36,
+   "ordem": 8,
+   "titulo": "Repete ações que produzem risos e atenção."
+  },
+  {
+   "id": "SOC-037",
+   "area": "socializacao",
+   "faixa": "1-2",
+   "numero": 37,
+   "ordem": 9,
+   "titulo": "Dá um livro para que um adulto o leia ou para que ambos o compartilhem."
+  },
+  {
+   "id": "SOC-038",
+   "area": "socializacao",
+   "faixa": "1-2",
+   "numero": 38,
+   "ordem": 10,
+   "titulo": "Puxa uma pessoa a mostrar-lhe algo."
+  },
+  {
+   "id": "SOC-039",
+   "area": "socializacao",
+   "faixa": "1-2",
+   "numero": 39,
+   "ordem": 11,
+   "titulo": "Retira a mão ou diz \"não\" quando está próximo de um objeto não permitido e alguém o lembra disto."
+  },
+  {
+   "id": "SOC-040",
+   "area": "socializacao",
+   "faixa": "1-2",
+   "numero": 40,
+   "ordem": 12,
+   "titulo": "Quando colocado em sua cadeira ou trocador espera ser atendido."
+  },
+  {
+   "id": "SOC-041",
+   "area": "socializacao",
+   "faixa": "1-2",
+   "numero": 41,
+   "ordem": 13,
+   "titulo": "Brinca com 2 ou 3 crianças da sua idade."
+  },
+  {
+   "id": "SOC-042",
+   "area": "socializacao",
+   "faixa": "1-2",
+   "numero": 42,
+   "ordem": 14,
+   "titulo": "Compartilha um objeto ou alimento com outra criança."
+  },
+  {
+   "id": "SOC-043",
+   "area": "socializacao",
+   "faixa": "1-2",
+   "numero": 43,
+   "ordem": 15,
+   "titulo": "Cumprimenta colegas ou adultos quando lembrado."
+  },
+  {
+   "id": "SOC-044",
+   "area": "socializacao",
+   "faixa": "2-3",
+   "numero": 44,
+   "ordem": 1,
+   "titulo": "Obedece às ordens dos pais pelo menos ½ das vezes."
+  },
+  {
+   "id": "SOC-045",
+   "area": "socializacao",
+   "faixa": "2-3",
+   "numero": 45,
+   "ordem": 2,
+   "titulo": "Busca / leva um objeto ou pessoa, quando solicitado."
+  },
+  {
+   "id": "SOC-046",
+   "area": "socializacao",
+   "faixa": "2-3",
+   "numero": 46,
+   "ordem": 3,
+   "titulo": "Presta atenção à estória ou música por 5 a 10 min."
+  },
+  {
+   "id": "SOC-047",
+   "area": "socializacao",
+   "faixa": "2-3",
+   "numero": 47,
+   "ordem": 4,
+   "titulo": "Diz \"Por favor\" ou \"Obrigado\" quando lembrado."
+  },
+  {
+   "id": "SOC-048",
+   "area": "socializacao",
+   "faixa": "2-3",
+   "numero": 48,
+   "ordem": 5,
+   "titulo": "Tenta ajudar os pais a executarem tarefas realizando parte da mesma"
+  },
+  {
+   "id": "SOC-049",
+   "area": "socializacao",
+   "faixa": "2-3",
+   "numero": 49,
+   "ordem": 6,
+   "titulo": "Brinca de usar roupas de adultos."
+  },
+  {
+   "id": "SOC-050",
+   "area": "socializacao",
+   "faixa": "2-3",
+   "numero": 50,
+   "ordem": 7,
+   "titulo": "Faz uma escolha quando indagado."
+  },
+  {
+   "id": "SOC-051",
+   "area": "socializacao",
+   "faixa": "2-3",
+   "numero": 51,
+   "ordem": 8,
+   "titulo": "Demonstra entender sentimentos, expressando-os."
+  },
+  {
+   "id": "SOC-052",
+   "area": "socializacao",
+   "faixa": "3-4",
+   "numero": 52,
+   "ordem": 1,
+   "titulo": "Canta e dança ao ouvir músicas."
+  },
+  {
+   "id": "SOC-053",
+   "area": "socializacao",
+   "faixa": "3-4",
+   "numero": 53,
+   "ordem": 2,
+   "titulo": "Segue regras de um jogo imitando ações de outras crianças."
+  },
+  {
+   "id": "SOC-054",
+   "area": "socializacao",
+   "faixa": "3-4",
+   "numero": 54,
+   "ordem": 3,
+   "titulo": "Cumprimenta pessoas familiares sem ser lembrado."
+  },
+  {
+   "id": "SOC-055",
+   "area": "socializacao",
+   "faixa": "3-4",
+   "numero": 55,
+   "ordem": 4,
+   "titulo": "Seguem regras em jogos de grupos dirigidos por adultos."
+  },
+  {
+   "id": "SOC-056",
+   "area": "socializacao",
+   "faixa": "3-4",
+   "numero": 56,
+   "ordem": 5,
+   "titulo": "Pede permissão para brincar com um brinquedo que está sendo usado por outra criança"
+  },
+  {
+   "id": "SOC-057",
+   "area": "socializacao",
+   "faixa": "3-4",
+   "numero": 57,
+   "ordem": 6,
+   "titulo": "Diz \"Por favor\" e \"Obrigado\" sem ser lembrado ½ das vezes."
+  },
+  {
+   "id": "SOC-058",
+   "area": "socializacao",
+   "faixa": "3-4",
+   "numero": 58,
+   "ordem": 7,
+   "titulo": "Atende ao telefone, chamando um adulto e falando com pessoas familiares."
+  },
+  {
+   "id": "SOC-059",
+   "area": "socializacao",
+   "faixa": "3-4",
+   "numero": 59,
+   "ordem": 8,
+   "titulo": "Espera a sua vez."
+  },
+  {
+   "id": "SOC-060",
+   "area": "socializacao",
+   "faixa": "3-4",
+   "numero": 60,
+   "ordem": 9,
+   "titulo": "Segue regras em jogos dirigidos por uma criança mais velha."
+  },
+  {
+   "id": "SOC-061",
+   "area": "socializacao",
+   "faixa": "3-4",
+   "numero": 61,
+   "ordem": 10,
+   "titulo": "Obedece às ordens de um adulto 75% das vezes. (3 vezes a cada 4 tentativas)"
+  },
+  {
+   "id": "SOC-062",
+   "area": "socializacao",
+   "faixa": "3-4",
+   "numero": 62,
+   "ordem": 11,
+   "titulo": "Permanece em seu próprio quintal ou jardim"
+  },
+  {
+   "id": "SOC-063",
+   "area": "socializacao",
+   "faixa": "3-4",
+   "numero": 63,
+   "ordem": 12,
+   "titulo": "Brinca perto de outras crianças conversando com elas enquanto trabalha em um projeto próprio (30 min.)."
+  },
+  {
+   "id": "SOC-064",
+   "area": "socializacao",
+   "faixa": "4-5",
+   "numero": 64,
+   "ordem": 1,
+   "titulo": "Pede ajuda quando está tendo dificuldades."
+  },
+  {
+   "id": "SOC-065",
+   "area": "socializacao",
+   "faixa": "4-5",
+   "numero": 65,
+   "ordem": 2,
+   "titulo": "Contribui para a conversa de adultos."
+  },
+  {
+   "id": "SOC-066",
+   "area": "socializacao",
+   "faixa": "4-5",
+   "numero": 66,
+   "ordem": 3,
+   "titulo": "Repete rimas, canções ou dança para os outros."
+  },
+  {
+   "id": "SOC-067",
+   "area": "socializacao",
+   "faixa": "4-5",
+   "numero": 67,
+   "ordem": 4,
+   "titulo": "Faz uma tarefa sozinha por 20 a 30 minutos."
+  },
+  {
+   "id": "SOC-068",
+   "area": "socializacao",
+   "faixa": "4-5",
+   "numero": 68,
+   "ordem": 5,
+   "titulo": "Pede desculpas sem ser lembrado 75% das vezes."
+  },
+  {
+   "id": "SOC-069",
+   "area": "socializacao",
+   "faixa": "4-5",
+   "numero": 69,
+   "ordem": 6,
+   "titulo": "Espera sua vez em brincadeiras que envolvam de 8 a 9 crianças."
+  },
+  {
+   "id": "SOC-070",
+   "area": "socializacao",
+   "faixa": "4-5",
+   "numero": 70,
+   "ordem": 7,
+   "titulo": "Brinca com 2 a 3 crianças por 20 min. em uma atividade que envolva cooperação."
+  },
+  {
+   "id": "SOC-071",
+   "area": "socializacao",
+   "faixa": "4-5",
+   "numero": 71,
+   "ordem": 8,
+   "titulo": "Quando em público, apresenta um comportamento socialmente aceitável."
+  },
+  {
+   "id": "SOC-072",
+   "area": "socializacao",
+   "faixa": "4-5",
+   "numero": 72,
+   "ordem": 9,
+   "titulo": "Pede permissão para usar objetos dos outros em 75% das vezes."
+  },
+  {
+   "id": "SOC-073",
+   "area": "socializacao",
+   "faixa": "5-6",
+   "numero": 73,
+   "ordem": 1,
+   "titulo": "Manifesta seus sentimentos"
+  },
+  {
+   "id": "SOC-074",
+   "area": "socializacao",
+   "faixa": "5-6",
+   "numero": 74,
+   "ordem": 2,
+   "titulo": "Brinca com 4 a 5 crianças em atividade de cooperação por 20 minutos, sem supervisão."
+  },
+  {
+   "id": "SOC-075",
+   "area": "socializacao",
+   "faixa": "5-6",
+   "numero": 75,
+   "ordem": 3,
+   "titulo": "Explica aos outros as regras do jogo ou atividade."
+  },
+  {
+   "id": "SOC-076",
+   "area": "socializacao",
+   "faixa": "5-6",
+   "numero": 76,
+   "ordem": 4,
+   "titulo": "Imita papéis de adulto."
+  },
+  {
+   "id": "SOC-077",
+   "area": "socializacao",
+   "faixa": "5-6",
+   "numero": 77,
+   "ordem": 5,
+   "titulo": "Colabora para a conversa durante as refeições."
+  },
+  {
+   "id": "SOC-078",
+   "area": "socializacao",
+   "faixa": "5-6",
+   "numero": 78,
+   "ordem": 6,
+   "titulo": "Segue regras de jogo que envolva raciocínio verbal."
+  },
+  {
+   "id": "SOC-079",
+   "area": "socializacao",
+   "faixa": "5-6",
+   "numero": 79,
+   "ordem": 7,
+   "titulo": "Conforta colegas quando estes estão tristes."
+  },
+  {
+   "id": "SOC-080",
+   "area": "socializacao",
+   "faixa": "5-6",
+   "numero": 80,
+   "ordem": 8,
+   "titulo": "Escolhe seus próprios amigos."
+  },
+  {
+   "id": "SOC-081",
+   "area": "socializacao",
+   "faixa": "5-6",
+   "numero": 81,
+   "ordem": 9,
+   "titulo": "Planeja e constrói, usando ferramentas simples."
+  },
+  {
+   "id": "SOC-082",
+   "area": "socializacao",
+   "faixa": "5-6",
+   "numero": 82,
+   "ordem": 10,
+   "titulo": "Estabelece metas para si próprio e executa atividade para atingi-las."
+  },
+  {
+   "id": "SOC-083",
+   "area": "socializacao",
+   "faixa": "5-6",
+   "numero": 83,
+   "ordem": 11,
+   "titulo": "Dramatiza trechos de histórias, desempenhando um papel ou utilizando fantoches."
+  },
+  {
+   "id": "LIN-001",
+   "area": "linguagem",
+   "faixa": "0-1",
+   "numero": 1,
+   "ordem": 1,
+   "titulo": "Repete sons emitidos por outras pessoas."
+  },
+  {
+   "id": "LIN-002",
+   "area": "linguagem",
+   "faixa": "0-1",
+   "numero": 2,
+   "ordem": 2,
+   "titulo": "Repete a mesma sílaba 2 a 3 vezes."
+  },
+  {
+   "id": "LIN-003",
+   "area": "linguagem",
+   "faixa": "0-1",
+   "numero": 3,
+   "ordem": 3,
+   "titulo": "Responde a gestos com gestos."
+  },
+  {
+   "id": "LIN-004",
+   "area": "linguagem",
+   "faixa": "0-1",
+   "numero": 4,
+   "ordem": 4,
+   "titulo": "Obedece a uma ordem simples, quando acompanhada de gestos indicativos."
+  },
+  {
+   "id": "LIN-005",
+   "area": "linguagem",
+   "faixa": "0-1",
+   "numero": 5,
+   "ordem": 5,
+   "titulo": "Interrompe a atividade quando lhe dizem \"Não\" 75% das vezes."
+  },
+  {
+   "id": "LIN-006",
+   "area": "linguagem",
+   "faixa": "0-1",
+   "numero": 6,
+   "ordem": 6,
+   "titulo": "Responde a perguntas simples com respostas não verbais."
+  },
+  {
+   "id": "LIN-007",
+   "area": "linguagem",
+   "faixa": "0-1",
+   "numero": 7,
+   "ordem": 7,
+   "titulo": "Combina 2 sílabas diferentes quando tenta verbalizar."
+  },
+  {
+   "id": "LIN-008",
+   "area": "linguagem",
+   "faixa": "0-1",
+   "numero": 8,
+   "ordem": 8,
+   "titulo": "Imita padrões de entonação da voz de outras pessoas."
+  },
+  {
+   "id": "LIN-009",
+   "area": "linguagem",
+   "faixa": "0-1",
+   "numero": 9,
+   "ordem": 9,
+   "titulo": "Usa uma palavra funcionalmente para indicar objetos ou pessoas."
+  },
+  {
+   "id": "LIN-010",
+   "area": "linguagem",
+   "faixa": "0-1",
+   "numero": 10,
+   "ordem": 10,
+   "titulo": "Vocaliza em resposta à fala de outras pessoas."
+  },
+  {
+   "id": "LIN-011",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 11,
+   "ordem": 1,
+   "titulo": "Diz 5 palavras diferentes."
+  },
+  {
+   "id": "LIN-012",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 12,
+   "ordem": 2,
+   "titulo": "Pede \"mais\"."
+  },
+  {
+   "id": "LIN-013",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 13,
+   "ordem": 3,
+   "titulo": "Diz \"acabou\"."
+  },
+  {
+   "id": "LIN-014",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 14,
+   "ordem": 4,
+   "titulo": "Obedece a 3 ordens diferentes que não são acompanhadas de gestos indicativos."
+  },
+  {
+   "id": "LIN-015",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 15,
+   "ordem": 5,
+   "titulo": "Consegue \"dar\" ou \"mostrar\" quando solicitado."
+  },
+  {
+   "id": "LIN-016",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 16,
+   "ordem": 6,
+   "titulo": "Aponta para 12 objetos quando nomeados."
+  },
+  {
+   "id": "LIN-017",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 17,
+   "ordem": 7,
+   "titulo": "Aponta para 3 a 5 figuras em um livro."
+  },
+  {
+   "id": "LIN-018",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 18,
+   "ordem": 8,
+   "titulo": "Aponta para 3 partes de seu próprio corpo."
+  },
+  {
+   "id": "LIN-019",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 19,
+   "ordem": 9,
+   "titulo": "Diz seu nome ou apelido quando solicitado."
+  },
+  {
+   "id": "LIN-020",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 20,
+   "ordem": 10,
+   "titulo": "Responde à pergunta \"O que é isto?\""
+  },
+  {
+   "id": "LIN-021",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 21,
+   "ordem": 11,
+   "titulo": "Combina palavras e gestos para expressar desejos."
+  },
+  {
+   "id": "LIN-022",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 22,
+   "ordem": 12,
+   "titulo": "Nomeia 5 membros da família, incluindo animais."
+  },
+  {
+   "id": "LIN-023",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 23,
+   "ordem": 13,
+   "titulo": "Nomeia 4 brinquedos."
+  },
+  {
+   "id": "LIN-024",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 24,
+   "ordem": 14,
+   "titulo": "Produz sons de animais, ou os nomeia pelo som"
+  },
+  {
+   "id": "LIN-025",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 25,
+   "ordem": 15,
+   "titulo": "Pede alimentos conhecidos pelo nome, quando mostrados."
+  },
+  {
+   "id": "LIN-026",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 26,
+   "ordem": 16,
+   "titulo": "Faz perguntas variando a entonação da voz"
+  },
+  {
+   "id": "LIN-027",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 27,
+   "ordem": 17,
+   "titulo": "Nomeia 3 partes do corpo em uma boneca ou outra pessoa."
+  },
+  {
+   "id": "LIN-028",
+   "area": "linguagem",
+   "faixa": "1-2",
+   "numero": 28,
+   "ordem": 18,
+   "titulo": "Responde a perguntas de sim / não."
+  },
+  {
+   "id": "LIN-029",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 29,
+   "ordem": 1,
+   "titulo": "Combina substantivos ou adjetivos e substantivos em frases de 2 palavras."
+  },
+  {
+   "id": "LIN-030",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 30,
+   "ordem": 2,
+   "titulo": "Combina substantivo e verbo em frases de 2 palavras"
+  },
+  {
+   "id": "LIN-031",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 31,
+   "ordem": 3,
+   "titulo": "Usa uma palavra para indicar que quer ir ao banheiro"
+  },
+  {
+   "id": "LIN-032",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 32,
+   "ordem": 4,
+   "titulo": "Combina verbo ou substantivo com \"lá\" e \"aqui\" em frases de 2 palavras."
+  },
+  {
+   "id": "LIN-033",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 33,
+   "ordem": 5,
+   "titulo": "Combina 2 palavras para expressar posse."
+  },
+  {
+   "id": "LIN-034",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 34,
+   "ordem": 6,
+   "titulo": "Emprega \"não\" na fala"
+  },
+  {
+   "id": "LIN-035",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 35,
+   "ordem": 7,
+   "titulo": "Responde à pergunta \"O que .... está fazendo?\" para atividade habituais."
+  },
+  {
+   "id": "LIN-036",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 36,
+   "ordem": 8,
+   "titulo": "Responde a perguntas tipo \"Onde está objeto?\""
+  },
+  {
+   "id": "LIN-037",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 37,
+   "ordem": 9,
+   "titulo": "Nomeia sons ambientais familiares."
+  },
+  {
+   "id": "LIN-038",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 38,
+   "ordem": 10,
+   "titulo": "Dá mais de um objeto quando se usa a forma plural na solicitação."
+  },
+  {
+   "id": "LIN-039",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 39,
+   "ordem": 11,
+   "titulo": "Ao falar, refere-se a si próprio pelo nome."
+  },
+  {
+   "id": "LIN-040",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 40,
+   "ordem": 12,
+   "titulo": "Aponta para figuras de objetos comuns descritos pelo uso (até 10) (\"O que se usa pra comer? = colher\")"
+  },
+  {
+   "id": "LIN-041",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 41,
+   "ordem": 13,
+   "titulo": "Mostra a idade pelos dedos."
+  },
+  {
+   "id": "LIN-042",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 42,
+   "ordem": 14,
+   "titulo": "Diz seu sexo quando solicitado."
+  },
+  {
+   "id": "LIN-043",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 43,
+   "ordem": 15,
+   "titulo": "Obedece à seqüência de duas ordens relacionadas."
+  },
+  {
+   "id": "LIN-044",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 44,
+   "ordem": 16,
+   "titulo": "Usa a forma do verbo no gerúndio."
+  },
+  {
+   "id": "LIN-045",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 45,
+   "ordem": 17,
+   "titulo": "Emprega formas regulares no plural."
+  },
+  {
+   "id": "LIN-046",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 46,
+   "ordem": 18,
+   "titulo": "Emprega algumas formas irregulares de verbos no passado de forma sistemática."
+  },
+  {
+   "id": "LIN-047",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 47,
+   "ordem": 19,
+   "titulo": "Faz perguntas do tipo \"O que é isso?\""
+  },
+  {
+   "id": "LIN-048",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 48,
+   "ordem": 20,
+   "titulo": "Controla o volume da voz 90% das vezes."
+  },
+  {
+   "id": "LIN-049",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 49,
+   "ordem": 21,
+   "titulo": "Usa \"este / esta\" e \"aquele / aquela\" na fala."
+  },
+  {
+   "id": "LIN-050",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 50,
+   "ordem": 22,
+   "titulo": "Emprega \"é\" e \"está\" em frases simples."
+  },
+  {
+   "id": "LIN-051",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 51,
+   "ordem": 23,
+   "titulo": "Diz \"eu\", \"mim\", \"meu\" ao invés do próprio nome."
+  },
+  {
+   "id": "LIN-052",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 52,
+   "ordem": 24,
+   "titulo": "Aponta objetos e diz que eles não são outras coisas"
+  },
+  {
+   "id": "LIN-053",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 53,
+   "ordem": 25,
+   "titulo": "Responde à pergunta \"Quem?\" dando um nome"
+  },
+  {
+   "id": "LIN-054",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 54,
+   "ordem": 26,
+   "titulo": "Emprega as formas possessivas dos substantivos."
+  },
+  {
+   "id": "LIN-055",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 55,
+   "ordem": 27,
+   "titulo": "Usa artigos ao falar."
+  },
+  {
+   "id": "LIN-056",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 56,
+   "ordem": 28,
+   "titulo": "Usa substantivos que indicam grupo ou categoria."
+  },
+  {
+   "id": "LIN-057",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 57,
+   "ordem": 29,
+   "titulo": "Usa os verbos \"ser\", \"estar\" e \"ter\" no presente com poucos erros."
+  },
+  {
+   "id": "LIN-058",
+   "area": "linguagem",
+   "faixa": "2-3",
+   "numero": 58,
+   "ordem": 30,
+   "titulo": "Diz se os objetos estão abertos ou fechados."
+  },
+  {
+   "id": "LIN-059",
+   "area": "linguagem",
+   "faixa": "3-4",
+   "numero": 59,
+   "ordem": 1,
+   "titulo": "Expressa diminutivos e aumentativos quando fala."
+  },
+  {
+   "id": "LIN-060",
+   "area": "linguagem",
+   "faixa": "3-4",
+   "numero": 60,
+   "ordem": 2,
+   "titulo": "Presta atenção por 5 minutos a uma estória lida"
+  },
+  {
+   "id": "LIN-061",
+   "area": "linguagem",
+   "faixa": "3-4",
+   "numero": 61,
+   "ordem": 3,
+   "titulo": "Obedece à sequência de 2 ordens não relacionadas."
+  },
+  {
+   "id": "LIN-062",
+   "area": "linguagem",
+   "faixa": "3-4",
+   "numero": 62,
+   "ordem": 4,
+   "titulo": "Diz seu nome completo quando solicitado."
+  },
+  {
+   "id": "LIN-063",
+   "area": "linguagem",
+   "faixa": "3-4",
+   "numero": 63,
+   "ordem": 5,
+   "titulo": "Responde perguntas simples envolvendo \"Como\"."
+  },
+  {
+   "id": "LIN-064",
+   "area": "linguagem",
+   "faixa": "3-4",
+   "numero": 64,
+   "ordem": 6,
+   "titulo": "Emprega verbos regulares, no passado."
+  },
+  {
+   "id": "LIN-065",
+   "area": "linguagem",
+   "faixa": "3-4",
+   "numero": 65,
+   "ordem": 7,
+   "titulo": "Relata experiências imediatas."
+  },
+  {
+   "id": "LIN-066",
+   "area": "linguagem",
+   "faixa": "3-4",
+   "numero": 66,
+   "ordem": 8,
+   "titulo": "Diz como são usados objetos comuns."
+  },
+  {
+   "id": "LIN-067",
+   "area": "linguagem",
+   "faixa": "3-4",
+   "numero": 67,
+   "ordem": 9,
+   "titulo": "Expressa ações futuras empregando os verbos \"ir\", \"ter\" e \"querer\"."
+  },
+  {
+   "id": "LIN-068",
+   "area": "linguagem",
+   "faixa": "3-4",
+   "numero": 68,
+   "ordem": 10,
+   "titulo": "Utiliza adequadamente masculino e feminino na fala."
+  },
+  {
+   "id": "LIN-069",
+   "area": "linguagem",
+   "faixa": "3-4",
+   "numero": 69,
+   "ordem": 11,
+   "titulo": "Usa formas imperativas de verbos ao pedir favores."
+  },
+  {
+   "id": "LIN-070",
+   "area": "linguagem",
+   "faixa": "3-4",
+   "numero": 70,
+   "ordem": 12,
+   "titulo": "Conta 2 fatos na ordem de ocorrência."
+  },
+  {
+   "id": "LIN-071",
+   "area": "linguagem",
+   "faixa": "4-5",
+   "numero": 71,
+   "ordem": 1,
+   "titulo": "Obedece a uma sequência envolvendo 3 ordens."
+  },
+  {
+   "id": "LIN-072",
+   "area": "linguagem",
+   "faixa": "4-5",
+   "numero": 72,
+   "ordem": 2,
+   "titulo": "Demonstra compreensão de verbos reflexivos, usando-os ocasionalmente (ex. ele se machucou)."
+  },
+  {
+   "id": "LIN-073",
+   "area": "linguagem",
+   "faixa": "4-5",
+   "numero": 73,
+   "ordem": 3,
+   "titulo": "Consegue identificar objetos / figuras que formem par, sob solicitação."
+  },
+  {
+   "id": "LIN-074",
+   "area": "linguagem",
+   "faixa": "4-5",
+   "numero": 74,
+   "ordem": 4,
+   "titulo": "Emprega o futuro ao falar."
+  },
+  {
+   "id": "LIN-075",
+   "area": "linguagem",
+   "faixa": "4-5",
+   "numero": 75,
+   "ordem": 5,
+   "titulo": "Usa orações compostas por coordenação."
+  },
+  {
+   "id": "LIN-076",
+   "area": "linguagem",
+   "faixa": "4-5",
+   "numero": 76,
+   "ordem": 6,
+   "titulo": "Consegue identificar a parte de cima e de baixo de objetos, quando solicitado."
+  },
+  {
+   "id": "LIN-077",
+   "area": "linguagem",
+   "faixa": "4-5",
+   "numero": 77,
+   "ordem": 7,
+   "titulo": "Emprega ocasionalmente o condicional ao falar (poderia, pudesse, iria, seria, faria)."
+  },
+  {
+   "id": "LIN-078",
+   "area": "linguagem",
+   "faixa": "4-5",
+   "numero": 78,
+   "ordem": 8,
+   "titulo": "Consegue identificar absurdos em figuras."
+  },
+  {
+   "id": "LIN-079",
+   "area": "linguagem",
+   "faixa": "4-5",
+   "numero": 79,
+   "ordem": 9,
+   "titulo": "Emprega as seguintes palavras: irmã(o), avó, avô."
+  },
+  {
+   "id": "LIN-080",
+   "area": "linguagem",
+   "faixa": "4-5",
+   "numero": 80,
+   "ordem": 10,
+   "titulo": "Completa frases com antônimos."
+  },
+  {
+   "id": "LIN-081",
+   "area": "linguagem",
+   "faixa": "4-5",
+   "numero": 81,
+   "ordem": 11,
+   "titulo": "Relata uma estória conhecida sem ajuda de figuras."
+  },
+  {
+   "id": "LIN-082",
+   "area": "linguagem",
+   "faixa": "4-5",
+   "numero": 82,
+   "ordem": 12,
+   "titulo": "Em uma figura, nomeia o objeto que não pertence a uma determinada categoria."
+  },
+  {
+   "id": "LIN-083",
+   "area": "linguagem",
+   "faixa": "4-5",
+   "numero": 83,
+   "ordem": 13,
+   "titulo": "Diz se duas palavras rimam ou não."
+  },
+  {
+   "id": "LIN-084",
+   "area": "linguagem",
+   "faixa": "4-5",
+   "numero": 84,
+   "ordem": 14,
+   "titulo": "Usa frases complexas, compostas por subordinação."
+  },
+  {
+   "id": "LIN-085",
+   "area": "linguagem",
+   "faixa": "4-5",
+   "numero": 85,
+   "ordem": 15,
+   "titulo": "Diz se um som é forte ou fraco."
+  },
+  {
+   "id": "LIN-086",
+   "area": "linguagem",
+   "faixa": "5-6",
+   "numero": 86,
+   "ordem": 1,
+   "titulo": "Consegue indicar alguns, muitos e vários elementos."
+  },
+  {
+   "id": "LIN-087",
+   "area": "linguagem",
+   "faixa": "5-6",
+   "numero": 87,
+   "ordem": 2,
+   "titulo": "Diz seu endereço."
+  },
+  {
+   "id": "LIN-088",
+   "area": "linguagem",
+   "faixa": "5-6",
+   "numero": 88,
+   "ordem": 3,
+   "titulo": "Diz o número de seu telefone."
+  },
+  {
+   "id": "LIN-089",
+   "area": "linguagem",
+   "faixa": "5-6",
+   "numero": 89,
+   "ordem": 4,
+   "titulo": "Aponta para o conjunto que tem mais, menos ou poucos elementos."
+  },
+  {
+   "id": "LIN-090",
+   "area": "linguagem",
+   "faixa": "5-6",
+   "numero": 90,
+   "ordem": 5,
+   "titulo": "Conta piadas simples."
+  },
+  {
+   "id": "LIN-091",
+   "area": "linguagem",
+   "faixa": "5-6",
+   "numero": 91,
+   "ordem": 6,
+   "titulo": "Relata experiências diárias."
+  },
+  {
+   "id": "LIN-092",
+   "area": "linguagem",
+   "faixa": "5-6",
+   "numero": 92,
+   "ordem": 7,
+   "titulo": "Descreve um local ou movimento: através ou entre, longe de, de / desde..., para, por cima de, até."
+  },
+  {
+   "id": "LIN-093",
+   "area": "linguagem",
+   "faixa": "5-6",
+   "numero": 93,
+   "ordem": 8,
+   "titulo": "Responde à pergunta \"Porque\" com uma explicação."
+  },
+  {
+   "id": "LIN-094",
+   "area": "linguagem",
+   "faixa": "5-6",
+   "numero": 94,
+   "ordem": 9,
+   "titulo": "Ordena e conta uma estória de 2 a 5 episódios na sequência correta."
+  },
+  {
+   "id": "LIN-095",
+   "area": "linguagem",
+   "faixa": "5-6",
+   "numero": 95,
+   "ordem": 10,
+   "titulo": "Define palavras."
+  },
+  {
+   "id": "LIN-096",
+   "area": "linguagem",
+   "faixa": "5-6",
+   "numero": 96,
+   "ordem": 11,
+   "titulo": "Responde adequadamente a pergunta \"Qual o contrário de ...\"."
+  },
+  {
+   "id": "LIN-097",
+   "area": "linguagem",
+   "faixa": "5-6",
+   "numero": 97,
+   "ordem": 12,
+   "titulo": "Responde a pergunta \"O que acontece se...\"."
+  },
+  {
+   "id": "LIN-098",
+   "area": "linguagem",
+   "faixa": "5-6",
+   "numero": 98,
+   "ordem": 13,
+   "titulo": "Usa \"ontem\" e “amanhã”, corretamente”."
+  },
+  {
+   "id": "LIN-099",
+   "area": "linguagem",
+   "faixa": "5-6",
+   "numero": 99,
+   "ordem": 14,
+   "titulo": "Pergunta o significado de perguntas novas ou conhecidas."
+  },
+  {
+   "id": "COG-001",
+   "area": "cognicao",
+   "faixa": "0-1",
+   "numero": 1,
+   "ordem": 1,
+   "titulo": "Remove um pano do rosto que obscureça sua visão."
+  },
+  {
+   "id": "COG-002",
+   "area": "cognicao",
+   "faixa": "0-1",
+   "numero": 2,
+   "ordem": 2,
+   "titulo": "Procura com o olhar um objeto que foi tirado de seu campo visual."
+  },
+  {
+   "id": "COG-003",
+   "area": "cognicao",
+   "faixa": "0-1",
+   "numero": 3,
+   "ordem": 3,
+   "titulo": "Remove um objeto de um recipiente colocando a mão dentro do mesmo"
+  },
+  {
+   "id": "COG-004",
+   "area": "cognicao",
+   "faixa": "0-1",
+   "numero": 4,
+   "ordem": 4,
+   "titulo": "Coloca um objeto em um recipiente imitando um adulto."
+  },
+  {
+   "id": "COG-005",
+   "area": "cognicao",
+   "faixa": "0-1",
+   "numero": 5,
+   "ordem": 5,
+   "titulo": "Coloca um objeto em um recipiente quando recebe instruções."
+  },
+  {
+   "id": "COG-006",
+   "area": "cognicao",
+   "faixa": "0-1",
+   "numero": 6,
+   "ordem": 6,
+   "titulo": "Balança um brinquedo que produz som, pendurado em um barbante."
+  },
+  {
+   "id": "COG-007",
+   "area": "cognicao",
+   "faixa": "0-1",
+   "numero": 7,
+   "ordem": 7,
+   "titulo": "Coloca três objetos em um recipiente e o esvazia."
+  },
+  {
+   "id": "COG-008",
+   "area": "cognicao",
+   "faixa": "0-1",
+   "numero": 8,
+   "ordem": 8,
+   "titulo": "Transfere um objeto de uma mão à outra para apanhar outro objeto."
+  },
+  {
+   "id": "COG-009",
+   "area": "cognicao",
+   "faixa": "0-1",
+   "numero": 9,
+   "ordem": 9,
+   "titulo": "Deixa cair e apanha um brinquedo."
+  },
+  {
+   "id": "COG-010",
+   "area": "cognicao",
+   "faixa": "0-1",
+   "numero": 10,
+   "ordem": 10,
+   "titulo": "Descobre um objeto escondido sob um recipiente."
+  },
+  {
+   "id": "COG-011",
+   "area": "cognicao",
+   "faixa": "0-1",
+   "numero": 11,
+   "ordem": 11,
+   "titulo": "Empurra 3 blocos como se fosse um comboio."
+  },
+  {
+   "id": "COG-012",
+   "area": "cognicao",
+   "faixa": "0-1",
+   "numero": 12,
+   "ordem": 12,
+   "titulo": "Remove um círculo de uma prancha, por imitação."
+  },
+  {
+   "id": "COG-013",
+   "area": "cognicao",
+   "faixa": "0-1",
+   "numero": 13,
+   "ordem": 13,
+   "titulo": "Coloca um pino redondo em uma prancha de pinos, quando solicitado."
+  },
+  {
+   "id": "COG-014",
+   "area": "cognicao",
+   "faixa": "0-1",
+   "numero": 14,
+   "ordem": 14,
+   "titulo": "Executa gestos simples quando requisitado."
+  },
+  {
+   "id": "COG-015",
+   "area": "cognicao",
+   "faixa": "1-2",
+   "numero": 15,
+   "ordem": 1,
+   "titulo": "Retira 6 objetos de um recipiente, um por vez."
+  },
+  {
+   "id": "COG-016",
+   "area": "cognicao",
+   "faixa": "1-2",
+   "numero": 16,
+   "ordem": 2,
+   "titulo": "Aponta para uma parte do corpo."
+  },
+  {
+   "id": "COG-017",
+   "area": "cognicao",
+   "faixa": "1-2",
+   "numero": 17,
+   "ordem": 3,
+   "titulo": "Empilha 3 blocos, dada a ordem."
+  },
+  {
+   "id": "COG-018",
+   "area": "cognicao",
+   "faixa": "1-2",
+   "numero": 18,
+   "ordem": 4,
+   "titulo": "Emparelha objetos semelhantes."
+  },
+  {
+   "id": "COG-019",
+   "area": "cognicao",
+   "faixa": "1-2",
+   "numero": 19,
+   "ordem": 5,
+   "titulo": "Faz rabiscos no papel."
+  },
+  {
+   "id": "COG-020",
+   "area": "cognicao",
+   "faixa": "1-2",
+   "numero": 20,
+   "ordem": 6,
+   "titulo": "Aponta para si quando perguntam \"Cadê o Fulano?\""
+  },
+  {
+   "id": "COG-021",
+   "area": "cognicao",
+   "faixa": "1-2",
+   "numero": 21,
+   "ordem": 7,
+   "titulo": "Coloca 5 pinos redondos, dada a ordem."
+  },
+  {
+   "id": "COG-022",
+   "area": "cognicao",
+   "faixa": "1-2",
+   "numero": 22,
+   "ordem": 8,
+   "titulo": "Emparelha objetos com a figura do mesmo nome."
+  },
+  {
+   "id": "COG-023",
+   "area": "cognicao",
+   "faixa": "1-2",
+   "numero": 23,
+   "ordem": 9,
+   "titulo": "Aponta para a figura nomeada."
+  },
+  {
+   "id": "COG-024",
+   "area": "cognicao",
+   "faixa": "1-2",
+   "numero": 24,
+   "ordem": 10,
+   "titulo": "Vira as páginas de um livro (2/3 por vez) para encontrar a figura nomeada."
+  },
+  {
+   "id": "COG-025",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 25,
+   "ordem": 1,
+   "titulo": "Encontra determinado livro quando solicitado."
+  },
+  {
+   "id": "COG-026",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 26,
+   "ordem": 2,
+   "titulo": "Completa um quebra-cabeça de encaixe de 3 peças."
+  },
+  {
+   "id": "COG-027",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 27,
+   "ordem": 3,
+   "titulo": "Nomeia 4 objetos comuns em figuras."
+  },
+  {
+   "id": "COG-028",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 28,
+   "ordem": 4,
+   "titulo": "Desenha uma linha vertical imitando um adulto."
+  },
+  {
+   "id": "COG-029",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 29,
+   "ordem": 5,
+   "titulo": "Desenha uma linha horizontal imitando um adulto."
+  },
+  {
+   "id": "COG-030",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 30,
+   "ordem": 6,
+   "titulo": "Copia um círculo."
+  },
+  {
+   "id": "COG-031",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 31,
+   "ordem": 7,
+   "titulo": "Emparelha objetos com a mesma textura."
+  },
+  {
+   "id": "COG-032",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 32,
+   "ordem": 8,
+   "titulo": "Aponta o \"pequeno\" e o \"grande\" quando solicitado."
+  },
+  {
+   "id": "COG-033",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 33,
+   "ordem": 9,
+   "titulo": "Desenha (+) imitando um adulto."
+  },
+  {
+   "id": "COG-034",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 34,
+   "ordem": 10,
+   "titulo": "Emparelha 3 cores."
+  },
+  {
+   "id": "COG-035",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 35,
+   "ordem": 11,
+   "titulo": "Coloca objetos dentro, em cima e em baixo de um recipiente, dada a ordem."
+  },
+  {
+   "id": "COG-036",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 36,
+   "ordem": 12,
+   "titulo": "Nomeia objetos quando ouve o barulho que fazem."
+  },
+  {
+   "id": "COG-037",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 37,
+   "ordem": 13,
+   "titulo": "Monta um brinquedo de encaixe de 4 peças."
+  },
+  {
+   "id": "COG-038",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 38,
+   "ordem": 14,
+   "titulo": "Nomeia ações em figuras (\"O que ... está fazendo?\")."
+  },
+  {
+   "id": "COG-039",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 39,
+   "ordem": 15,
+   "titulo": "Emparelha forma geométrica com a figura da mesma."
+  },
+  {
+   "id": "COG-040",
+   "area": "cognicao",
+   "faixa": "2-3",
+   "numero": 40,
+   "ordem": 16,
+   "titulo": "Empilha 5 ou mais argolas em uma vara na ordem."
+  },
+  {
+   "id": "COG-041",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 41,
+   "ordem": 1,
+   "titulo": "Nomeia objetos como sendo grandes ou pequenos."
+  },
+  {
+   "id": "COG-042",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 42,
+   "ordem": 2,
+   "titulo": "Aponta para 10 partes do corpo quando requisitado."
+  },
+  {
+   "id": "COG-043",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 43,
+   "ordem": 3,
+   "titulo": "Aponta para menino e menina, dada a ordem."
+  },
+  {
+   "id": "COG-044",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 44,
+   "ordem": 4,
+   "titulo": "Diz se um objeto é pesado ou leve."
+  },
+  {
+   "id": "COG-045",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 45,
+   "ordem": 5,
+   "titulo": "Une 2 partes de uma figura para formar o todo."
+  },
+  {
+   "id": "COG-046",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 46,
+   "ordem": 6,
+   "titulo": "Descreve 2 eventos ou personagens de uma estória familiar ou programa de televisão."
+  },
+  {
+   "id": "COG-047",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 47,
+   "ordem": 7,
+   "titulo": "Repete brincadeiras (rimas ou canções) que envolvam movimentos coordenados."
+  },
+  {
+   "id": "COG-048",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 48,
+   "ordem": 8,
+   "titulo": "Emparelha 3 ou mais objetos."
+  },
+  {
+   "id": "COG-049",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 49,
+   "ordem": 9,
+   "titulo": "Aponta para objetos compridos ou curtos."
+  },
+  {
+   "id": "COG-050",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 50,
+   "ordem": 10,
+   "titulo": "Associa objetos correspondentes. Ex: meia/sapato."
+  },
+  {
+   "id": "COG-051",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 51,
+   "ordem": 11,
+   "titulo": "Conta até 3 imitando um adulto."
+  },
+  {
+   "id": "COG-052",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 52,
+   "ordem": 12,
+   "titulo": "Agrupa objetos em categorias."
+  },
+  {
+   "id": "COG-053",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 53,
+   "ordem": 13,
+   "titulo": "Traça um (V) em imitação."
+  },
+  {
+   "id": "COG-054",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 54,
+   "ordem": 14,
+   "titulo": "Traça uma linha diagonal dado o exemplo."
+  },
+  {
+   "id": "COG-055",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 55,
+   "ordem": 15,
+   "titulo": "Conta até 10 objetos, imitando um adulto."
+  },
+  {
+   "id": "COG-056",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 56,
+   "ordem": 16,
+   "titulo": "Constrói uma ponte com 3 blocos por imitação."
+  },
+  {
+   "id": "COG-057",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 57,
+   "ordem": 17,
+   "titulo": "Emparelha uma sequência ou padrão (tamanho, cor) de blocos ou contas."
+  },
+  {
+   "id": "COG-058",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 58,
+   "ordem": 18,
+   "titulo": "Copia uma série de (V) interligados."
+  },
+  {
+   "id": "COG-059",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 59,
+   "ordem": 19,
+   "titulo": "Acrescenta perna ou braço em um desenho incompleto da figura humana."
+  },
+  {
+   "id": "COG-060",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 60,
+   "ordem": 20,
+   "titulo": "Completa um quebra-cabeças de 6 peças."
+  },
+  {
+   "id": "COG-061",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 61,
+   "ordem": 21,
+   "titulo": "Indica se os objetos são iguais ou diferentes."
+  },
+  {
+   "id": "COG-062",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 62,
+   "ordem": 22,
+   "titulo": "Desenha um quadrado imitando um adulto."
+  },
+  {
+   "id": "COG-063",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 63,
+   "ordem": 23,
+   "titulo": "Nomeia 3 cores sendo requisitado."
+  },
+  {
+   "id": "COG-064",
+   "area": "cognicao",
+   "faixa": "3-4",
+   "numero": 64,
+   "ordem": 24,
+   "titulo": "Nomeia 3 formas geométricas (quadrado, triângulo e círculo)."
+  },
+  {
+   "id": "COG-065",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 65,
+   "ordem": 1,
+   "titulo": "Apanha de 1 a 5 objetos quando solicitado."
+  },
+  {
+   "id": "COG-066",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 66,
+   "ordem": 2,
+   "titulo": "Nomeia 5 texturas diferentes."
+  },
+  {
+   "id": "COG-067",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 67,
+   "ordem": 3,
+   "titulo": "Copia um triângulo ao ser requisitado."
+  },
+  {
+   "id": "COG-068",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 68,
+   "ordem": 4,
+   "titulo": "Recorda-se de 4 objetos que haviam sido vistos em uma figura."
+  },
+  {
+   "id": "COG-069",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 69,
+   "ordem": 5,
+   "titulo": "Diz o momento do dia associado a cada atividade."
+  },
+  {
+   "id": "COG-070",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 70,
+   "ordem": 6,
+   "titulo": "Repete rimas familiares."
+  },
+  {
+   "id": "COG-071",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 71,
+   "ordem": 7,
+   "titulo": "Diz se um objeto é mais pesado ou mais leve (objetos com diferença de 0,5 quilo)."
+  },
+  {
+   "id": "COG-072",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 72,
+   "ordem": 8,
+   "titulo": "Diz o que está faltando quando um objeto é retirado de um grupo de 3 objetos."
+  },
+  {
+   "id": "COG-073",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 73,
+   "ordem": 9,
+   "titulo": "Nomeia 8 cores."
+  },
+  {
+   "id": "COG-074",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 74,
+   "ordem": 10,
+   "titulo": "Identifica o valor de 3 moedas."
+  },
+  {
+   "id": "COG-075",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 75,
+   "ordem": 11,
+   "titulo": "Emparelha símbolos (letras e números)."
+  },
+  {
+   "id": "COG-076",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 76,
+   "ordem": 12,
+   "titulo": "Diz a cor de objetos nomeados."
+  },
+  {
+   "id": "COG-077",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 77,
+   "ordem": 13,
+   "titulo": "Relata 5 principais fatos de uma história contada 3x."
+  },
+  {
+   "id": "COG-078",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 78,
+   "ordem": 14,
+   "titulo": "Desenha figura humana (cabeça, tronco e 4 membros)"
+  },
+  {
+   "id": "COG-079",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 79,
+   "ordem": 15,
+   "titulo": "Canta 5 estrofes de uma canção."
+  },
+  {
+   "id": "COG-080",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 80,
+   "ordem": 16,
+   "titulo": "Constrói uma pirâmide de 10 blocos por imitação."
+  },
+  {
+   "id": "COG-081",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 81,
+   "ordem": 17,
+   "titulo": "Nomeia objetos como sendo compridos ou curtos."
+  },
+  {
+   "id": "COG-082",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 82,
+   "ordem": 18,
+   "titulo": "Coloca objetos \"atrás\", \"ao lado\" ou \"junto\" a outros."
+  },
+  {
+   "id": "COG-083",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 83,
+   "ordem": 19,
+   "titulo": "Faz conjuntos iguais de 10 objetos, segundo modelo."
+  },
+  {
+   "id": "COG-084",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 84,
+   "ordem": 20,
+   "titulo": "Nomeia ou aponta para a parte ausente da figura"
+  },
+  {
+   "id": "COG-085",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 85,
+   "ordem": 21,
+   "titulo": "Conta de 1 a 20."
+  },
+  {
+   "id": "COG-086",
+   "area": "cognicao",
+   "faixa": "4-5",
+   "numero": 86,
+   "ordem": 22,
+   "titulo": "Identifica o objeto que está colocado no meio, em primeiro e em último lugar."
+  },
+  {
+   "id": "COG-087",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 87,
+   "ordem": 1,
+   "titulo": "Conta até 20 objetos e responde adequadamente à pergunta: \"Quantos ... você contou?\""
+  },
+  {
+   "id": "COG-088",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 88,
+   "ordem": 2,
+   "titulo": "Nomeia 10 numerais."
+  },
+  {
+   "id": "COG-089",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 89,
+   "ordem": 3,
+   "titulo": "Identifica qual a sua esquerda e qual a sua direita"
+  },
+  {
+   "id": "COG-090",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 90,
+   "ordem": 4,
+   "titulo": "Diz as vogais em ordem."
+  },
+  {
+   "id": "COG-091",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 91,
+   "ordem": 5,
+   "titulo": "Escreve seu nome com letras de forma"
+  },
+  {
+   "id": "COG-092",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 92,
+   "ordem": 6,
+   "titulo": "Nomeia 5 letras do alfabeto."
+  },
+  {
+   "id": "COG-093",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 93,
+   "ordem": 7,
+   "titulo": "Ordena objetos em sequência de comprimento e largura."
+  },
+  {
+   "id": "COG-094",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 94,
+   "ordem": 8,
+   "titulo": "Nomeia as letras maiúsculas do alfabeto."
+  },
+  {
+   "id": "COG-095",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 95,
+   "ordem": 9,
+   "titulo": "Coloca numerais de 1 a 10 na sequência correta."
+  },
+  {
+   "id": "COG-096",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 96,
+   "ordem": 10,
+   "titulo": "Identifica a posição de objetos em 1º, 2º e 3º lugar."
+  },
+  {
+   "id": "COG-097",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 97,
+   "ordem": 11,
+   "titulo": "Nomeia as letras minúsculas do alfabeto."
+  },
+  {
+   "id": "COG-098",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 98,
+   "ordem": 12,
+   "titulo": "Emparelha letras maiúsculas com minúsculas."
+  },
+  {
+   "id": "COG-099",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 99,
+   "ordem": 13,
+   "titulo": "Aponta para numerais de 1 a 25."
+  },
+  {
+   "id": "COG-100",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 100,
+   "ordem": 14,
+   "titulo": "Copia um losango."
+  },
+  {
+   "id": "COG-101",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 101,
+   "ordem": 15,
+   "titulo": "Completa um labirinto simples."
+  },
+  {
+   "id": "COG-102",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 102,
+   "ordem": 16,
+   "titulo": "Diz os dias da semana na ordem."
+  },
+  {
+   "id": "COG-103",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 103,
+   "ordem": 17,
+   "titulo": "Soma e subtrai combinações de até 3 elementos."
+  },
+  {
+   "id": "COG-104",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 104,
+   "ordem": 18,
+   "titulo": "Diz o mês e o dia de seu aniversário."
+  },
+  {
+   "id": "COG-105",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 105,
+   "ordem": 19,
+   "titulo": "Lê 10 palavras impressas."
+  },
+  {
+   "id": "COG-106",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 106,
+   "ordem": 20,
+   "titulo": "Prediz o que vai ocorrer."
+  },
+  {
+   "id": "COG-107",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 107,
+   "ordem": 21,
+   "titulo": "Aponta para objetos inteiros e partidos ao meio."
+  },
+  {
+   "id": "COG-108",
+   "area": "cognicao",
+   "faixa": "5-6",
+   "numero": 108,
+   "ordem": 22,
+   "titulo": "Conta de memória de 1 a 100 (pedir que pare no 40, e continue no 80, caso não erre até o 40)."
+  },
+  {
+   "id": "AUT-001",
+   "area": "autocuidados",
+   "faixa": "0-1",
+   "numero": 1,
+   "ordem": 1,
+   "titulo": "Suga e deglute líquidos."
+  },
+  {
+   "id": "AUT-002",
+   "area": "autocuidados",
+   "faixa": "0-1",
+   "numero": 2,
+   "ordem": 2,
+   "titulo": "Toma mingau / sopinha."
+  },
+  {
+   "id": "AUT-003",
+   "area": "autocuidados",
+   "faixa": "0-1",
+   "numero": 3,
+   "ordem": 3,
+   "titulo": "Estende as mãos em direção a mamadeira, tentando pegá-la"
+  },
+  {
+   "id": "AUT-004",
+   "area": "autocuidados",
+   "faixa": "0-1",
+   "numero": 4,
+   "ordem": 4,
+   "titulo": "Come alimentos liquidificados dados pelos pais."
+  },
+  {
+   "id": "AUT-005",
+   "area": "autocuidados",
+   "faixa": "0-1",
+   "numero": 5,
+   "ordem": 5,
+   "titulo": "Segura a mamadeira sem ajuda enquanto bebe."
+  },
+  {
+   "id": "AUT-006",
+   "area": "autocuidados",
+   "faixa": "0-1",
+   "numero": 6,
+   "ordem": 6,
+   "titulo": "Leva a mamadeira até a boca ou a recusa, empurrando-a"
+  },
+  {
+   "id": "AUT-007",
+   "area": "autocuidados",
+   "faixa": "0-1",
+   "numero": 7,
+   "ordem": 7,
+   "titulo": "Come alimentos amassados dados pelos pais."
+  },
+  {
+   "id": "AUT-008",
+   "area": "autocuidados",
+   "faixa": "0-1",
+   "numero": 8,
+   "ordem": 8,
+   "titulo": "Bebe em uma caneca, segurada pelos pais."
+  },
+  {
+   "id": "AUT-009",
+   "area": "autocuidados",
+   "faixa": "0-1",
+   "numero": 9,
+   "ordem": 9,
+   "titulo": "Come alimentos semissólidos dados pelos pais."
+  },
+  {
+   "id": "AUT-010",
+   "area": "autocuidados",
+   "faixa": "0-1",
+   "numero": 10,
+   "ordem": 10,
+   "titulo": "Alimenta-se sozinho usando os dedos."
+  },
+  {
+   "id": "AUT-011",
+   "area": "autocuidados",
+   "faixa": "0-1",
+   "numero": 11,
+   "ordem": 11,
+   "titulo": "Segura a caneca com ambas as mãos e bebe."
+  },
+  {
+   "id": "AUT-012",
+   "area": "autocuidados",
+   "faixa": "0-1",
+   "numero": 12,
+   "ordem": 12,
+   "titulo": "Leva a colher cheia de comida até a boca com ajuda."
+  },
+  {
+   "id": "AUT-013",
+   "area": "autocuidados",
+   "faixa": "0-1",
+   "numero": 13,
+   "ordem": 13,
+   "titulo": "Estica braços e pernas ao ser vestido."
+  },
+  {
+   "id": "AUT-014",
+   "area": "autocuidados",
+   "faixa": "1-2",
+   "numero": 14,
+   "ordem": 1,
+   "titulo": "Come com colher de modo independente."
+  },
+  {
+   "id": "AUT-015",
+   "area": "autocuidados",
+   "faixa": "1-2",
+   "numero": 15,
+   "ordem": 2,
+   "titulo": "Segura a caneca com uma só mão e bebe."
+  },
+  {
+   "id": "AUT-016",
+   "area": "autocuidados",
+   "faixa": "1-2",
+   "numero": 16,
+   "ordem": 3,
+   "titulo": "Coloca a mão na água e dá tapinhas no rosto com as mãos molhadas, imitando alguém."
+  },
+  {
+   "id": "AUT-017",
+   "area": "autocuidados",
+   "faixa": "1-2",
+   "numero": 17,
+   "ordem": 4,
+   "titulo": "Senta-se em um piniquinho ou sanitário infantil por 5 min"
+  },
+  {
+   "id": "AUT-018",
+   "area": "autocuidados",
+   "faixa": "1-2",
+   "numero": 18,
+   "ordem": 5,
+   "titulo": "Coloca um chapéu na cabeça e o remove."
+  },
+  {
+   "id": "AUT-019",
+   "area": "autocuidados",
+   "faixa": "1-2",
+   "numero": 19,
+   "ordem": 6,
+   "titulo": "Tira as meias."
+  },
+  {
+   "id": "AUT-020",
+   "area": "autocuidados",
+   "faixa": "1-2",
+   "numero": 20,
+   "ordem": 7,
+   "titulo": "Empurra os braços pelas mangas e os pés pelas pernas da calça."
+  },
+  {
+   "id": "AUT-021",
+   "area": "autocuidados",
+   "faixa": "1-2",
+   "numero": 21,
+   "ordem": 8,
+   "titulo": "Tira os sapatos quando os cordões estiverem desamarrados"
+  },
+  {
+   "id": "AUT-022",
+   "area": "autocuidados",
+   "faixa": "1-2",
+   "numero": 22,
+   "ordem": 9,
+   "titulo": "Tira o casaco quando desabotoado."
+  },
+  {
+   "id": "AUT-023",
+   "area": "autocuidados",
+   "faixa": "1-2",
+   "numero": 23,
+   "ordem": 10,
+   "titulo": "Tira a calça quando desabotoada."
+  },
+  {
+   "id": "AUT-024",
+   "area": "autocuidados",
+   "faixa": "1-2",
+   "numero": 24,
+   "ordem": 11,
+   "titulo": "Puxa um fecho grande para cima e para baixo."
+  },
+  {
+   "id": "AUT-025",
+   "area": "autocuidados",
+   "faixa": "1-2",
+   "numero": 25,
+   "ordem": 12,
+   "titulo": "Utiliza palavras ou gestos indicando necessidade de ir ao banheiro."
+  },
+  {
+   "id": "AUT-026",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 26,
+   "ordem": 1,
+   "titulo": "Alimenta-se sozinho usando colher ou caneca, derrubando um pouco de comida ou derramando pouco líquido."
+  },
+  {
+   "id": "AUT-027",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 27,
+   "ordem": 2,
+   "titulo": "Quando recebe uma toalha enxuga as mãos e o rosto com ajuda"
+  },
+  {
+   "id": "AUT-028",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 28,
+   "ordem": 3,
+   "titulo": "Suga líquido do copo ou caneca usando canudinho."
+  },
+  {
+   "id": "AUT-029",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 29,
+   "ordem": 4,
+   "titulo": "Dá garfadas."
+  },
+  {
+   "id": "AUT-030",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 30,
+   "ordem": 5,
+   "titulo": "Mastiga e engole apenas substâncias comestíveis."
+  },
+  {
+   "id": "AUT-031",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 31,
+   "ordem": 6,
+   "titulo": "Enxuga as mãos sem ajuda ao lhe darem uma toalha"
+  },
+  {
+   "id": "AUT-032",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 32,
+   "ordem": 7,
+   "titulo": "Avisa que quer ir ao banheiro, mesmo sendo tarde demais."
+  },
+  {
+   "id": "AUT-033",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 33,
+   "ordem": 8,
+   "titulo": "Controla sua baba."
+  },
+  {
+   "id": "AUT-034",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 34,
+   "ordem": 9,
+   "titulo": "Urina ou defeca quando colocado no piniquinho pelo menos 3 vezes por semana."
+  },
+  {
+   "id": "AUT-035",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 35,
+   "ordem": 10,
+   "titulo": "Calça os sapatos."
+  },
+  {
+   "id": "AUT-036",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 36,
+   "ordem": 11,
+   "titulo": "Escova os dentes imitando um adulto."
+  },
+  {
+   "id": "AUT-037",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 37,
+   "ordem": 12,
+   "titulo": "Retira roupas simples que foram desabotoadas."
+  },
+  {
+   "id": "AUT-038",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 38,
+   "ordem": 13,
+   "titulo": "Usa o banheiro para defecar (falha apenas 1x por semana)."
+  },
+  {
+   "id": "AUT-039",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 39,
+   "ordem": 14,
+   "titulo": "Obtém água de uma torneira sem ajuda."
+  },
+  {
+   "id": "AUT-040",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 40,
+   "ordem": 15,
+   "titulo": "Lava as mãos e o rosto com um sabonete."
+  },
+  {
+   "id": "AUT-041",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 41,
+   "ordem": 16,
+   "titulo": "Avisa que quer ir ao banheiro durante o dia a tempo."
+  },
+  {
+   "id": "AUT-042",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 42,
+   "ordem": 17,
+   "titulo": "Pendura o casaco em um gancho da sua altura."
+  },
+  {
+   "id": "AUT-043",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 43,
+   "ordem": 18,
+   "titulo": "Permanece seco ao dormir durante o dia."
+  },
+  {
+   "id": "AUT-044",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 44,
+   "ordem": 19,
+   "titulo": "Evita riscos, por ex: pontas em móveis e escadas sem corrimão."
+  },
+  {
+   "id": "AUT-045",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 45,
+   "ordem": 20,
+   "titulo": "Usa guardanapo quando recomendado."
+  },
+  {
+   "id": "AUT-046",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 46,
+   "ordem": 21,
+   "titulo": "Espeta o garfo na comida, levando-a a boca."
+  },
+  {
+   "id": "AUT-047",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 47,
+   "ordem": 22,
+   "titulo": "Despeja líquido de uma peq. jarra para o copo sem ajuda."
+  },
+  {
+   "id": "AUT-048",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 48,
+   "ordem": 23,
+   "titulo": "Desprende roupas presas com o feixe de pressão."
+  },
+  {
+   "id": "AUT-049",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 49,
+   "ordem": 24,
+   "titulo": "Lava seus braços e pernas ao lhe darem banho."
+  },
+  {
+   "id": "AUT-050",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 50,
+   "ordem": 25,
+   "titulo": "Coloca meias."
+  },
+  {
+   "id": "AUT-051",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 51,
+   "ordem": 26,
+   "titulo": "Veste casaco, malha ou camisa."
+  },
+  {
+   "id": "AUT-052",
+   "area": "autocuidados",
+   "faixa": "2-3",
+   "numero": 52,
+   "ordem": 27,
+   "titulo": "Identifica a parte dianteira da roupa."
+  },
+  {
+   "id": "AUT-053",
+   "area": "autocuidados",
+   "faixa": "3-4",
+   "numero": 53,
+   "ordem": 1,
+   "titulo": "Alimenta-se sozinho por toda a refeição."
+  },
+  {
+   "id": "AUT-054",
+   "area": "autocuidados",
+   "faixa": "3-4",
+   "numero": 54,
+   "ordem": 2,
+   "titulo": "Veste-se só, precisando de ajuda apenas quanto há malhas ou camisetas com golas fechadas ou botões e fechos."
+  },
+  {
+   "id": "AUT-055",
+   "area": "autocuidados",
+   "faixa": "3-4",
+   "numero": 55,
+   "ordem": 3,
+   "titulo": "Enxuga o nariz quando lembrado."
+  },
+  {
+   "id": "AUT-056",
+   "area": "autocuidados",
+   "faixa": "3-4",
+   "numero": 56,
+   "ordem": 4,
+   "titulo": "Acorda seco 2 manhãs por semana"
+  },
+  {
+   "id": "AUT-057",
+   "area": "autocuidados",
+   "faixa": "3-4",
+   "numero": 57,
+   "ordem": 5,
+   "titulo": "Se menino, urina no sanitário, em pé"
+  },
+  {
+   "id": "AUT-058",
+   "area": "autocuidados",
+   "faixa": "3-4",
+   "numero": 58,
+   "ordem": 6,
+   "titulo": "Veste-se e despe-se sozinho, exceto quanto à botões e fechos em 75% das vezes."
+  },
+  {
+   "id": "AUT-059",
+   "area": "autocuidados",
+   "faixa": "3-4",
+   "numero": 59,
+   "ordem": 7,
+   "titulo": "Fecha a roupa com fechos de pressão ou de gancho."
+  },
+  {
+   "id": "AUT-060",
+   "area": "autocuidados",
+   "faixa": "3-4",
+   "numero": 60,
+   "ordem": 8,
+   "titulo": "Assoa o nariz quando lembrado."
+  },
+  {
+   "id": "AUT-061",
+   "area": "autocuidados",
+   "faixa": "3-4",
+   "numero": 61,
+   "ordem": 9,
+   "titulo": "Evita perigos corriqueiros, por ex: caco de vidro."
+  },
+  {
+   "id": "AUT-062",
+   "area": "autocuidados",
+   "faixa": "3-4",
+   "numero": 62,
+   "ordem": 10,
+   "titulo": "Pendura roupa no cabide e põe no armário quando pedem."
+  },
+  {
+   "id": "AUT-063",
+   "area": "autocuidados",
+   "faixa": "3-4",
+   "numero": 63,
+   "ordem": 11,
+   "titulo": "Escova os dentes quando recebe instrução."
+  },
+  {
+   "id": "AUT-064",
+   "area": "autocuidados",
+   "faixa": "3-4",
+   "numero": 64,
+   "ordem": 12,
+   "titulo": "Coloca luvas."
+  },
+  {
+   "id": "AUT-065",
+   "area": "autocuidados",
+   "faixa": "3-4",
+   "numero": 65,
+   "ordem": 13,
+   "titulo": "Desabotoa botões grandes"
+  },
+  {
+   "id": "AUT-066",
+   "area": "autocuidados",
+   "faixa": "3-4",
+   "numero": 66,
+   "ordem": 14,
+   "titulo": "Abotoa botões grandes."
+  },
+  {
+   "id": "AUT-067",
+   "area": "autocuidados",
+   "faixa": "3-4",
+   "numero": 67,
+   "ordem": 15,
+   "titulo": "Calça botas."
+  },
+  {
+   "id": "AUT-068",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 68,
+   "ordem": 1,
+   "titulo": "Limpa o que derramou por conta própria."
+  },
+  {
+   "id": "AUT-069",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 69,
+   "ordem": 2,
+   "titulo": "Evita veneno e todas as substâncias prejudiciais."
+  },
+  {
+   "id": "AUT-070",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 70,
+   "ordem": 3,
+   "titulo": "Desabotoa sua roupa."
+  },
+  {
+   "id": "AUT-071",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 71,
+   "ordem": 4,
+   "titulo": "Abotoa sua roupa."
+  },
+  {
+   "id": "AUT-072",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 72,
+   "ordem": 5,
+   "titulo": "Retira prato e talheres da mesa."
+  },
+  {
+   "id": "AUT-073",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 73,
+   "ordem": 6,
+   "titulo": "Encaixa fecho em sua terminação."
+  },
+  {
+   "id": "AUT-074",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 74,
+   "ordem": 7,
+   "titulo": "Lava as mãos e o rosto."
+  },
+  {
+   "id": "AUT-075",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 75,
+   "ordem": 8,
+   "titulo": "Usa talher apropriado para alimentar-se."
+  },
+  {
+   "id": "AUT-076",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 76,
+   "ordem": 9,
+   "titulo": "Acorda de noite para ir ao banheiro, ou acorda seco."
+  },
+  {
+   "id": "AUT-077",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 77,
+   "ordem": 10,
+   "titulo": "Limpa e assua o nariz em 75% das vezes sem ser lembrado"
+  },
+  {
+   "id": "AUT-078",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 78,
+   "ordem": 11,
+   "titulo": "Toma banho só, precisando de ajuda apenas para lavar as costas, pescoço e orelhas."
+  },
+  {
+   "id": "AUT-079",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 79,
+   "ordem": 12,
+   "titulo": "Usa faca para espalhar manteiga no pão."
+  },
+  {
+   "id": "AUT-080",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 80,
+   "ordem": 13,
+   "titulo": "Aperta e afrouxa cintos ou fivelas."
+  },
+  {
+   "id": "AUT-081",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 81,
+   "ordem": 14,
+   "titulo": "Veste-se sozinho, mas não dá laços."
+  },
+  {
+   "id": "AUT-082",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 82,
+   "ordem": 15,
+   "titulo": "Serve-se à mesa enquanto seguram a travessa de comida."
+  },
+  {
+   "id": "AUT-083",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 83,
+   "ordem": 16,
+   "titulo": "Ajuda a pôr a mesa corretamente quando recebe instruções."
+  },
+  {
+   "id": "AUT-084",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 84,
+   "ordem": 17,
+   "titulo": "Escova os dentes."
+  },
+  {
+   "id": "AUT-085",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 85,
+   "ordem": 18,
+   "titulo": "Vai ao banheiro a tempo, retira a roupa, usa papel higiênico, dá descarga e veste-se sem ajuda."
+  },
+  {
+   "id": "AUT-086",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 86,
+   "ordem": 19,
+   "titulo": "Penteia ou escova cabelos."
+  },
+  {
+   "id": "AUT-087",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 87,
+   "ordem": 20,
+   "titulo": "Pendura roupas em cabides."
+  },
+  {
+   "id": "AUT-088",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 88,
+   "ordem": 21,
+   "titulo": "Anda pela vizinhança sem constante supervisão."
+  },
+  {
+   "id": "AUT-089",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 89,
+   "ordem": 22,
+   "titulo": "Enfia cordões em sapatos."
+  },
+  {
+   "id": "AUT-090",
+   "area": "autocuidados",
+   "faixa": "4-5",
+   "numero": 90,
+   "ordem": 23,
+   "titulo": "Amarra ou dá laços nos cordões dos sapatos."
+  },
+  {
+   "id": "AUT-091",
+   "area": "autocuidados",
+   "faixa": "5-6",
+   "numero": 91,
+   "ordem": 1,
+   "titulo": "É responsável por uma tarefa semanal e a executa ao ser lembrado"
+  },
+  {
+   "id": "AUT-092",
+   "area": "autocuidados",
+   "faixa": "5-6",
+   "numero": 92,
+   "ordem": 2,
+   "titulo": "Seleciona roupas apropriadas ao clima e ocasião."
+  },
+  {
+   "id": "AUT-093",
+   "area": "autocuidados",
+   "faixa": "5-6",
+   "numero": 93,
+   "ordem": 3,
+   "titulo": "Pára no passeio, olha para ambos os lados, e atravessa a rua sem precisar ser lembrado."
+  },
+  {
+   "id": "AUT-094",
+   "area": "autocuidados",
+   "faixa": "5-6",
+   "numero": 94,
+   "ordem": 4,
+   "titulo": "Serve-se à mesa e passa aos demais a panela de comida."
+  },
+  {
+   "id": "AUT-095",
+   "area": "autocuidados",
+   "faixa": "5-6",
+   "numero": 95,
+   "ordem": 5,
+   "titulo": "Prepara sua própria caneca de café com leite."
+  },
+  {
+   "id": "AUT-096",
+   "area": "autocuidados",
+   "faixa": "5-6",
+   "numero": 96,
+   "ordem": 6,
+   "titulo": "É responsável por uma tarefa diária em casa."
+  },
+  {
+   "id": "AUT-097",
+   "area": "autocuidados",
+   "faixa": "5-6",
+   "numero": 97,
+   "ordem": 7,
+   "titulo": "Ajusta a temperatura da água para o banho."
+  },
+  {
+   "id": "AUT-098",
+   "area": "autocuidados",
+   "faixa": "5-6",
+   "numero": 98,
+   "ordem": 8,
+   "titulo": "Prepara seu próprio lanche."
+  },
+  {
+   "id": "AUT-099",
+   "area": "autocuidados",
+   "faixa": "5-6",
+   "numero": 99,
+   "ordem": 9,
+   "titulo": "Anda sozinho até a distância de 2 quadras de casa."
+  },
+  {
+   "id": "AUT-100",
+   "area": "autocuidados",
+   "faixa": "5-6",
+   "numero": 100,
+   "ordem": 10,
+   "titulo": "Corta alimentos tenros com faca."
+  },
+  {
+   "id": "AUT-101",
+   "area": "autocuidados",
+   "faixa": "5-6",
+   "numero": 101,
+   "ordem": 11,
+   "titulo": "Encontra o banheiro em local público, corretamente."
+  },
+  {
+   "id": "AUT-102",
+   "area": "autocuidados",
+   "faixa": "5-6",
+   "numero": 102,
+   "ordem": 12,
+   "titulo": "Abre a embalagem de leite."
+  },
+  {
+   "id": "AUT-103",
+   "area": "autocuidados",
+   "faixa": "5-6",
+   "numero": 103,
+   "ordem": 13,
+   "titulo": "Apanha uma bandeja com comida, levando-a e pondo sobre a mesa."
+  },
+  {
+   "id": "AUT-104",
+   "area": "autocuidados",
+   "faixa": "5-6",
+   "numero": 104,
+   "ordem": 14,
+   "titulo": "Amarra os cordões em casacos com capuz."
+  },
+  {
+   "id": "AUT-105",
+   "area": "autocuidados",
+   "faixa": "5-6",
+   "numero": 105,
+   "ordem": 15,
+   "titulo": "Aperta o cinto de segurança do automóvel."
+  },
+  {
+   "id": "MOT-001",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 1,
+   "ordem": 1,
+   "titulo": "Alcança um objeto colocado à sua frente (15 a 20 cm.)."
+  },
+  {
+   "id": "MOT-002",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 2,
+   "ordem": 2,
+   "titulo": "Apanha um objeto colocado à sua frente (8 cm.)."
+  },
+  {
+   "id": "MOT-003",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 3,
+   "ordem": 3,
+   "titulo": "Estende os braços em direção a um objeto à sua frente e o apanha."
+  },
+  {
+   "id": "MOT-004",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 4,
+   "ordem": 4,
+   "titulo": "Alcança um objeto preferido."
+  },
+  {
+   "id": "MOT-005",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 5,
+   "ordem": 5,
+   "titulo": "Coloca objetos na boca."
+  },
+  {
+   "id": "MOT-006",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 6,
+   "ordem": 6,
+   "titulo": "Eleva a cabeça e o tronco apoiando-se nos braços, ao estar deitado de barriga para baixo."
+  },
+  {
+   "id": "MOT-007",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 7,
+   "ordem": 7,
+   "titulo": "Levanta a cabeça e o tronco apoiando-se em um só braço."
+  },
+  {
+   "id": "MOT-008",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 8,
+   "ordem": 8,
+   "titulo": "Toca e explora objetos com a boca."
+  },
+  {
+   "id": "MOT-009",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 9,
+   "ordem": 9,
+   "titulo": "Em DV (decúbito ventral, de bruços), vira de lado e mantém esta posição ½ das vezes."
+  },
+  {
+   "id": "MOT-010",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 10,
+   "ordem": 10,
+   "titulo": "Em DV, vira de costas."
+  },
+  {
+   "id": "MOT-011",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 11,
+   "ordem": 11,
+   "titulo": "Em DV, move-se para frente o equivalente à sua altura."
+  },
+  {
+   "id": "MOT-012",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 12,
+   "ordem": 12,
+   "titulo": "Em DD (decúbito dorsal), rola para o lado."
+  },
+  {
+   "id": "MOT-013",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 13,
+   "ordem": 13,
+   "titulo": "Em DD, vira de barriga para baixo."
+  },
+  {
+   "id": "MOT-014",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 14,
+   "ordem": 14,
+   "titulo": "Faz esforço para sentar-se, segurando nos dedos do adulto."
+  },
+  {
+   "id": "MOT-015",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 15,
+   "ordem": 15,
+   "titulo": "Vira a cabeça com facilidade quando o corpo está apoiado."
+  },
+  {
+   "id": "MOT-016",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 16,
+   "ordem": 16,
+   "titulo": "Mantém-se sentado por 2 minutos."
+  },
+  {
+   "id": "MOT-017",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 17,
+   "ordem": 17,
+   "titulo": "Solta um objeto para apanhar outro."
+  },
+  {
+   "id": "MOT-018",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 18,
+   "ordem": 18,
+   "titulo": "Apanha e deixa cair um objeto propositalmente."
+  },
+  {
+   "id": "MOT-019",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 19,
+   "ordem": 19,
+   "titulo": "Fica em pé com o máximo de apoio."
+  },
+  {
+   "id": "MOT-020",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 20,
+   "ordem": 20,
+   "titulo": "Estando em pé com apoio, pula para cima e para baixo."
+  },
+  {
+   "id": "MOT-021",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 21,
+   "ordem": 21,
+   "titulo": "Engatinha para apanhar um objeto (distante a sua altura)."
+  },
+  {
+   "id": "MOT-022",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 22,
+   "ordem": 22,
+   "titulo": "Senta-se apoiando-se sozinho."
+  },
+  {
+   "id": "MOT-023",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 23,
+   "ordem": 23,
+   "titulo": "Estando sentado, vira de gatinhas."
+  },
+  {
+   "id": "MOT-024",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 24,
+   "ordem": 24,
+   "titulo": "Estando em DV consegue sentar-se."
+  },
+  {
+   "id": "MOT-025",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 25,
+   "ordem": 25,
+   "titulo": "Senta-se sem o apoio das mãos."
+  },
+  {
+   "id": "MOT-026",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 26,
+   "ordem": 26,
+   "titulo": "Atira objetos ao acaso."
+  },
+  {
+   "id": "MOT-027",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 27,
+   "ordem": 27,
+   "titulo": "Balança para frente e para trás quando de gatinhas."
+  },
+  {
+   "id": "MOT-028",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 28,
+   "ordem": 28,
+   "titulo": "Transfere objetos de uma mão para outra quando sentado."
+  },
+  {
+   "id": "MOT-029",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 29,
+   "ordem": 29,
+   "titulo": "Retém em uma das mãos 2 cubos de 2,5 cm."
+  },
+  {
+   "id": "MOT-030",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 30,
+   "ordem": 30,
+   "titulo": "Fica de joelhos."
+  },
+  {
+   "id": "MOT-031",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 31,
+   "ordem": 31,
+   "titulo": "Fica em pé, apoiando-se em algo."
+  },
+  {
+   "id": "MOT-032",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 32,
+   "ordem": 32,
+   "titulo": "Usa preensão de pinça para pegar objetos."
+  },
+  {
+   "id": "MOT-033",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 33,
+   "ordem": 33,
+   "titulo": "Engatinha."
+  },
+  {
+   "id": "MOT-034",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 34,
+   "ordem": 34,
+   "titulo": "Estando de gatinhas, estende uma das mãos para o alto."
+  },
+  {
+   "id": "MOT-035",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 35,
+   "ordem": 35,
+   "titulo": "Fica em pé com o mínimo de apoio."
+  },
+  {
+   "id": "MOT-036",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 36,
+   "ordem": 36,
+   "titulo": "Lambe a comida ao redor da boca."
+  },
+  {
+   "id": "MOT-037",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 37,
+   "ordem": 37,
+   "titulo": "Mantém-se em pé sozinho por um minuto."
+  },
+  {
+   "id": "MOT-038",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 38,
+   "ordem": 38,
+   "titulo": "Derruba um objeto que está dentro de um recipiente."
+  },
+  {
+   "id": "MOT-039",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 39,
+   "ordem": 39,
+   "titulo": "Vira várias páginas de um livro ao mesmo tempo."
+  },
+  {
+   "id": "MOT-040",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 40,
+   "ordem": 40,
+   "titulo": "Escava com uma colher ou pá."
+  },
+  {
+   "id": "MOT-041",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 41,
+   "ordem": 41,
+   "titulo": "Coloca pequenos objetos dentro do recipiente."
+  },
+  {
+   "id": "MOT-042",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 42,
+   "ordem": 42,
+   "titulo": "Estando de pé, abaixa-se e senta."
+  },
+  {
+   "id": "MOT-043",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 43,
+   "ordem": 43,
+   "titulo": "Bate palmas."
+  },
+  {
+   "id": "MOT-044",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 44,
+   "ordem": 44,
+   "titulo": "Anda com um mínimo de apoio."
+  },
+  {
+   "id": "MOT-045",
+   "area": "motor",
+   "faixa": "0-1",
+   "numero": 45,
+   "ordem": 45,
+   "titulo": "Dá alguns passos sem apoio."
+  },
+  {
+   "id": "MOT-046",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 46,
+   "ordem": 1,
+   "titulo": "Sobe escadas engatinhando."
+  },
+  {
+   "id": "MOT-047",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 47,
+   "ordem": 2,
+   "titulo": "Coloca-se em pé, estando sentado."
+  },
+  {
+   "id": "MOT-048",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 48,
+   "ordem": 3,
+   "titulo": "Rola uma bola imitando um adulto."
+  },
+  {
+   "id": "MOT-049",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 49,
+   "ordem": 4,
+   "titulo": "Sobe em uma cadeira de adulto, vira-se e senta."
+  },
+  {
+   "id": "MOT-050",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 50,
+   "ordem": 5,
+   "titulo": "Coloca 4 aros em uma pequena estaca."
+  },
+  {
+   "id": "MOT-051",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 51,
+   "ordem": 6,
+   "titulo": "Retira pinos de 2,5 cm de uma prancha ou tabuleiro."
+  },
+  {
+   "id": "MOT-052",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 52,
+   "ordem": 7,
+   "titulo": "Encaixa pinos de 2,5 cm em uma prancha de encaixe."
+  },
+  {
+   "id": "MOT-053",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 53,
+   "ordem": 8,
+   "titulo": "Constrói uma torre de 3 blocos."
+  },
+  {
+   "id": "MOT-054",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 54,
+   "ordem": 9,
+   "titulo": "Faz traços no papel com lápis ou lápis de cera."
+  },
+  {
+   "id": "MOT-055",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 55,
+   "ordem": 10,
+   "titulo": "Anda sozinho."
+  },
+  {
+   "id": "MOT-056",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 56,
+   "ordem": 11,
+   "titulo": "Desce escadas sentado, colocando primeiro os pés."
+  },
+  {
+   "id": "MOT-057",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 57,
+   "ordem": 12,
+   "titulo": "Senta-se em uma cadeirinha."
+  },
+  {
+   "id": "MOT-058",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 58,
+   "ordem": 13,
+   "titulo": "Agacha-se e volta a ficar em pé."
+  },
+  {
+   "id": "MOT-059",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 59,
+   "ordem": 14,
+   "titulo": "Empurra e puxa brinquedos ao andar."
+  },
+  {
+   "id": "MOT-060",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 60,
+   "ordem": 15,
+   "titulo": "Usa cadeira ou cavalo de balanço."
+  },
+  {
+   "id": "MOT-061",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 61,
+   "ordem": 16,
+   "titulo": "Sobe escadas com ajuda."
+  },
+  {
+   "id": "MOT-062",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 62,
+   "ordem": 17,
+   "titulo": "Dobra o corpo sem cair para apanhar objetos no chão."
+  },
+  {
+   "id": "MOT-063",
+   "area": "motor",
+   "faixa": "1-2",
+   "numero": 63,
+   "ordem": 18,
+   "titulo": "Imita um movimento circular."
+  },
+  {
+   "id": "MOT-064",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 64,
+   "ordem": 1,
+   "titulo": "Enfia 4 contas grandes em um cordão em 2 minutos."
+  },
+  {
+   "id": "MOT-065",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 65,
+   "ordem": 2,
+   "titulo": "Vira trincos ou maçanetas em portas."
+  },
+  {
+   "id": "MOT-066",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 66,
+   "ordem": 3,
+   "titulo": "Salta no mesmo local com ambos os pés."
+  },
+  {
+   "id": "MOT-067",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 67,
+   "ordem": 4,
+   "titulo": "Anda de costas."
+  },
+  {
+   "id": "MOT-068",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 68,
+   "ordem": 5,
+   "titulo": "Desce escadas sem ajuda."
+  },
+  {
+   "id": "MOT-069",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 69,
+   "ordem": 6,
+   "titulo": "Atira uma bola a um adulto à 1 ½ de distância."
+  },
+  {
+   "id": "MOT-070",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 70,
+   "ordem": 7,
+   "titulo": "Constrói uma torre de 5 a 6 blocos."
+  },
+  {
+   "id": "MOT-071",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 71,
+   "ordem": 8,
+   "titulo": "Vira páginas de um livro, uma por vez."
+  },
+  {
+   "id": "MOT-072",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 72,
+   "ordem": 9,
+   "titulo": "Desembrulha um pequeno objeto."
+  },
+  {
+   "id": "MOT-073",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 73,
+   "ordem": 10,
+   "titulo": "Dobra um papel ao meio, imitando um adulto."
+  },
+  {
+   "id": "MOT-074",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 74,
+   "ordem": 11,
+   "titulo": "Desmancha e reconstrói brinquedos de encaixe por pressão."
+  },
+  {
+   "id": "MOT-075",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 75,
+   "ordem": 12,
+   "titulo": "Desenrosca brinquedos que se encaixam por roscas."
+  },
+  {
+   "id": "MOT-076",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 76,
+   "ordem": 13,
+   "titulo": "Chuta uma bola grande que está imóvel."
+  },
+  {
+   "id": "MOT-077",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 77,
+   "ordem": 14,
+   "titulo": "Faz bolas de argila, barro ou massinha."
+  },
+  {
+   "id": "MOT-078",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 78,
+   "ordem": 15,
+   "titulo": "Segura o lápis entre o polegar e o indicador, apoiando-o sobre o dedo médio."
+  },
+  {
+   "id": "MOT-079",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 79,
+   "ordem": 16,
+   "titulo": "Dá cambalhota para frente com ajuda."
+  },
+  {
+   "id": "MOT-080",
+   "area": "motor",
+   "faixa": "2-3",
+   "numero": 80,
+   "ordem": 17,
+   "titulo": "Dá marteladas para encaixar 5 pinos em seus orifícios."
+  },
+  {
+   "id": "MOT-081",
+   "area": "motor",
+   "faixa": "3-4",
+   "numero": 81,
+   "ordem": 1,
+   "titulo": "Faz um quebra cabeça de 3 peças."
+  },
+  {
+   "id": "MOT-082",
+   "area": "motor",
+   "faixa": "3-4",
+   "numero": 82,
+   "ordem": 2,
+   "titulo": "Corta algo em pedaços com tesoura."
+  },
+  {
+   "id": "MOT-083",
+   "area": "motor",
+   "faixa": "3-4",
+   "numero": 83,
+   "ordem": 3,
+   "titulo": "Pula de uma altura de 20 cm"
+  },
+  {
+   "id": "MOT-084",
+   "area": "motor",
+   "faixa": "3-4",
+   "numero": 84,
+   "ordem": 4,
+   "titulo": "Chuta uma bola grande quando enviada para si."
+  },
+  {
+   "id": "MOT-085",
+   "area": "motor",
+   "faixa": "3-4",
+   "numero": 85,
+   "ordem": 5,
+   "titulo": "Anda na ponta dos pés."
+  },
+  {
+   "id": "MOT-086",
+   "area": "motor",
+   "faixa": "3-4",
+   "numero": 86,
+   "ordem": 6,
+   "titulo": "Corre 10 passos coordenando e alternando o movimento dos braços e pés."
+  },
+  {
+   "id": "MOT-087",
+   "area": "motor",
+   "faixa": "3-4",
+   "numero": 87,
+   "ordem": 7,
+   "titulo": "Pedala com triciclo a distância de 1 metro e ½."
+  },
+  {
+   "id": "MOT-088",
+   "area": "motor",
+   "faixa": "3-4",
+   "numero": 88,
+   "ordem": 8,
+   "titulo": "Balança em um balanço quando este está em movimento."
+  },
+  {
+   "id": "MOT-089",
+   "area": "motor",
+   "faixa": "3-4",
+   "numero": 89,
+   "ordem": 9,
+   "titulo": "Sobe em um escorregador de 1,20m a 1,80m e escorrega."
+  },
+  {
+   "id": "MOT-090",
+   "area": "motor",
+   "faixa": "3-4",
+   "numero": 90,
+   "ordem": 10,
+   "titulo": "Dá cambalhotas para frente."
+  },
+  {
+   "id": "MOT-091",
+   "area": "motor",
+   "faixa": "3-4",
+   "numero": 91,
+   "ordem": 11,
+   "titulo": "Sobe escadas alternando os pés."
+  },
+  {
+   "id": "MOT-092",
+   "area": "motor",
+   "faixa": "3-4",
+   "numero": 92,
+   "ordem": 12,
+   "titulo": "Marcha (anda de forma ritmada)."
+  },
+  {
+   "id": "MOT-093",
+   "area": "motor",
+   "faixa": "3-4",
+   "numero": 93,
+   "ordem": 13,
+   "titulo": "Apara a bola com ambas as mãos."
+  },
+  {
+   "id": "MOT-094",
+   "area": "motor",
+   "faixa": "3-4",
+   "numero": 94,
+   "ordem": 14,
+   "titulo": "Desenha figuras seguindo contornos ou pontilhados."
+  },
+  {
+   "id": "MOT-095",
+   "area": "motor",
+   "faixa": "3-4",
+   "numero": 95,
+   "ordem": 15,
+   "titulo": "Recorta ao longo de uma linha reta 20 cm, afastando-se pouco da linha."
+  },
+  {
+   "id": "MOT-096",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 96,
+   "ordem": 1,
+   "titulo": "Fica em um só pé sem apoio por 4 a 8 segundos."
+  },
+  {
+   "id": "MOT-097",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 97,
+   "ordem": 2,
+   "titulo": "Muda de direção ao correr."
+  },
+  {
+   "id": "MOT-098",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 98,
+   "ordem": 3,
+   "titulo": "Anda sobre uma viga ou tábua, mantendo o equilíbrio."
+  },
+  {
+   "id": "MOT-099",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 99,
+   "ordem": 4,
+   "titulo": "Pula para frente 10 vezes sem cair."
+  },
+  {
+   "id": "MOT-100",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 100,
+   "ordem": 5,
+   "titulo": "Salta sobre uma corda suspensa a 5 cm do solo."
+  },
+  {
+   "id": "MOT-101",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 101,
+   "ordem": 6,
+   "titulo": "Pula de costas 6 vezes."
+  },
+  {
+   "id": "MOT-102",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 102,
+   "ordem": 7,
+   "titulo": "Rebate e apanha uma bola grande."
+  },
+  {
+   "id": "MOT-103",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 103,
+   "ordem": 8,
+   "titulo": "Une 2 a 3 pedaços de massa de modelar."
+  },
+  {
+   "id": "MOT-104",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 104,
+   "ordem": 9,
+   "titulo": "Recorta em torno de linhas curvas."
+  },
+  {
+   "id": "MOT-105",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 105,
+   "ordem": 10,
+   "titulo": "Encaixa objetos de rosca."
+  },
+  {
+   "id": "MOT-106",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 106,
+   "ordem": 11,
+   "titulo": "Desce escadas alternando os pés."
+  },
+  {
+   "id": "MOT-107",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 107,
+   "ordem": 12,
+   "titulo": "Pedala um triciclo fazendo curvas."
+  },
+  {
+   "id": "MOT-108",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 108,
+   "ordem": 13,
+   "titulo": "Salta em um só pé 5 vezes consecutivas."
+  },
+  {
+   "id": "MOT-109",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 109,
+   "ordem": 14,
+   "titulo": "Recorta um círculo em 5 cm."
+  },
+  {
+   "id": "MOT-110",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 110,
+   "ordem": 15,
+   "titulo": "Desenha figuras simples facilmente identificáveis (por ex: casa)."
+  },
+  {
+   "id": "MOT-111",
+   "area": "motor",
+   "faixa": "4-5",
+   "numero": 111,
+   "ordem": 16,
+   "titulo": "Recorta e cola formas simples."
+  },
+  {
+   "id": "MOT-112",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 112,
+   "ordem": 1,
+   "titulo": "Escreve letras de imprensa maiúsculas, isoladas e grandes em qualquer lugar do papel."
+  },
+  {
+   "id": "MOT-113",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 113,
+   "ordem": 2,
+   "titulo": "Anda sobre uma tábua para trás, para frente e para os lados, mantendo o equilíbrio."
+  },
+  {
+   "id": "MOT-114",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 114,
+   "ordem": 3,
+   "titulo": "Caminha saltitando."
+  },
+  {
+   "id": "MOT-115",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 115,
+   "ordem": 4,
+   "titulo": "Balança em um balanço iniciando e mantendo o movimento."
+  },
+  {
+   "id": "MOT-116",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 116,
+   "ordem": 5,
+   "titulo": "Estica os dedos tocando o polegar em cada um deles."
+  },
+  {
+   "id": "MOT-117",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 117,
+   "ordem": 6,
+   "titulo": "Copia letras maiúsculas."
+  },
+  {
+   "id": "MOT-118",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 118,
+   "ordem": 7,
+   "titulo": "Sobe em escadas de mão ou de escorregador de 3 m."
+  },
+  {
+   "id": "MOT-119",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 119,
+   "ordem": 8,
+   "titulo": "Bate em um prego com martelo."
+  },
+  {
+   "id": "MOT-120",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 120,
+   "ordem": 9,
+   "titulo": "Rebate a bola à medida que anda com direção."
+  },
+  {
+   "id": "MOT-121",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 121,
+   "ordem": 10,
+   "titulo": "Consegue colorir sem sair da margem em 95% das vezes."
+  },
+  {
+   "id": "MOT-122",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 122,
+   "ordem": 11,
+   "titulo": "Recorta figuras sem sair mais que 6 mm da margem."
+  },
+  {
+   "id": "MOT-123",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 123,
+   "ordem": 12,
+   "titulo": "Usa apontador de lápis."
+  },
+  {
+   "id": "MOT-124",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 124,
+   "ordem": 13,
+   "titulo": "Copia desenhos complexos (escola, navio)."
+  },
+  {
+   "id": "MOT-125",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 125,
+   "ordem": 14,
+   "titulo": "Rasga figuras simples de um papel."
+  },
+  {
+   "id": "MOT-126",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 126,
+   "ordem": 15,
+   "titulo": "Dobra um papel quadrado 2x em diagonal por imitação."
+  },
+  {
+   "id": "MOT-127",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 127,
+   "ordem": 16,
+   "titulo": "Apanha uma bola leve com uma só mão."
+  },
+  {
+   "id": "MOT-128",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 128,
+   "ordem": 17,
+   "titulo": "Pula corda sozinho."
+  },
+  {
+   "id": "MOT-129",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 129,
+   "ordem": 18,
+   "titulo": "Golpeia uma bola com um bastão ou pedaço de pau."
+  },
+  {
+   "id": "MOT-130",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 130,
+   "ordem": 19,
+   "titulo": "Apanha um objeto no chão enquanto corre."
+  },
+  {
+   "id": "MOT-131",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 131,
+   "ordem": 20,
+   "titulo": "Patina uma distância de 3 m, ou usa skate."
+  },
+  {
+   "id": "MOT-132",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 132,
+   "ordem": 21,
+   "titulo": "Anda de bicicleta."
+  },
+  {
+   "id": "MOT-133",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 133,
+   "ordem": 22,
+   "titulo": "Escorrega descendo um monte de areia ou terra."
+  },
+  {
+   "id": "MOT-134",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 134,
+   "ordem": 23,
+   "titulo": "Anda ou brinca em piscina tendo água até a cintura."
+  },
+  {
+   "id": "MOT-135",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 135,
+   "ordem": 24,
+   "titulo": "Conduz um patinete dando impulso com um só pé."
+  },
+  {
+   "id": "MOT-136",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 136,
+   "ordem": 25,
+   "titulo": "Salta e gira em um só pé."
+  },
+  {
+   "id": "MOT-137",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 137,
+   "ordem": 26,
+   "titulo": "Escreve seu nome com letras de forma em caderno pautado."
+  },
+  {
+   "id": "MOT-138",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 138,
+   "ordem": 27,
+   "titulo": "Salta de uma altura de 30 cm. e cai na ponta dos pés."
+  },
+  {
+   "id": "MOT-139",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 139,
+   "ordem": 28,
+   "titulo": "Pára em um só pé sem apoio com olhos fechados por 10 segundos."
+  },
+  {
+   "id": "MOT-140",
+   "area": "motor",
+   "faixa": "5-6",
+   "numero": 140,
+   "ordem": 29,
+   "titulo": "Dependura-se por 10 segundos em uma barra horizontal."
+  }
+ ]
+}
