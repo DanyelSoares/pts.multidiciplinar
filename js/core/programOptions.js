@@ -1,8 +1,21 @@
-export const PROGRAM_FREQUENCIES = [
-  { id: 'daily', label: 'Diário', description: 'Aplicado todos os dias de atendimento.' },
-  { id: 'weekly', label: 'Semanal', description: 'Aplicado uma vez por semana.' },
-  { id: 'custom', label: 'Personalizado', description: 'Frequência definida em texto livre, específica para o caso.' },
+export const FREQUENCY_PERIODOS = [
+  { id: 'dia', label: 'dia' },
+  { id: 'semana', label: 'semana' },
+  { id: 'mes', label: 'mês' },
 ];
+
+export const FREQUENCY_UNIDADES = [
+  { id: 'segundos', label: 'segundos' },
+  { id: 'minutos', label: 'minutos' },
+  { id: 'horas', label: 'horas' },
+];
+
+export function frequencyDescricao({ quantidade, periodo, duracao, unidade }) {
+  if (!quantidade || !periodo || !duracao || !unidade) return null;
+  const periodoLabel = FREQUENCY_PERIODOS.find((p) => p.id === periodo)?.label || periodo;
+  const unidadeLabel = FREQUENCY_UNIDADES.find((u) => u.id === unidade)?.label || unidade;
+  return `${quantidade}x ${periodoLabel}, ${duracao} ${unidadeLabel}`;
+}
 
 export const PROGRAM_STATUSES = [
   { id: 'not_started', label: 'Não iniciado', description: 'Programa configurado, mas ainda sem aplicação.' },

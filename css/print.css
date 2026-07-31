@@ -1,0 +1,22 @@
+/* Regras genéricas de impressão, reaproveitáveis por qualquer tela do app.
+   Convenção: um bloco de documento formatado (gerado sob demanda, escondido na tela)
+   usa a classe .doc-print-only; elementos de UI que nunca devem imprimir usam .no-print. */
+
+.doc-print-only { display: none; }
+
+@media print {
+  .main > * { display: none !important; }
+  .main > .screen.active { display: block !important; }
+  .screen > *:not(.doc-print-only) { display: none !important; }
+  .doc-print-only { display: block !important; }
+  .no-print { display: none !important; }
+
+  @page { size: A4; margin: 20mm 15mm; }
+
+  table { page-break-inside: auto; }
+  tr, .doc-print-block { page-break-inside: avoid; break-inside: avoid; }
+  thead { display: table-header-group; }
+  [class*="-quebra-antes"] { page-break-before: always; break-before: page; }
+
+  body { background: #fff; }
+}

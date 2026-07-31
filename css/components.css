@@ -1,6 +1,7 @@
 /* ── STAT CARDS ── */
 .stat-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-bottom:20px;}
 @media(max-width:1200px){.stat-grid{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:520px){.stat-grid{grid-template-columns:repeat(2,1fr);}}
 .stat-card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius-md);padding:16px 18px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;transition:transform var(--transition),box-shadow var(--transition);}
 .stat-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);}
 .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:3px 3px 0 0;}
@@ -67,8 +68,9 @@
 .panel-header{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;border-bottom:1px solid var(--border);}
 .panel-header h3{font-size:13.5px;font-weight:800;}
 .panel-body{padding:8px 22px 18px;}
+.table-scroll{overflow-x:auto;}
 
-table{width:100%;border-collapse:collapse;font-size:12.5px;}
+table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:640px;}
 thead th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);font-weight:700;padding:10px;border-bottom:1px solid var(--border);white-space:nowrap;}
 tbody td{padding:12px 10px;border-bottom:1px solid var(--border);vertical-align:middle;}
 tbody tr:last-child td{border-bottom:none;}

@@ -112,6 +112,18 @@ export function calcularPontuacaoPortage(aplicacao, inventario, opcoes = {}) {
     const avaliadosTotal = adquiridos + emergentes + naoAdquiridos;
     const coberturaGeral = itensArea.length > 0 ? avaliadosTotal / itensArea.length : 0;
 
+    // Faixas "aplicadas" são as que tiveram ao menos 1 item avaliado — exclui faixas nunca
+    // tocadas (100% não_avaliado) do somatório de "Total", evitando misturar o total teórico
+    // do instrumento (0-6 anos) com o que foi de fato investigado nesta aplicação.
+    const faixasAplicadas = inventario.faixas.filter((f) => (contagemPorFaixa[f.id]?.avaliados || 0) > 0);
+    const totalItensAplicados = faixasAplicadas.reduce((soma, f) => soma + contagemPorFaixa[f.id].total, 0);
+    const adquiridosAplicados = faixasAplicadas.reduce((soma, f) => soma + contagemPorFaixa[f.id].adquiridos, 0);
+    const emergentesAplicados = faixasAplicadas.reduce((soma, f) => soma + contagemPorFaixa[f.id].emergentes, 0);
+    const naoAdquiridosAplicados = faixasAplicadas.reduce((soma, f) => soma + contagemPorFaixa[f.id].naoAdquiridos, 0);
+    const coberturaAplicada = totalItensAplicados > 0
+      ? (adquiridosAplicados + emergentesAplicados + naoAdquiridosAplicados) / totalItensAplicados
+      : 0;
+
     const faixaAtingida = calcularFaixaDeAreaAtingida(inventario, area, contagemPorFaixa, coberturaMinima);
     const faixaAtingidaInfo = faixaAtingida ? inventario.faixas.find((f) => f.id === faixaAtingida) : null;
 
@@ -144,6 +156,14 @@ export function calcularPontuacaoPortage(aplicacao, inventario, opcoes = {}) {
       defasagemMeses,
       percentualAdquirido,
       contagemPorFaixa,
+      // Somatório restrito às faixas com ao menos 1 item avaliado — use estes campos para
+      // exibir totais/cobertura "do que foi aplicado", em vez de totalItens/cobertura, que
+      // sempre somam sobre todo o instrumento (0-6 anos), mesmo com faixas nunca tocadas.
+      adquiridosAplicados,
+      emergentesAplicados,
+      naoAdquiridosAplicados,
+      totalItensAplicados,
+      coberturaAplicada,
     };
   });
 

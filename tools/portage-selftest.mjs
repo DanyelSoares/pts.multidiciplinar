@@ -1,6 +1,7 @@
 // Self-test do núcleo de cálculo Portage. Roda em Node puro (fora do runtime do browser):
 //   node tools/portage-selftest.mjs
 import { calcularPontuacaoPortage } from '../js/core/portageScore.js';
+import { derivarObjetivosPEI, separarObjetivosPorPrazo } from '../js/core/pei.js';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
@@ -110,6 +111,64 @@ function itensDaArea(areaId) {
   });
   const somaDeclarada = inventario.areas.reduce((s, a) => s + a.totalItens, 0);
   checar(`soma total declarada (${somaDeclarada}) == inventario.itens.length (${inventario.itens.length})`, somaDeclarada === inventario.itens.length);
+}
+
+// Cenário 7: separação longo prazo vs. curto/médio prazo — longo prazo vem da faixa mais
+// avançada com cobertura suficiente; curto/médio prazo vem de pendências em faixas anteriores.
+{
+  console.log('\nCenário 7: separação de objetivos por prazo (longo prazo vs. curto/médio prazo)');
+  const respostas = {};
+  // faixa 0-1 com cobertura suficiente (100%): maioria adquirida, 5 pendentes (emergente)
+  const itens01 = itensDaArea('cognicao').filter((i) => i.faixa === '0-1');
+  itens01.slice(0, 9).forEach((item) => { respostas[item.id] = { status: 'adquirido' }; });
+  itens01.slice(9).forEach((item) => { respostas[item.id] = { status: 'emergente' }; });
+  // faixa 1-2 (a mais avançada, cobertura suficiente e maioria adquirida): 2 pendentes (não adquirido)
+  const itens12 = itensDaArea('cognicao').filter((i) => i.faixa === '1-2');
+  itens12.slice(0, 8).forEach((item) => { respostas[item.id] = { status: 'adquirido' }; });
+  itens12.slice(8).forEach((item) => { respostas[item.id] = { status: 'nao_adquirido' }; });
+
+  const aplicacao = { idadeCronologicaMeses: 24, respostas };
+  const { longoPrazo, curtoMedioPrazo } = separarObjetivosPorPrazo(aplicacao, inventario);
+
+  const longoPrazoCognicao = longoPrazo.filter((c) => c.area.id === 'cognicao');
+  const curtoMedioPrazoCognicao = curtoMedioPrazo.filter((c) => c.area.id === 'cognicao');
+
+  checar('longo prazo vem da faixa 1-2 (a mais avançada com cobertura suficiente)', longoPrazoCognicao.length > 0 && longoPrazoCognicao.every((c) => c.item.faixa === '1-2'));
+  checar('curto/médio prazo vem da faixa 0-1 (pendências em faixa anterior)', curtoMedioPrazoCognicao.length > 0 && curtoMedioPrazoCognicao.every((c) => c.item.faixa === '0-1'));
+  checar('há os 5 itens pendentes de curto/médio prazo (emergentes de 0-1)', curtoMedioPrazoCognicao.length === 5);
+}
+
+// Cenário 8: geração de programa só ocorre para áreas com pendências — área totalmente
+// adquirida (sem objetivos) não deve gerar programa.
+{
+  console.log('\nCenário 8: programa de ensino só é gerado para áreas com objetivos pendentes');
+  const respostas = {};
+  inventario.itens.filter((i) => i.area === 'motor').forEach((item) => { respostas[item.id] = { status: 'adquirido' }; });
+  const itensLin01 = itensDaArea('linguagem').filter((i) => i.faixa === '0-1');
+  itensLin01.slice(0, 7).forEach((item) => { respostas[item.id] = { status: 'adquirido' }; });
+  itensLin01.slice(7).forEach((item) => { respostas[item.id] = { status: 'nao_adquirido' }; });
+
+  const aplicacao = { idadeCronologicaMeses: 12, respostas };
+  const { programas } = derivarObjetivosPEI(aplicacao, inventario);
+
+  checar('nenhum programa gerado para "motor" (área sem pendências, tudo adquirido)', !programas.some((p) => p.area === 'motor'));
+  checar('ao menos 1 programa gerado para áreas com pendências', programas.length > 0);
+}
+
+// Cenário 9: rastreabilidade — todo programa gerado referencia origem/objetivo/item válidos.
+{
+  console.log('\nCenário 9: rastreabilidade dos programas gerados (origem, objetivoPeiId, itemPortageId)');
+  const respostas = {};
+  itensDaArea('autocuidados').filter((i) => i.faixa === '0-1').forEach((item) => { respostas[item.id] = { status: 'emergente' }; });
+
+  const aplicacao = { idadeCronologicaMeses: 12, respostas };
+  const { objetivosLongoPrazo, objetivosCurtoMedioPrazo, programas } = derivarObjetivosPEI(aplicacao, inventario);
+  const todosObjetivosIds = new Set([...objetivosLongoPrazo, ...objetivosCurtoMedioPrazo].map((o) => o.id));
+  const todosItensIds = new Set(inventario.itens.map((i) => i.id));
+
+  checar('todo programa tem origem "pei"', programas.every((p) => p.origem === 'pei'));
+  checar('todo programa referencia um objetivoPeiId existente', programas.every((p) => todosObjetivosIds.has(p.objetivoPeiId)));
+  checar('todo programa referencia um itemPortageId válido do inventário', programas.every((p) => todosItensIds.has(p.itemPortageId)));
 }
 
 console.log(`\n${total - falhas}/${total} verificações passaram.`);

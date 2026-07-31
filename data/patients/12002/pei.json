@@ -1,272 +1,231 @@
 {
- "geradoEm": "2026-07-30T20:17:12.334Z",
+ "geradoEm": "2026-07-31T12:39:35.905Z",
  "aplicacaoId": "AV-0001",
- "vigencia": {
-  "inicio": "2026-05-22",
-  "revisao": null
- },
- "areasPrioritarias": [
-  "linguagem",
-  "cognicao",
-  "autocuidados",
-  "motor",
-  "socializacao"
- ],
- "objetivos": [
+ "objetivosLongoPrazo": [
   {
-   "id": "OBJ-0001",
+   "id": "OBJ-LP-0001",
    "area": "socializacao",
    "itemId": "SOC-044",
-   "prioridade": "alta",
-   "longoPrazo": "Obedece às ordens dos pais pelo menos ½ das vezes.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "descricao": "Obedece às ordens dos pais pelo menos ½ das vezes.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
   },
   {
-   "id": "OBJ-0002",
+   "id": "OBJ-LP-0002",
    "area": "socializacao",
    "itemId": "SOC-049",
-   "prioridade": "alta",
-   "longoPrazo": "Brinca de usar roupas de adultos.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "descricao": "Brinca de usar roupas de adultos.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
   },
   {
-   "id": "OBJ-0003",
+   "id": "OBJ-LP-0003",
    "area": "socializacao",
    "itemId": "SOC-051",
-   "prioridade": "alta",
-   "longoPrazo": "Demonstra entender sentimentos, expressando-os.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "descricao": "Demonstra entender sentimentos, expressando-os.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
   },
   {
-   "id": "OBJ-0004",
+   "id": "OBJ-LP-0004",
    "area": "linguagem",
    "itemId": "LIN-030",
-   "prioridade": "alta",
-   "longoPrazo": "Combina substantivo e verbo em frases de 2 palavras",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "descricao": "Combina substantivo e verbo em frases de 2 palavras",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
   },
   {
-   "id": "OBJ-0005",
+   "id": "OBJ-LP-0005",
    "area": "linguagem",
    "itemId": "LIN-031",
-   "prioridade": "alta",
-   "longoPrazo": "Usa uma palavra para indicar que quer ir ao banheiro",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "descricao": "Usa uma palavra para indicar que quer ir ao banheiro",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
   },
   {
-   "id": "OBJ-0006",
+   "id": "OBJ-LP-0006",
    "area": "linguagem",
-   "itemId": "LIN-039",
-   "prioridade": "alta",
-   "longoPrazo": "Ao falar, refere-se a si próprio pelo nome.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "itemId": "LIN-034",
+   "descricao": "Emprega \"não\" na fala",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  }
+ ],
+ "objetivosCurtoMedioPrazo": [],
+ "programas": [
+  {
+   "id": "PRG-PEI-0001",
+   "origem": "pei",
+   "objetivoPeiId": "OBJ-LP-0001",
+   "itemPortageId": "SOC-044",
+   "area": "socializacao",
+   "nome": "Programa de Socialização",
+   "estimuloDiscriminativo": "",
+   "respostaEsperada": [
+    "SOC-044",
+    "SOC-049",
+    "SOC-051"
+   ],
+   "observacao": "",
+   "ajudaHelpTypeIds": [],
+   "sistemaEsvanecimento": "",
+   "procedimentoEnsino": "",
+   "criterioAquisicaoPercent": 90,
+   "criterioAquisicaoDias": 3,
+   "consequencia": "",
+   "correcaoErro": "",
+   "manutencao": {
+    "blocos": [
+     {
+      "vezesPorSemana": 3,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 2,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 1,
+      "semanas": 8
+     }
+    ]
+   },
+   "passosEnsino": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "generalizacao": ""
   },
   {
-   "id": "OBJ-0007",
-   "area": "cognicao",
-   "itemId": "COG-065",
-   "prioridade": "alta",
-   "longoPrazo": "Apanha de 1 a 5 objetos quando solicitado.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0008",
-   "area": "cognicao",
-   "itemId": "COG-066",
-   "prioridade": "alta",
-   "longoPrazo": "Nomeia 5 texturas diferentes.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0009",
-   "area": "cognicao",
-   "itemId": "COG-069",
-   "prioridade": "alta",
-   "longoPrazo": "Diz o momento do dia associado a cada atividade.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0010",
-   "area": "autocuidados",
-   "itemId": "AUT-069",
-   "prioridade": "alta",
-   "longoPrazo": "Evita veneno e todas as substâncias prejudiciais.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0011",
-   "area": "autocuidados",
-   "itemId": "AUT-071",
-   "prioridade": "alta",
-   "longoPrazo": "Abotoa sua roupa.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0012",
-   "area": "autocuidados",
-   "itemId": "AUT-072",
-   "prioridade": "alta",
-   "longoPrazo": "Retira prato e talheres da mesa.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0013",
-   "area": "motor",
-   "itemId": "MOT-099",
-   "prioridade": "alta",
-   "longoPrazo": "Pula para frente 10 vezes sem cair.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0014",
-   "area": "motor",
-   "itemId": "MOT-111",
-   "prioridade": "alta",
-   "longoPrazo": "Recorta e cola formas simples.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0015",
-   "area": "motor",
-   "itemId": "MOT-100",
-   "prioridade": "media",
-   "longoPrazo": "Salta sobre uma corda suspensa a 5 cm do solo.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "id": "PRG-PEI-0002",
+   "origem": "pei",
+   "objetivoPeiId": "OBJ-LP-0004",
+   "itemPortageId": "LIN-030",
+   "area": "linguagem",
+   "nome": "Programa de Linguagem",
+   "estimuloDiscriminativo": "",
+   "respostaEsperada": [
+    "LIN-030",
+    "LIN-031",
+    "LIN-034"
+   ],
+   "observacao": "",
+   "ajudaHelpTypeIds": [],
+   "sistemaEsvanecimento": "",
+   "procedimentoEnsino": "",
+   "criterioAquisicaoPercent": 90,
+   "criterioAquisicaoDias": 3,
+   "consequencia": "",
+   "correcaoErro": "",
+   "manutencao": {
+    "blocos": [
+     {
+      "vezesPorSemana": 3,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 2,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 1,
+      "semanas": 8
+     }
+    ]
+   },
+   "passosEnsino": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "generalizacao": ""
   }
  ],
  "equipe": [],

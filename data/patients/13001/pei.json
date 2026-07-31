@@ -1,0 +1,1157 @@
+{
+ "geradoEm": "2026-07-31T15:22:25.303Z",
+ "aplicacaoId": "AV-0001",
+ "objetivosLongoPrazo": [
+  {
+   "id": "OBJ-LP-0001",
+   "area": "socializacao",
+   "itemId": "SOC-030",
+   "descricao": "Brinca ao lado de outra criança, cada uma realizando tarefas diferentes.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0002",
+   "area": "socializacao",
+   "itemId": "SOC-031",
+   "descricao": "Toma parte em uma brincadeira com outra criança por 2 a 5 minutos.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0003",
+   "area": "socializacao",
+   "itemId": "SOC-033",
+   "descricao": "Explora ativamente seu meio ambiente.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0004",
+   "area": "socializacao",
+   "itemId": "SOC-034",
+   "descricao": "Realiza atividade manipulativa com outra pessoa.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0005",
+   "area": "socializacao",
+   "itemId": "SOC-036",
+   "descricao": "Repete ações que produzem risos e atenção.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0006",
+   "area": "socializacao",
+   "itemId": "SOC-037",
+   "descricao": "Dá um livro para que um adulto o leia ou para que ambos o compartilhem.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0007",
+   "area": "socializacao",
+   "itemId": "SOC-039",
+   "descricao": "Retira a mão ou diz \"não\" quando está próximo de um objeto não permitido e alguém o lembra disto.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0008",
+   "area": "socializacao",
+   "itemId": "SOC-040",
+   "descricao": "Quando colocado em sua cadeira ou trocador espera ser atendido.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0009",
+   "area": "socializacao",
+   "itemId": "SOC-042",
+   "descricao": "Compartilha um objeto ou alimento com outra criança.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0010",
+   "area": "socializacao",
+   "itemId": "SOC-043",
+   "descricao": "Cumprimenta colegas ou adultos quando lembrado.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0011",
+   "area": "linguagem",
+   "itemId": "LIN-012",
+   "descricao": "Pede \"mais\".",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0012",
+   "area": "linguagem",
+   "itemId": "LIN-013",
+   "descricao": "Diz \"acabou\".",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0013",
+   "area": "linguagem",
+   "itemId": "LIN-015",
+   "descricao": "Consegue \"dar\" ou \"mostrar\" quando solicitado.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0014",
+   "area": "linguagem",
+   "itemId": "LIN-016",
+   "descricao": "Aponta para 12 objetos quando nomeados.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0015",
+   "area": "linguagem",
+   "itemId": "LIN-018",
+   "descricao": "Aponta para 3 partes de seu próprio corpo.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0016",
+   "area": "linguagem",
+   "itemId": "LIN-019",
+   "descricao": "Diz seu nome ou apelido quando solicitado.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0017",
+   "area": "linguagem",
+   "itemId": "LIN-021",
+   "descricao": "Combina palavras e gestos para expressar desejos.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0018",
+   "area": "linguagem",
+   "itemId": "LIN-022",
+   "descricao": "Nomeia 5 membros da família, incluindo animais.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0019",
+   "area": "linguagem",
+   "itemId": "LIN-024",
+   "descricao": "Produz sons de animais, ou os nomeia pelo som",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0020",
+   "area": "linguagem",
+   "itemId": "LIN-025",
+   "descricao": "Pede alimentos conhecidos pelo nome, quando mostrados.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  }
+ ],
+ "objetivosCurtoMedioPrazo": [
+  {
+   "id": "OBJ-CMP-0001",
+   "area": "socializacao",
+   "itemId": "SOC-001",
+   "descricao": "Observa uma pessoa movimentando-se em seu campo visual.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0002",
+   "area": "socializacao",
+   "itemId": "SOC-005",
+   "descricao": "Responde a seu círculo familiar, sorrindo, vocalizando ou parando de chorar",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0003",
+   "area": "socializacao",
+   "itemId": "SOC-009",
+   "descricao": "Estende a mão em direção a um objeto oferecido.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0004",
+   "area": "socializacao",
+   "itemId": "SOC-013",
+   "descricao": "Sacode ou aperta um objeto colocado em sua mão, produzindo sons involuntários.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0005",
+   "area": "socializacao",
+   "itemId": "SOC-017",
+   "descricao": "Vocaliza para obter atenção",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0006",
+   "area": "socializacao",
+   "itemId": "SOC-021",
+   "descricao": "Ergue os braços para expressar “grande”, imitando um adulto",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0007",
+   "area": "socializacao",
+   "itemId": "SOC-025",
+   "descricao": "Aperta ou sacode um brinquedo para produzir sons, em imitação.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0008",
+   "area": "linguagem",
+   "itemId": "LIN-001",
+   "descricao": "Repete sons emitidos por outras pessoas.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0009",
+   "area": "linguagem",
+   "itemId": "LIN-005",
+   "descricao": "Interrompe a atividade quando lhe dizem \"Não\" 75% das vezes.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0010",
+   "area": "linguagem",
+   "itemId": "LIN-009",
+   "descricao": "Usa uma palavra funcionalmente para indicar objetos ou pessoas.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0011",
+   "area": "cognicao",
+   "itemId": "COG-001",
+   "descricao": "Remove um pano do rosto que obscureça sua visão.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0012",
+   "area": "cognicao",
+   "itemId": "COG-005",
+   "descricao": "Coloca um objeto em um recipiente quando recebe instruções.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0013",
+   "area": "cognicao",
+   "itemId": "COG-009",
+   "descricao": "Deixa cair e apanha um brinquedo.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0014",
+   "area": "cognicao",
+   "itemId": "COG-013",
+   "descricao": "Coloca um pino redondo em uma prancha de pinos, quando solicitado.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0015",
+   "area": "autocuidados",
+   "itemId": "AUT-001",
+   "descricao": "Suga e deglute líquidos.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0016",
+   "area": "autocuidados",
+   "itemId": "AUT-005",
+   "descricao": "Segura a mamadeira sem ajuda enquanto bebe.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0017",
+   "area": "autocuidados",
+   "itemId": "AUT-009",
+   "descricao": "Come alimentos semissólidos dados pelos pais.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0018",
+   "area": "autocuidados",
+   "itemId": "AUT-013",
+   "descricao": "Estica braços e pernas ao ser vestido.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0019",
+   "area": "motor",
+   "itemId": "MOT-001",
+   "descricao": "Alcança um objeto colocado à sua frente (15 a 20 cm.).",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-CMP-0020",
+   "area": "motor",
+   "itemId": "MOT-005",
+   "descricao": "Coloca objetos na boca.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  }
+ ],
+ "programas": [
+  {
+   "id": "PRG-PEI-0001",
+   "origem": "pei",
+   "objetivoPeiId": "OBJ-LP-0001",
+   "itemPortageId": "SOC-030",
+   "area": "socializacao",
+   "nome": "Programa de Ensino — Socialização",
+   "estimuloDiscriminativo": "Ocorrência de uma atividade em grupo (roda, brincadeira dirigida ou momento de rotina compartilhada) em que a terapeuta ou um par apresenta uma oportunidade de interação social.",
+   "respostaEsperada": [
+    "SOC-030",
+    "SOC-031",
+    "SOC-033",
+    "SOC-034",
+    "SOC-036",
+    "SOC-037",
+    "SOC-039",
+    "SOC-040",
+    "SOC-042",
+    "SOC-043",
+    "SOC-001",
+    "SOC-005",
+    "SOC-009",
+    "SOC-013",
+    "SOC-017",
+    "SOC-021",
+    "SOC-025"
+   ],
+   "observacao": "Programa revisado em reunião interdisciplinar; ajustes de critério previstos a cada reavaliação trimestral.",
+   "ajudaHelpTypeIds": [
+    "gestual",
+    "verbal"
+   ],
+   "sistemaEsvanecimento": "Mais para menos: inicia com ajuda gestual do par ou terapeuta, reduzindo até resposta independente.",
+   "procedimentoEnsino": "Treino por Tentativa Discreta com componente de Ensino Incidental para generalização em contexto de brincadeira livre.",
+   "criterioAquisicaoPercent": 90,
+   "criterioAquisicaoDias": 3,
+   "consequencia": "Reforço social de alta magnitude (elogio entusiasmado, atenção do par) imediatamente após a resposta.",
+   "correcaoErro": "Interrupção da resposta incorreta, reapresentação do estímulo com ajuda um nível acima da anterior.",
+   "manutencao": {
+    "blocos": [
+     {
+      "vezesPorSemana": 3,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 2,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 1,
+      "semanas": 8
+     }
+    ]
+   },
+   "passosEnsino": [
+    "Observa o par por ao menos 3 segundos antes de agir.",
+    "Inicia contato (olhar, gesto ou aproximação) com ajuda.",
+    "Inicia contato de forma independente em 1 de 3 oportunidades.",
+    "Mantém a interação por ao menos 1 minuto sem suporte."
+   ],
+   "generalizacao": "Praticado com ao menos 2 pares diferentes, em ambiente terapêutico e escolar, sob supervisão."
+  },
+  {
+   "id": "PRG-PEI-0002",
+   "origem": "pei",
+   "objetivoPeiId": "OBJ-LP-0011",
+   "itemPortageId": "LIN-012",
+   "area": "linguagem",
+   "nome": "Programa de Ensino — Linguagem",
+   "estimuloDiscriminativo": "Ocorrência de uma atividade em que a terapeuta apresenta um estímulo verbal, visual ou gestual solicitando nomeação, resposta a pergunta ou pedido funcional.",
+   "respostaEsperada": [
+    "LIN-012",
+    "LIN-013",
+    "LIN-015",
+    "LIN-016",
+    "LIN-018",
+    "LIN-019",
+    "LIN-021",
+    "LIN-022",
+    "LIN-024",
+    "LIN-025",
+    "LIN-001",
+    "LIN-005",
+    "LIN-009"
+   ],
+   "observacao": "Programa revisado em reunião interdisciplinar; ajustes de critério previstos a cada reavaliação trimestral.",
+   "ajudaHelpTypeIds": [
+    "verbal",
+    "independente"
+   ],
+   "sistemaEsvanecimento": "Mais para menos: inicia com modelo verbal completo, reduzindo para dica parcial e depois expectante.",
+   "procedimentoEnsino": "Treino por Tentativa Discreta, com uso de dicas verbais e visuais (CAA quando indicado).",
+   "criterioAquisicaoPercent": 90,
+   "criterioAquisicaoDias": 3,
+   "consequencia": "Reforço social pareado ao acesso ao item/atividade solicitada, quando aplicável (manding).",
+   "correcaoErro": "Bloqueio da resposta incorreta, modelo correto imediato, nova tentativa em até 5 segundos.",
+   "manutencao": {
+    "blocos": [
+     {
+      "vezesPorSemana": 3,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 2,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 1,
+      "semanas": 8
+     }
+    ]
+   },
+   "passosEnsino": [
+    "Emite aproximação vocal ou gestual ao estímulo.",
+    "Emite resposta correta com ajuda verbal total.",
+    "Emite resposta correta com dica parcial (primeiro fonema/gesto).",
+    "Emite resposta correta de forma independente."
+   ],
+   "generalizacao": "Praticado com ao menos 3 interlocutores (terapeuta, familiar, professora) e 2 ambientes distintos."
+  },
+  {
+   "id": "PRG-PEI-0003",
+   "origem": "pei",
+   "objetivoPeiId": "OBJ-CMP-0011",
+   "itemPortageId": "COG-001",
+   "area": "cognicao",
+   "nome": "Programa de Ensino — Cognição",
+   "estimuloDiscriminativo": "Ocorrência de uma atividade estruturada em mesa (encaixe, classificação, sequência lógica) apresentada pela terapeuta com materiais concretos.",
+   "respostaEsperada": [
+    "COG-001",
+    "COG-005",
+    "COG-009",
+    "COG-013"
+   ],
+   "observacao": "Programa revisado em reunião interdisciplinar; ajustes de critério previstos a cada reavaliação trimestral.",
+   "ajudaHelpTypeIds": [
+    "fisica_parcial",
+    "gestual"
+   ],
+   "sistemaEsvanecimento": "Mais para menos: ajuda física parcial reduzida progressivamente até realização independente.",
+   "procedimentoEnsino": "Treino por Tentativa Discreta, com apresentação de 3 a 5 estímulos por bloco e reforço diferencial.",
+   "criterioAquisicaoPercent": 90,
+   "criterioAquisicaoDias": 3,
+   "consequencia": "Reforço social de alta magnitude e, em fase inicial, reforço tangível pareado.",
+   "correcaoErro": "Interrupção sem ênfase negativa, remoção do material, reapresentação com ajuda física parcial.",
+   "manutencao": {
+    "blocos": [
+     {
+      "vezesPorSemana": 3,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 2,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 1,
+      "semanas": 8
+     }
+    ]
+   },
+   "passosEnsino": [
+    "Discrimina o estímulo-alvo entre 2 opções com ajuda física.",
+    "Discrimina entre 3 opções com dica gestual.",
+    "Realiza a tarefa completa com dica verbal mínima.",
+    "Realiza a tarefa completa de forma independente."
+   ],
+   "generalizacao": "Praticado com materiais variados (cores, formas e tamanhos diferentes dos utilizados no treino)."
+  },
+  {
+   "id": "PRG-PEI-0004",
+   "origem": "pei",
+   "objetivoPeiId": "OBJ-CMP-0015",
+   "itemPortageId": "AUT-001",
+   "area": "autocuidados",
+   "nome": "Programa de Ensino — Autocuidados",
+   "estimuloDiscriminativo": "Ocorrência do momento natural de rotina (troca, alimentação, higiene) em que a tarefa de autocuidado é esperada.",
+   "respostaEsperada": [
+    "AUT-001",
+    "AUT-005",
+    "AUT-009",
+    "AUT-013"
+   ],
+   "observacao": "Programa revisado em reunião interdisciplinar; ajustes de critério previstos a cada reavaliação trimestral.",
+   "ajudaHelpTypeIds": [
+    "fisica_total",
+    "fisica_parcial"
+   ],
+   "sistemaEsvanecimento": "Mais para menos: ajuda física total nas primeiras sessões, reduzida a cada critério atingido.",
+   "procedimentoEnsino": "Modelagem com encadeamento para trás (backward chaining), integrado à rotina natural.",
+   "criterioAquisicaoPercent": 90,
+   "criterioAquisicaoDias": 3,
+   "consequencia": "Reforço social de alta magnitude e acesso a atividade preferida ao final da rotina.",
+   "correcaoErro": "Redirecionamento físico suave até completar o passo, sem reforço nesse ciclo específico.",
+   "manutencao": {
+    "blocos": [
+     {
+      "vezesPorSemana": 3,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 2,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 1,
+      "semanas": 8
+     }
+    ]
+   },
+   "passosEnsino": [
+    "Permite a ajuda física total durante o passo da rotina.",
+    "Realiza parte do passo com ajuda física parcial.",
+    "Inicia o passo de forma independente, completando com dica verbal.",
+    "Realiza o passo completo de forma independente."
+   ],
+   "generalizacao": "Praticado nos ambientes domiciliar e escolar, com cuidadores diferentes orientados pela equipe."
+  },
+  {
+   "id": "PRG-PEI-0005",
+   "origem": "pei",
+   "objetivoPeiId": "OBJ-CMP-0019",
+   "itemPortageId": "MOT-001",
+   "area": "motor",
+   "nome": "Programa de Ensino — Desenvolvimento Motor",
+   "estimuloDiscriminativo": "Ocorrência de uma atividade motora estruturada (circuito, jogo com bola, tarefa de coordenação fina) proposta pela terapeuta.",
+   "respostaEsperada": [
+    "MOT-001",
+    "MOT-005"
+   ],
+   "observacao": "Programa revisado em reunião interdisciplinar; ajustes de critério previstos a cada reavaliação trimestral.",
+   "ajudaHelpTypeIds": [
+    "fisica_parcial",
+    "independente"
+   ],
+   "sistemaEsvanecimento": "Mais para menos: apoio físico parcial reduzido conforme estabilidade e coordenação evoluem.",
+   "procedimentoEnsino": "Modelagem com prática distribuída e repetição em blocos curtos, com pausas programadas.",
+   "criterioAquisicaoPercent": 90,
+   "criterioAquisicaoDias": 3,
+   "consequencia": "Reforço social de alta magnitude, com ênfase em feedback específico sobre o movimento realizado.",
+   "correcaoErro": "Pausa breve, demonstração do movimento correto, nova tentativa com ajuda física parcial.",
+   "manutencao": {
+    "blocos": [
+     {
+      "vezesPorSemana": 3,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 2,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 1,
+      "semanas": 8
+     }
+    ]
+   },
+   "passosEnsino": [
+    "Realiza o movimento com apoio físico total.",
+    "Realiza o movimento com apoio físico parcial.",
+    "Realiza o movimento com supervisão próxima, sem contato físico.",
+    "Realiza o movimento de forma independente e estável."
+   ],
+   "generalizacao": "Praticado em superfícies e contextos variados (sala de terapia, pátio, ambiente domiciliar)."
+  }
+ ],
+ "equipe": [],
+ "observacoes": "Caso de demonstração (mock) gerado para validar o layout completo do documento impresso do PEI — não corresponde a paciente real."
+}

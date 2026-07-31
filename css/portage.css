@@ -1,3 +1,14 @@
+/* Paleta de identidade dos documentos de impressão (PEI, Perfil de Desenvolvimento) —
+   aplicada com moderação: título, bordas, sub-cabeçalhos. Corpo de texto e tabelas em
+   tons neutros para manter a sobriedade de um documento clínico. */
+:root {
+  --doc-sage: #A0B393;
+  --doc-sage-dark: #7A8F6C;
+  --doc-orange: #E88C38;
+  --doc-ink: #33402c;
+  --doc-ice: #F6F5F4;
+}
+
 #patients-section-switcher.section-switcher { justify-content: center; }
 .section-switcher-break { flex-basis: 100%; height: 0; }
 
@@ -35,7 +46,7 @@
 .portage-resumo-card .area-idade { font-size: 20px; font-weight: 800; color: var(--primary); }
 .portage-resumo-card .area-idade.sem-dado { font-size: 13px; color: var(--muted); font-weight: 600; }
 
-.portage-tabela-area { margin-bottom: 22px; }
+.portage-tabela-area { margin-bottom: 22px; table-layout: fixed; }
 .portage-tabela-area:last-child { margin-bottom: 0; }
 .portage-tabela-area thead tr:first-child th { background: var(--panel-soft); font-size: 12.5px; text-transform: none; letter-spacing: normal; color: var(--text, #1a1a2e); }
 .portage-tabela-area thead tr:nth-child(2) th { cursor: help; }
@@ -47,14 +58,103 @@
 .portage-grafico-area { padding: 18px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: #fff; }
 .portage-grafico-titulo { font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 14px; }
 
-.pei-objetivo-card { border: 1px solid var(--border); border-radius: var(--radius-sm); background: #fff; padding: 16px 18px; margin-bottom: 14px; }
-.pei-objetivo-card .pei-objetivo-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
-.pei-objetivo-card textarea, .pei-objetivo-card input { width: 100%; }
-.pei-objetivo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
+.pei-objetivo-card, .pei-programa-card { border: 1px solid var(--border); border-radius: var(--radius-sm); background: #fff; padding: 16px 18px; margin-bottom: 14px; }
+.pei-objetivo-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
+.pei-objetivo-card textarea, .pei-objetivo-card input, .pei-programa-card textarea, .pei-programa-card input { width: 100%; }
 
-@media print {
-  .page-header, .tab-switcher, .patient-switcher, .section-switcher, #toast-region, .pei-no-print { display: none !important; }
-  .main { margin: 0; padding: 0; }
-  .pei-objetivo-card { break-inside: avoid; border: 1px solid #ccc; }
-  body { background: #fff; }
+.pei-contexto-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.pei-programa-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 10px 0; }
+@media (max-width: 900px) { .pei-contexto-grid, .pei-programa-grid { grid-template-columns: 1fr; } }
+
+.pei-chip-group { display: flex; flex-wrap: wrap; gap: 6px; }
+.pei-chip { display: inline-flex; align-items: center; gap: 5px; padding: 5px 10px; border-radius: 16px; border: 1.5px solid var(--border); background: #fff; font-size: 11.5px; font-weight: 600; color: var(--muted); cursor: pointer; }
+.pei-chip.checked, .pei-chip:has(input:checked) { background: var(--primary-soft); border-color: var(--primary); color: var(--primary); }
+.pei-chip input { width: auto !important; margin: 0; }
+
+.pei-frase-contexto { margin-top: 12px; padding: 10px 14px; background: var(--panel-soft); border-radius: var(--radius-sm); font-size: 12px; font-style: italic; color: var(--muted); }
+
+.pei-resposta-esperada { margin: 0; padding-left: 18px; font-size: 12.5px; color: var(--muted); line-height: 1.7; }
+
+.pei-manutencao-grid { display: flex; gap: 12px; flex-wrap: wrap; }
+.pei-manutencao-bloco { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 10px; background: var(--panel-soft); border-radius: var(--radius-sm); flex: 1; min-width: 180px; }
+
+/* Documento formal do PEI — gerado sob demanda em #pei-documento-impressao (.doc-print-only),
+   ver css/print.css para as regras genéricas de impressão (allowlist, @page, paginação).
+   Paleta de identidade aplicada com moderação (título, bordas, sub-cabeçalhos) — corpo do
+   texto e tabelas seguem em tons neutros para manter a sobriedade de um documento clínico. */
+/* Estrutura comum aos documentos impressos (PEI e Perfil de Desenvolvimento) — repetida
+   sob os prefixos .pei-doc-* e .portagePerfil-doc-* (cada tela gera seu próprio container),
+   mas com identidade visual mais presente: selo institucional, título em bloco preenchido,
+   hierarquia clara entre título de documento / seção / sub-bloco. */
+.pei-doc, .portagePerfil-doc {
+  color: #1f2a1a;
+  font-size: 12px;
+  line-height: 1.6;
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+}
+
+.pei-doc-header, .portagePerfil-doc-header {
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  background: var(--doc-ink); color: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 14px 18px;
+  margin-bottom: 0;
+}
+.pei-doc-header img, .portagePerfil-doc-header img { max-height: 48px; border-radius: 6px; }
+.pei-doc-selo, .portagePerfil-doc-selo {
+  width: 42px; height: 42px; border-radius: 10px; background: var(--doc-orange); color: #fff;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  font-weight: 900; font-size: 13px; line-height: 1; flex-direction: column; letter-spacing: -0.5px;
+}
+.pei-doc-selo .plus, .portagePerfil-doc-selo .plus { font-size: 17px; }
+.pei-doc-selo .sub, .portagePerfil-doc-selo .sub { font-size: 6px; font-weight: 700; letter-spacing: 1px; margin-top: 1px; }
+.pei-doc-institution, .portagePerfil-doc-institution { display: flex; align-items: center; gap: 10px; font-size: 10.5px; line-height: 1.5; color: rgba(255,255,255,0.85); }
+.pei-doc-institution .name, .portagePerfil-doc-institution .name { font-size: 15px; font-weight: 800; color: #fff; letter-spacing: 0.01em; }
+.pei-doc-meta, .portagePerfil-doc-meta { text-align: right; font-size: 10px; color: rgba(255,255,255,0.8); line-height: 1.6; }
+.pei-doc-meta b, .portagePerfil-doc-meta b { color: #fff; }
+
+.pei-doc-title, .portagePerfil-doc-title {
+  text-align: center; font-size: 18px; font-weight: 800; margin: 0 0 18px;
+  text-transform: uppercase; letter-spacing: 0.05em; color: #fff;
+  background: linear-gradient(120deg, var(--doc-sage-dark), var(--doc-sage) 85%);
+  padding: 10px; border-radius: 0 0 10px 10px;
+}
+
+.pei-doc-section, .portagePerfil-doc-section { margin-bottom: 20px; }
+.pei-doc-section h4, .portagePerfil-doc-section h4 {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 12.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;
+  color: #fff; background: var(--doc-sage-dark);
+  padding: 6px 12px; border-radius: 5px; margin-bottom: 10px;
+}
+.pei-doc-section h4::before, .portagePerfil-doc-section h4::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--doc-orange); flex-shrink: 0; }
+.pei-doc-section p { margin: 0 0 6px; }
+
+.pei-doc-kv, .portagePerfil-doc-kv { margin-bottom: 4px; padding-left: 2px; }
+.pei-doc-kv b, .portagePerfil-doc-kv b { font-weight: 700; color: var(--doc-ink); }
+
+.pei-doc-area-titulo, .portagePerfil-doc-area-titulo {
+  display: inline-block; font-size: 11.5px; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.03em; margin: 14px 0 6px; color: #fff; background: var(--doc-orange);
+  padding: 3px 10px; border-radius: 4px;
+}
+
+table.pei-doc-table, table.portagePerfil-doc-table { width: 100%; border-collapse: collapse; margin-bottom: 14px; font-size: 11px; }
+table.pei-doc-table th, table.pei-doc-table td,
+table.portagePerfil-doc-table th, table.portagePerfil-doc-table td { border: 1px solid #d8ddd2; padding: 7px 9px; text-align: left; vertical-align: top; }
+table.pei-doc-table th, table.portagePerfil-doc-table th { background: var(--doc-sage); color: #fff; font-weight: 700; text-transform: uppercase; font-size: 10px; letter-spacing: 0.03em; }
+table.pei-doc-table tbody tr:nth-child(even), table.portagePerfil-doc-table tbody tr:nth-child(even) { background: var(--doc-ice); }
+
+.pei-doc-programa {
+  margin-bottom: 18px; padding: 12px 14px;
+  background: var(--doc-ice); border-left: 4px solid var(--doc-orange); border-radius: 0 6px 6px 0;
+}
+.pei-doc-programa h5 { font-size: 12.5px; font-weight: 800; margin: 0 0 8px; color: var(--doc-ink); }
+
+.pei-doc-signature, .portagePerfil-doc-signature { margin-top: 44px; text-align: center; font-size: 11.5px; }
+.pei-doc-signature .linha, .portagePerfil-doc-signature .linha { width: 280px; margin: 0 auto 4px; border-top: 1.5px solid var(--doc-sage-dark); }
+
+.pei-doc-footer-fixo, .portagePerfil-doc-footer-fixo {
+  position: fixed; bottom: 8mm; left: 0; right: 0; text-align: center; font-size: 9px; color: #fff;
+  background: var(--doc-ink); padding: 4px 0; letter-spacing: 0.02em;
 }

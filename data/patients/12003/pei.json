@@ -1,255 +1,231 @@
 {
- "geradoEm": "2026-07-30T20:17:12.340Z",
+ "geradoEm": "2026-07-31T12:39:35.911Z",
  "aplicacaoId": "AV-0001",
- "vigencia": {
-  "inicio": "2026-06-01",
-  "revisao": null
- },
- "areasPrioritarias": [
-  "cognicao",
-  "linguagem",
-  "autocuidados",
-  "socializacao",
-  "motor"
- ],
- "objetivos": [
+ "objetivosLongoPrazo": [
   {
-   "id": "OBJ-0001",
+   "id": "OBJ-LP-0001",
    "area": "socializacao",
    "itemId": "SOC-057",
-   "prioridade": "alta",
-   "longoPrazo": "Diz \"Por favor\" e \"Obrigado\" sem ser lembrado ½ das vezes.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "descricao": "Diz \"Por favor\" e \"Obrigado\" sem ser lembrado ½ das vezes.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
   },
   {
-   "id": "OBJ-0002",
-   "area": "socializacao",
-   "itemId": "SOC-059",
-   "prioridade": "alta",
-   "longoPrazo": "Espera a sua vez.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0003",
+   "id": "OBJ-LP-0002",
    "area": "socializacao",
    "itemId": "SOC-058",
-   "prioridade": "media",
-   "longoPrazo": "Atende ao telefone, chamando um adulto e falando com pessoas familiares.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "descricao": "Atende ao telefone, chamando um adulto e falando com pessoas familiares.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
   },
   {
-   "id": "OBJ-0004",
+   "id": "OBJ-LP-0003",
+   "area": "socializacao",
+   "itemId": "SOC-059",
+   "descricao": "Espera a sua vez.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0004",
+   "area": "socializacao",
+   "itemId": "SOC-060",
+   "descricao": "Segue regras em jogos dirigidos por uma criança mais velha.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0005",
    "area": "linguagem",
    "itemId": "LIN-061",
-   "prioridade": "alta",
-   "longoPrazo": "Obedece à sequência de 2 ordens não relacionadas.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "descricao": "Obedece à sequência de 2 ordens não relacionadas.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
   },
   {
-   "id": "OBJ-0005",
+   "id": "OBJ-LP-0006",
    "area": "linguagem",
    "itemId": "LIN-063",
-   "prioridade": "alta",
-   "longoPrazo": "Responde perguntas simples envolvendo \"Como\".",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "descricao": "Responde perguntas simples envolvendo \"Como\".",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  }
+ ],
+ "objetivosCurtoMedioPrazo": [],
+ "programas": [
+  {
+   "id": "PRG-PEI-0001",
+   "origem": "pei",
+   "objetivoPeiId": "OBJ-LP-0001",
+   "itemPortageId": "SOC-057",
+   "area": "socializacao",
+   "nome": "Programa de Socialização",
+   "estimuloDiscriminativo": "",
+   "respostaEsperada": [
+    "SOC-057",
+    "SOC-058",
+    "SOC-059",
+    "SOC-060"
+   ],
+   "observacao": "",
+   "ajudaHelpTypeIds": [],
+   "sistemaEsvanecimento": "",
+   "procedimentoEnsino": "",
+   "criterioAquisicaoPercent": 90,
+   "criterioAquisicaoDias": 3,
+   "consequencia": "",
+   "correcaoErro": "",
+   "manutencao": {
+    "blocos": [
+     {
+      "vezesPorSemana": 3,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 2,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 1,
+      "semanas": 8
+     }
+    ]
+   },
+   "passosEnsino": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "generalizacao": ""
   },
   {
-   "id": "OBJ-0006",
+   "id": "PRG-PEI-0002",
+   "origem": "pei",
+   "objetivoPeiId": "OBJ-LP-0005",
+   "itemPortageId": "LIN-061",
    "area": "linguagem",
-   "itemId": "LIN-064",
-   "prioridade": "alta",
-   "longoPrazo": "Emprega verbos regulares, no passado.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0007",
-   "area": "cognicao",
-   "itemId": "COG-032",
-   "prioridade": "alta",
-   "longoPrazo": "Aponta o \"pequeno\" e o \"grande\" quando solicitado.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0008",
-   "area": "cognicao",
-   "itemId": "COG-033",
-   "prioridade": "alta",
-   "longoPrazo": "Desenha (+) imitando um adulto.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0009",
-   "area": "cognicao",
-   "itemId": "COG-027",
-   "prioridade": "media",
-   "longoPrazo": "Nomeia 4 objetos comuns em figuras.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0010",
-   "area": "autocuidados",
-   "itemId": "AUT-071",
-   "prioridade": "alta",
-   "longoPrazo": "Abotoa sua roupa.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0011",
-   "area": "autocuidados",
-   "itemId": "AUT-077",
-   "prioridade": "alta",
-   "longoPrazo": "Limpa e assua o nariz em 75% das vezes sem ser lembrado",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0012",
-   "area": "autocuidados",
-   "itemId": "AUT-081",
-   "prioridade": "alta",
-   "longoPrazo": "Veste-se sozinho, mas não dá laços.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0013",
-   "area": "motor",
-   "itemId": "MOT-096",
-   "prioridade": "alta",
-   "longoPrazo": "Fica em um só pé sem apoio por 4 a 8 segundos.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0014",
-   "area": "motor",
-   "itemId": "MOT-108",
-   "prioridade": "media",
-   "longoPrazo": "Salta em um só pé 5 vezes consecutivas.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "nome": "Programa de Linguagem",
+   "estimuloDiscriminativo": "",
+   "respostaEsperada": [
+    "LIN-061",
+    "LIN-063"
+   ],
+   "observacao": "",
+   "ajudaHelpTypeIds": [],
+   "sistemaEsvanecimento": "",
+   "procedimentoEnsino": "",
+   "criterioAquisicaoPercent": 90,
+   "criterioAquisicaoDias": 3,
+   "consequencia": "",
+   "correcaoErro": "",
+   "manutencao": {
+    "blocos": [
+     {
+      "vezesPorSemana": 3,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 2,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 1,
+      "semanas": 8
+     }
+    ]
+   },
+   "passosEnsino": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "generalizacao": ""
   }
  ],
  "equipe": [],

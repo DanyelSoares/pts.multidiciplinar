@@ -24,8 +24,10 @@
         "name": "Comunicação funcional por troca de figuras (PECS)",
         "areaId": "communication",
         "statusId": "in_progress",
-        "frequencyId": "custom",
-        "frequencyNote": "3x por semana, 30 min"
+        "frequencyQuantidade": 3,
+        "frequencyPeriodo": "semana",
+        "frequencyDuracao": 30,
+        "frequencyUnidade": "minutos"
       },
       "sessions": []
     },
@@ -52,8 +54,10 @@
         "name": "Nomeação e apontamento de figuras para expressar necessidades",
         "areaId": "communication",
         "statusId": "in_progress",
-        "frequencyId": "custom",
-        "frequencyNote": "2x por semana, 30 min"
+        "frequencyQuantidade": 2,
+        "frequencyPeriodo": "semana",
+        "frequencyDuracao": 30,
+        "frequencyUnidade": "minutos"
       },
       "sessions": []
     }

@@ -158,12 +158,14 @@ export async function mount() {
         </div>
       </div>
       <div class="panel-body">
-        <table>
-          <thead>
-            <tr><th>ID</th><th>Paciente / Carteirinha</th><th>Supervisor</th><th>Versão</th><th>Situação</th><th>Próx. revisão</th><th>Progresso</th><th>Alertas</th><th></th></tr>
-          </thead>
-          <tbody id="patients-tbody">${allPatients.map(patientRow).join('')}</tbody>
-        </table>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th>ID</th><th>Paciente / Carteirinha</th><th>Supervisor</th><th>Versão</th><th>Situação</th><th>Próx. revisão</th><th>Progresso</th><th>Alertas</th><th></th></tr>
+            </thead>
+            <tbody id="patients-tbody">${allPatients.map(patientRow).join('')}</tbody>
+          </table>
+        </div>
       </div>
     </div>
 

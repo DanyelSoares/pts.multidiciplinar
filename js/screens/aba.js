@@ -1,12 +1,20 @@
 import Store from '../core/store.js';
 import Patient from '../core/patient.js';
+import Router from '../core/router.js';
 import Config from '../core/config.js';
 import Catalog from '../core/catalog.js';
 import LocalData from '../core/localData.js';
 import Toast from '../core/toast.js';
 import { calcularSerieSessoes } from '../core/abaEngine.js';
+import { carregarInventario, buscarItemPorId } from '../core/portage.js';
 import { escapeHtml, qs, qsa, emptyState } from '../core/dom.js';
-import { PROGRAM_FREQUENCIES, PROGRAM_STATUSES } from '../core/programOptions.js';
+import { PROGRAM_STATUSES, FREQUENCY_PERIODOS, FREQUENCY_UNIDADES, frequencyDescricao } from '../core/programOptions.js';
+
+function carregarDocumento(name, patientId) {
+  const local = LocalData.getDoc(name, patientId);
+  if (local) return Promise.resolve(local);
+  return Store.load(name, patientId);
+}
 
 let estado = null; // { patientId, config, stimulusById, helpTypeById, areaById }
 
@@ -42,10 +50,12 @@ function promptModeLabel(mode) {
 }
 
 function frequencyLabel(c) {
-  const freq = PROGRAM_FREQUENCIES.find((f) => f.id === c.frequencyId);
-  if (!freq) return null;
-  if (freq.id === 'custom' && c.frequencyNote) return `${freq.label} — ${c.frequencyNote}`;
-  return freq.label;
+  return frequencyDescricao({
+    quantidade: c.frequencyQuantidade,
+    periodo: c.frequencyPeriodo,
+    duracao: c.frequencyDuracao,
+    unidade: c.frequencyUnidade,
+  });
 }
 
 function statusLabelFromConfig(c) {
@@ -61,6 +71,50 @@ const STATUS_PILL_CLASS = {
 
 function statusPillClass(c) {
   return STATUS_PILL_CLASS[c.statusId] || 'muted';
+}
+
+function peiProgramCard(programa, inventario) {
+  const { helpTypeById } = estado;
+  const area = inventario.areas.find((a) => a.id === programa.area);
+  const ajudas = (programa.ajudaHelpTypeIds || [])
+    .map((id) => helpTypeById.get(id)?.label)
+    .filter(Boolean)
+    .join(', ');
+  const respostaEsperada = (programa.respostaEsperada || [])
+    .map((itemId) => buscarItemPorId(itemId))
+    .filter(Boolean)
+    .map((item) => `<li>${escapeHtml(item.id)} — ${escapeHtml(item.titulo)}</li>`)
+    .join('');
+
+  return `
+    <div class="aba-card">
+      <div class="aba-card-head">
+        <div>
+          <div class="name">${escapeHtml(programa.nome)}</div>
+          <div class="obj-link"><i class="fa-solid fa-link"></i> Objetivo PEI: ${escapeHtml(programa.objetivoPeiId)} · Item Portage: ${escapeHtml(programa.itemPortageId)}</div>
+        </div>
+        <span class="pill info">Origem: PEI</span>
+      </div>
+      <div class="kv-grid">
+        ${area ? kv('Área', area.nome) : ''}
+        ${ajudas ? kv('Ajudas', ajudas) : ''}
+        ${programa.procedimentoEnsino ? kv('Procedimento de ensino', programa.procedimentoEnsino) : ''}
+        ${programa.criterioAquisicaoPercent ? kv('Critério de aquisição', `${programa.criterioAquisicaoPercent}% por ${programa.criterioAquisicaoDias} dias`) : ''}
+      </div>
+      ${programa.estimuloDiscriminativo ? `
+      <div class="aba-field" style="margin-top:14px;">
+        <div class="k">Estímulo discriminativo</div>
+        <div class="v">${escapeHtml(programa.estimuloDiscriminativo)}</div>
+      </div>` : ''}
+      ${respostaEsperada ? `
+      <div class="aba-field">
+        <div class="k">Resposta esperada (itens do Portage)</div>
+        <ul class="pei-resposta-esperada">${respostaEsperada}</ul>
+      </div>` : ''}
+      <div style="margin-top:14px;">
+        <button type="button" class="btn btn-ghost btn-sm" data-goto-pei><i class="fa-solid fa-pen-to-square"></i> Editar no PEI</button>
+      </div>
+    </div>`;
 }
 
 function activeProgram(p) {
@@ -158,22 +212,35 @@ function renderConfigForm(program) {
 
   const name = c.name ?? program.name;
   const areaId = c.areaId ?? '';
-  const frequencyId = c.frequencyId ?? 'daily';
-  const frequencyNote = c.frequencyNote ?? '';
+  const frequencyQuantidade = c.frequencyQuantidade ?? 1;
+  const frequencyPeriodo = c.frequencyPeriodo ?? 'semana';
+  const frequencyDuracao = c.frequencyDuracao ?? 30;
+  const frequencyUnidade = c.frequencyUnidade ?? 'minutos';
   const statusId = c.statusId ?? 'not_started';
   const helpsCount = c.helpsCount ?? null;
   const helpsCountRequired = helpsCount !== null;
 
-  const stimulusOptions = stimuli
-    .map((s) => `<option value="${escapeHtml(s.id)}" ${c.stimulusIds.includes(s.id) ? 'selected' : ''}>${escapeHtml(s.label)}</option>`)
+  const stimulusChecks = stimuli
+    .map((s) => {
+      const marcado = c.stimulusIds.includes(s.id);
+      return `
+      <label class="aba-stimulus-check${marcado ? ' checked' : ''}">
+        <input type="checkbox" data-cfg-stimulus="${escapeHtml(s.id)}" ${marcado ? 'checked' : ''}>
+        ${escapeHtml(s.label)}
+      </label>`;
+    })
     .join('');
 
   const areaOptions = areas
     .map((a) => `<option value="${escapeHtml(a.id)}" ${a.id === areaId ? 'selected' : ''}>${escapeHtml(a.label)}</option>`)
     .join('');
 
-  const frequencyOptions = PROGRAM_FREQUENCIES
-    .map((f) => `<option value="${f.id}" ${f.id === frequencyId ? 'selected' : ''}>${escapeHtml(f.label)}</option>`)
+  const periodoOptions = FREQUENCY_PERIODOS
+    .map((p) => `<option value="${p.id}" ${p.id === frequencyPeriodo ? 'selected' : ''}>${escapeHtml(p.label)}</option>`)
+    .join('');
+
+  const unidadeOptions = FREQUENCY_UNIDADES
+    .map((u) => `<option value="${u.id}" ${u.id === frequencyUnidade ? 'selected' : ''}>${escapeHtml(u.label)}</option>`)
     .join('');
 
   const statusOptions = PROGRAM_STATUSES
@@ -198,21 +265,37 @@ function renderConfigForm(program) {
         </div>
         <div class="filter-row" style="margin-bottom:12px;">
           <div class="field-group">
-            <label>Frequência de aplicação</label>
-            <select class="select-input" id="cfg-frequency">
-              ${frequencyOptions}
-            </select>
-          </div>
-          <div class="field-group" id="cfg-frequency-note-wrap" style="${frequencyId === 'custom' ? '' : 'display:none;'}">
-            <label>Descrição da frequência</label>
-            <input class="search-input" id="cfg-frequency-note" value="${escapeHtml(frequencyNote)}" style="width:100%;padding:0 13px;" placeholder="Ex.: 2x por semana, em dias alternados">
-          </div>
-          <div class="field-group">
             <label>Status do programa</label>
             <select class="select-input" id="cfg-status">
               ${statusOptions}
             </select>
           </div>
+        </div>
+        <div class="field-group" style="margin-bottom:12px;">
+          <label>Frequência de aplicação</label>
+          <div class="filter-row" style="align-items:flex-end;">
+            <div class="field-group">
+              <label style="font-size:11px;">Vezes</label>
+              <input type="number" min="1" max="15" class="search-input" id="cfg-freq-quantidade" value="${frequencyQuantidade}" style="width:80px;">
+            </div>
+            <div class="field-group">
+              <label style="font-size:11px;">Por</label>
+              <select class="select-input" id="cfg-freq-periodo" style="width:120px;">
+                ${periodoOptions}
+              </select>
+            </div>
+            <div class="field-group">
+              <label style="font-size:11px;">Duração</label>
+              <input type="number" min="1" max="60" class="search-input" id="cfg-freq-duracao" value="${frequencyDuracao}" style="width:80px;">
+            </div>
+            <div class="field-group">
+              <label style="font-size:11px;">Unidade</label>
+              <select class="select-input" id="cfg-freq-unidade" style="width:120px;">
+                ${unidadeOptions}
+              </select>
+            </div>
+          </div>
+          <div class="footnote" id="cfg-freq-preview" style="margin:8px 0 0;padding:6px 10px;"><i class="fa-solid fa-circle-info"></i> ${escapeHtml(frequencyDescricao({ quantidade: frequencyQuantidade, periodo: frequencyPeriodo, duracao: frequencyDuracao, unidade: frequencyUnidade }) || '')}</div>
         </div>
         <div class="filter-row" style="margin-bottom:12px;">
           <div class="field-group">
@@ -247,9 +330,9 @@ function renderConfigForm(program) {
         </div>
         <div class="field-group" style="margin-bottom:12px;">
           <label>Estímulos a apresentar (define o que a tela de evolução oferece para registro)</label>
-          <select class="select-input" id="cfg-stimuli" multiple size="5" style="height:auto;padding:8px;">
-            ${stimulusOptions}
-          </select>
+          <div class="aba-stimulus-checks">
+            ${stimulusChecks}
+          </div>
         </div>
         <div style="display:flex;justify-content:flex-end;">
           <button class="btn btn-primary btn-sm" type="button" id="cfg-save"><i class="fa-solid fa-floppy-disk"></i> Salvar configuração</button>
@@ -258,10 +341,28 @@ function renderConfigForm(program) {
     </div>`;
 }
 
+function atualizarPreviewFrequencia() {
+  const preview = qs('#cfg-freq-preview');
+  if (!preview) return;
+  const descricao = frequencyDescricao({
+    quantidade: parseInt(qs('#cfg-freq-quantidade').value, 10),
+    periodo: qs('#cfg-freq-periodo').value,
+    duracao: parseInt(qs('#cfg-freq-duracao').value, 10),
+    unidade: qs('#cfg-freq-unidade').value,
+  });
+  preview.innerHTML = `<i class="fa-solid fa-circle-info"></i> ${escapeHtml(descricao || '')}`;
+}
+
 function bindConfigForm(program) {
-  const frequencySelect = qs('#cfg-frequency');
-  frequencySelect.addEventListener('change', () => {
-    qs('#cfg-frequency-note-wrap').style.display = frequencySelect.value === 'custom' ? '' : 'none';
+  qsa('#cfg-freq-quantidade, #cfg-freq-periodo, #cfg-freq-duracao, #cfg-freq-unidade').forEach((el) => {
+    el.addEventListener('input', atualizarPreviewFrequencia);
+    el.addEventListener('change', atualizarPreviewFrequencia);
+  });
+
+  qsa('[data-cfg-stimulus]').forEach((cb) => {
+    cb.addEventListener('change', () => {
+      cb.closest('.aba-stimulus-check').classList.toggle('checked', cb.checked);
+    });
   });
 
   const helpsCountEnabled = qs('#cfg-helps-count-enabled');
@@ -271,7 +372,7 @@ function bindConfigForm(program) {
   });
 
   qs('#cfg-save').addEventListener('click', () => {
-    const stimulusIds = Array.from(qs('#cfg-stimuli').selectedOptions).map((o) => o.value);
+    const stimulusIds = qsa('[data-cfg-stimulus]').filter((cb) => cb.checked).map((cb) => cb.dataset.cfgStimulus);
     if (!stimulusIds.length) {
       Toast.show('Selecione ao menos um estímulo.', { kind: 'warning' });
       return;
@@ -298,8 +399,10 @@ function bindConfigForm(program) {
     const newConfig = {
       name,
       areaId: qs('#cfg-area').value || null,
-      frequencyId: qs('#cfg-frequency').value,
-      frequencyNote: qs('#cfg-frequency-note').value.trim(),
+      frequencyQuantidade: parseInt(qs('#cfg-freq-quantidade').value, 10) || 1,
+      frequencyPeriodo: qs('#cfg-freq-periodo').value,
+      frequencyDuracao: parseInt(qs('#cfg-freq-duracao').value, 10) || 1,
+      frequencyUnidade: qs('#cfg-freq-unidade').value,
       statusId: qs('#cfg-status').value,
       model: qs('#cfg-model').value,
       promptHierarchyMode: promptMode,
@@ -348,26 +451,28 @@ async function refreshScreen() {
   await mount();
 }
 
+function bindGotoPei() {
+  qsa('[data-goto-pei]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      Router.resetAll(['s-dashboard']);
+      Router.go('s-pei');
+    });
+  });
+}
+
 export async function mount() {
   const patientId = Patient.getCurrentId();
-  const [aba, patient, config, areas, stimuli, helpTypes] = await Promise.all([
+  const [aba, patient, config, areas, stimuli, helpTypes, peiDoc, inventario] = await Promise.all([
     Store.load('aba', patientId),
     Store.load('patient', patientId),
     Config.load(),
     Catalog.listAreas(),
     Catalog.listStimuli(),
     Catalog.listHelpTypes(),
+    carregarDocumento('pei', patientId),
+    carregarInventario(),
   ]);
   const root = qs('#s-aba');
-
-  if (aba.empty) {
-    root.innerHTML = `
-      <div class="screen-title"><i class="fa-solid fa-star-of-life"></i> Programas de intervenção ABA</div>
-      <div class="screen-desc">${escapeHtml(patient.id)} · ${escapeHtml(patient.fullName)}</div>
-      ${emptyState(aba.reason)}
-    `;
-    return;
-  }
 
   estado = {
     patientId,
@@ -380,6 +485,28 @@ export async function mount() {
     areaById: new Map(areas.map((a) => [a.id, a])),
   };
 
+  const programasPei = peiDoc.programas || [];
+  const peiCards = programasPei.map((p) => peiProgramCard(p, inventario)).join('');
+
+  if (aba.empty) {
+    if (!programasPei.length) {
+      root.innerHTML = `
+        <div class="screen-title"><i class="fa-solid fa-star-of-life"></i> Programas de intervenção ABA</div>
+        <div class="screen-desc">${escapeHtml(patient.id)} · ${escapeHtml(patient.fullName)}</div>
+        ${emptyState(aba.reason)}
+      `;
+      return;
+    }
+
+    root.innerHTML = `
+      <div class="screen-title"><i class="fa-solid fa-star-of-life"></i> Programas de intervenção ABA</div>
+      <div class="screen-desc">${escapeHtml(patient.id)} · ${escapeHtml(patient.fullName)}</div>
+      ${peiCards}
+    `;
+    bindGotoPei();
+    return;
+  }
+
   const cards = aba.programs.map((p) => (p.config ? activeProgram(p) : draftProgram(p))).join('');
 
   root.innerHTML = `
@@ -389,7 +516,9 @@ export async function mount() {
     <div class="footnote" style="margin-bottom:18px;"><i class="fa-solid fa-circle-info"></i>${escapeHtml(aba.notice)}</div>
 
     ${cards}
+    ${peiCards}
   `;
 
   bindConfigToggles(aba.programs);
+  bindGotoPei();
 }

@@ -24,8 +24,10 @@
         "name": "Ampliação de vocabulário expressivo (nomeação)",
         "areaId": "communication",
         "statusId": "in_progress",
-        "frequencyId": "custom",
-        "frequencyNote": "2x por semana, 30 min"
+        "frequencyQuantidade": 2,
+        "frequencyPeriodo": "semana",
+        "frequencyDuracao": 30,
+        "frequencyUnidade": "minutos"
       },
       "sessions": []
     }

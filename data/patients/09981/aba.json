@@ -33,8 +33,10 @@
         "name": "Solicitação de itens preferidos (manding)",
         "areaId": "communication",
         "statusId": "in_progress",
-        "frequencyId": "custom",
-        "frequencyNote": "3x por semana, 30 min"
+        "frequencyQuantidade": 3,
+        "frequencyPeriodo": "semana",
+        "frequencyDuracao": 30,
+        "frequencyUnidade": "minutos"
       },
       "sessions": [
         {

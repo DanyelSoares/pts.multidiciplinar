@@ -1,7 +1,15 @@
 import Store from '../core/store.js';
 import Patient from '../core/patient.js';
 import Toast from '../core/toast.js';
+import LocalData from '../core/localData.js';
+import { carregarInventario, buscarItemPorId } from '../core/portage.js';
 import { escapeHtml, qs, qsa, emptyState } from '../core/dom.js';
+
+function carregarDocumento(name, patientId) {
+  const local = LocalData.getDoc(name, patientId);
+  if (local) return Promise.resolve(local);
+  return Store.load(name, patientId);
+}
 
 function kv(k, v) {
   return `<div class="kv"><div class="k">${escapeHtml(k)}</div><div class="v">${v}</div></div>`;
@@ -91,11 +99,47 @@ function goalCard(g) {
     </div>`;
 }
 
-function sectionE(pts) {
+function peiObjetivoResumo(objetivo, inventario, area) {
+  const item = buscarItemPorId(objetivo.itemId);
+  return `
+    <div class="kv">
+      <div class="k">${escapeHtml(area ? area.nome : objetivo.area)}</div>
+      <div class="v">${escapeHtml(objetivo.descricao)}${item ? ` <span class="pill muted" style="margin-left:6px;">${escapeHtml(item.id)}</span>` : ''}</div>
+    </div>`;
+}
+
+function secaoObjetivosPei(peiDoc, inventario) {
+  const longoPrazo = peiDoc.objetivosLongoPrazo || [];
+  const curtoMedioPrazo = peiDoc.objetivosCurtoMedioPrazo || [];
+  if (!longoPrazo.length && !curtoMedioPrazo.length) return '';
+
+  const areaPorId = (id) => inventario.areas.find((a) => a.id === id);
+
+  const blocoLongoPrazo = longoPrazo.length
+    ? `<div class="pts-pei-bloco"><span class="pill info">Longo prazo</span><div class="kv-grid" style="margin-top:10px;">${longoPrazo.map((o) => peiObjetivoResumo(o, inventario, areaPorId(o.area))).join('')}</div></div>`
+    : '';
+
+  const blocoCurtoMedioPrazo = curtoMedioPrazo.length
+    ? `<div class="pts-pei-bloco" style="margin-top:16px;"><span class="pill warn">Curto e médio prazo</span><div class="kv-grid" style="margin-top:10px;">${curtoMedioPrazo.map((o) => peiObjetivoResumo(o, inventario, areaPorId(o.area))).join('')}</div></div>`
+    : '';
+
+  return `
+    <div class="panel" style="margin-top:20px;">
+      <div class="panel-header"><h3>Objetivos do PEI</h3></div>
+      <div class="panel-body" style="padding-top:14px;">
+        ${blocoLongoPrazo}
+        ${blocoCurtoMedioPrazo}
+        <div class="footnote" style="margin-top:14px;"><i class="fa-solid fa-circle-info"></i>Objetivos derivados do Inventário Portage — edite-os na tela PEI. Esta lista é independente dos objetivos específicos acima, escritos pela equipe.</div>
+      </div>
+    </div>`;
+}
+
+function sectionE(pts, extras) {
   const cards = pts.specificGoals.map(goalCard).join('');
   const checklist = pts.goalChecklist
     .map((c) => `<span class="pill ${c.ok ? 'ok' : 'warn'}">${escapeHtml(c.label)}</span>`)
     .join('');
+  const objetivosPei = extras ? secaoObjetivosPei(extras.peiDoc, extras.inventario) : '';
   return `
     <div class="panel">
       <div class="panel-header"><h3>E · Objetivos específicos</h3><button class="btn btn-primary btn-sm" type="button" id="btn-new-goal"><i class="fa-solid fa-plus"></i> Novo objetivo</button></div>
@@ -104,7 +148,8 @@ function sectionE(pts) {
     <div class="panel">
       <div class="panel-header"><h3>Verificador de objetivo mensurável</h3></div>
       <div class="panel-body" style="padding-top:14px;display:flex;gap:10px;flex-wrap:wrap;">${checklist}</div>
-    </div>`;
+    </div>
+    ${objetivosPei}`;
 }
 
 function sectionF(pts) {
@@ -171,7 +216,12 @@ function switchSection(sec) {
 
 export async function mount() {
   const id = Patient.getCurrentId();
-  const [pts, patient] = await Promise.all([Store.load('pts', id), Store.load('patient', id)]);
+  const [pts, patient, peiDoc, inventario] = await Promise.all([
+    Store.load('pts', id),
+    Store.load('patient', id),
+    carregarDocumento('pei', id),
+    carregarInventario(),
+  ]);
   const root = qs('#s-goals');
 
   if (pts.empty) {
@@ -183,12 +233,14 @@ export async function mount() {
     return;
   }
 
+  const extras = { peiDoc, inventario };
+
   const nav = Object.keys(SECTION_BUILDERS)
     .map((sec) => `<button class="${sec === 'a' ? 'active' : ''}" data-sec="${sec}">${escapeHtml(SECTION_LABELS[sec])}</button>`)
     .join('');
 
   const sections = Object.keys(SECTION_BUILDERS)
-    .map((sec) => `<div class="pts-section${sec === 'a' ? ' active' : ''}" id="pts-${sec}">${SECTION_BUILDERS[sec](pts)}</div>`)
+    .map((sec) => `<div class="pts-section${sec === 'a' ? ' active' : ''}" id="pts-${sec}">${SECTION_BUILDERS[sec](pts, extras)}</div>`)
     .join('');
 
   root.innerHTML = `

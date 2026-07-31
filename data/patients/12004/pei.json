@@ -1,116 +1,231 @@
 {
- "geradoEm": "2026-07-30T20:17:12.343Z",
+ "geradoEm": "2026-07-31T12:39:35.912Z",
  "aplicacaoId": "AV-0001",
- "vigencia": {
-  "inicio": "2026-07-15",
-  "revisao": null
- },
- "areasPrioritarias": [
-  "linguagem",
-  "socializacao"
- ],
- "objetivos": [
+ "objetivosLongoPrazo": [
   {
-   "id": "OBJ-0001",
+   "id": "OBJ-LP-0001",
    "area": "socializacao",
    "itemId": "SOC-030",
-   "prioridade": "alta",
-   "longoPrazo": "Brinca ao lado de outra criança, cada uma realizando tarefas diferentes.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "descricao": "Brinca ao lado de outra criança, cada uma realizando tarefas diferentes.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
   },
   {
-   "id": "OBJ-0002",
+   "id": "OBJ-LP-0002",
    "area": "socializacao",
    "itemId": "SOC-031",
-   "prioridade": "alta",
-   "longoPrazo": "Toma parte em uma brincadeira com outra criança por 2 a 5 minutos.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "descricao": "Toma parte em uma brincadeira com outra criança por 2 a 5 minutos.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
   },
   {
-   "id": "OBJ-0003",
+   "id": "OBJ-LP-0003",
+   "area": "socializacao",
+   "itemId": "SOC-036",
+   "descricao": "Repete ações que produzem risos e atenção.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0004",
    "area": "socializacao",
    "itemId": "SOC-038",
-   "prioridade": "alta",
-   "longoPrazo": "Puxa uma pessoa a mostrar-lhe algo.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "descricao": "Puxa uma pessoa a mostrar-lhe algo.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
   },
   {
-   "id": "OBJ-0004",
+   "id": "OBJ-LP-0005",
+   "area": "socializacao",
+   "itemId": "SOC-043",
+   "descricao": "Cumprimenta colegas ou adultos quando lembrado.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  },
+  {
+   "id": "OBJ-LP-0006",
    "area": "linguagem",
    "itemId": "LIN-011",
-   "prioridade": "alta",
-   "longoPrazo": "Diz 5 palavras diferentes.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "descricao": "Diz 5 palavras diferentes.",
+   "contexto": {
+    "ocasioes": 10,
+    "publico": [
+     "pais",
+     "professora",
+     "terapeuta"
+    ],
+    "ambientes": [
+     "domiciliar",
+     "escolar",
+     "terapeutico",
+     "social"
+    ],
+    "criterioPercent": 90,
+    "diasConsecutivos": 3
+   }
+  }
+ ],
+ "objetivosCurtoMedioPrazo": [],
+ "programas": [
+  {
+   "id": "PRG-PEI-0001",
+   "origem": "pei",
+   "objetivoPeiId": "OBJ-LP-0001",
+   "itemPortageId": "SOC-030",
+   "area": "socializacao",
+   "nome": "Programa de Socialização",
+   "estimuloDiscriminativo": "",
+   "respostaEsperada": [
+    "SOC-030",
+    "SOC-031",
+    "SOC-036",
+    "SOC-038",
+    "SOC-043"
+   ],
+   "observacao": "",
+   "ajudaHelpTypeIds": [],
+   "sistemaEsvanecimento": "",
+   "procedimentoEnsino": "",
+   "criterioAquisicaoPercent": 90,
+   "criterioAquisicaoDias": 3,
+   "consequencia": "",
+   "correcaoErro": "",
+   "manutencao": {
+    "blocos": [
+     {
+      "vezesPorSemana": 3,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 2,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 1,
+      "semanas": 8
+     }
+    ]
+   },
+   "passosEnsino": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "generalizacao": ""
   },
   {
-   "id": "OBJ-0005",
+   "id": "PRG-PEI-0002",
+   "origem": "pei",
+   "objetivoPeiId": "OBJ-LP-0006",
+   "itemPortageId": "LIN-011",
    "area": "linguagem",
-   "itemId": "LIN-013",
-   "prioridade": "alta",
-   "longoPrazo": "Diz \"acabou\".",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
-  },
-  {
-   "id": "OBJ-0006",
-   "area": "linguagem",
-   "itemId": "LIN-016",
-   "prioridade": "alta",
-   "longoPrazo": "Aponta para 12 objetos quando nomeados.",
-   "condicao": "",
-   "resposta": "",
-   "criterio": "",
-   "estrategias": "",
-   "materiais": "",
-   "responsavel": "",
-   "frequencia": "",
-   "prazoSemanas": 8,
-   "statusObjetivo": "nao_iniciado",
-   "reavaliarEm": ""
+   "nome": "Programa de Linguagem",
+   "estimuloDiscriminativo": "",
+   "respostaEsperada": [
+    "LIN-011"
+   ],
+   "observacao": "",
+   "ajudaHelpTypeIds": [],
+   "sistemaEsvanecimento": "",
+   "procedimentoEnsino": "",
+   "criterioAquisicaoPercent": 90,
+   "criterioAquisicaoDias": 3,
+   "consequencia": "",
+   "correcaoErro": "",
+   "manutencao": {
+    "blocos": [
+     {
+      "vezesPorSemana": 3,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 2,
+      "semanas": 8
+     },
+     {
+      "vezesPorSemana": 1,
+      "semanas": 8
+     }
+    ]
+   },
+   "passosEnsino": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "generalizacao": ""
   }
  ],
  "equipe": [],

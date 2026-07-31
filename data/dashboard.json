@@ -16,6 +16,7 @@
     { "id": "#12001", "name": "BEATRIZ ALVES NOGUEIRA COSTA", "record": "0912045.00", "unit": "Mais Saúde — Unidade Poço", "supervisor": "Dra. Camila Souza", "version": "V1", "statusId": "review_in_progress", "nextReview": "10/08/2026", "progress": 38, "alertId": null },
     { "id": "#12002", "name": "GABRIEL HENRIQUE RAMOS TEIXEIRA", "record": "0928817.01", "unit": "Mais Saúde — Unidade Poço", "supervisor": "Dr. Bruno Alencar", "version": "V2", "statusId": "active", "nextReview": "20/08/2026", "progress": 55, "alertId": "critical" },
     { "id": "#12003", "name": "LARISSA FERNANDA BARBOSA MOREIRA", "record": "0934190.00", "unit": "Mais Saúde — Unidade Poço", "supervisor": "Dra. Camila Souza", "version": "V1", "statusId": "awaiting_validation", "nextReview": "—", "progress": 22, "alertId": null },
-    { "id": "#12004", "name": "RAFAEL SANTOS LIMA ANDRADE", "record": "0945602.00", "unit": "Mais Saúde — Unidade Poço", "supervisor": null, "version": "—", "statusId": "interview_in_progress", "nextReview": "—", "progress": 12, "alertId": null }
+    { "id": "#12004", "name": "RAFAEL SANTOS LIMA ANDRADE", "record": "0945602.00", "unit": "Mais Saúde — Unidade Poço", "supervisor": null, "version": "—", "statusId": "interview_in_progress", "nextReview": "—", "progress": 12, "alertId": null },
+    { "id": "#13001", "name": "VINÍCIUS AUGUSTO MOREIRA CARDOSO", "record": "0958214.00", "unit": "Mais Saúde — Unidade Poço", "supervisor": "Dra. Camila Souza", "version": "V1", "statusId": "active", "nextReview": "01/02/2027", "progress": 45, "alertId": "critical" }
   ]
 }

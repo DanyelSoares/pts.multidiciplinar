@@ -1,0 +1,1141 @@
+{
+ "aplicacoes": [
+  {
+   "id": "AV-0001",
+   "numero": 1,
+   "data": "2026-07-20",
+   "aplicador": "Dra. Camila Souza",
+   "idadeCronologicaMeses": 84,
+   "fonte": "misto",
+   "status": "concluida",
+   "base": {},
+   "teto": {},
+   "respostas": {
+    "SOC-001": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "SOC-002": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-003": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-004": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-005": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "SOC-006": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-007": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-008": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-009": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "SOC-010": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-011": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-012": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-013": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "SOC-014": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-015": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-016": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-017": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "SOC-018": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-019": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-020": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-021": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "SOC-022": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-023": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-024": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-025": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "SOC-026": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-027": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-028": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-029": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-030": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "SOC-031": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "SOC-032": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-033": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "SOC-034": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "SOC-035": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-036": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "SOC-037": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "SOC-038": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-039": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "SOC-040": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "SOC-041": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "SOC-042": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "SOC-043": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "SOC-044": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "SOC-045": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "SOC-046": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "SOC-047": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "SOC-048": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "SOC-049": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "SOC-050": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "SOC-051": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-001": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "LIN-002": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "LIN-003": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "LIN-004": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "LIN-005": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "LIN-006": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "LIN-007": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "LIN-008": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "LIN-009": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "LIN-010": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "LIN-011": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "LIN-012": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "LIN-013": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-014": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "LIN-015": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "LIN-016": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-017": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "LIN-018": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "LIN-019": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-020": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "LIN-021": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "LIN-022": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-023": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "LIN-024": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "LIN-025": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-026": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "LIN-027": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "LIN-028": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-029": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "LIN-030": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-031": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-032": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-033": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-034": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "LIN-035": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-036": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-037": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-038": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-039": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "LIN-040": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-041": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-042": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-043": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-044": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "LIN-045": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-046": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-047": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-048": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-049": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "LIN-050": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-051": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-052": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-053": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-054": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "LIN-055": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-056": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-057": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "LIN-058": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-001": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "COG-002": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "COG-003": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "COG-004": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "COG-005": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "COG-006": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "COG-007": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "COG-008": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "COG-009": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "COG-010": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "COG-011": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "COG-012": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "COG-013": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "COG-014": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "COG-015": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "COG-016": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "COG-017": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-018": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "COG-019": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "COG-020": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-021": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "COG-022": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "COG-023": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-024": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "COG-025": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "COG-026": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-027": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-028": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-029": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-030": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "COG-031": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-032": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-033": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-034": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-035": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "COG-036": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-037": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-038": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-039": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "COG-040": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "AUT-001": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "AUT-002": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "AUT-003": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "AUT-004": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "AUT-005": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "AUT-006": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "AUT-007": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "AUT-008": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "AUT-009": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "AUT-010": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "AUT-011": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "AUT-012": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "AUT-013": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "AUT-014": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "AUT-015": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "AUT-016": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-017": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "AUT-018": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "AUT-019": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-020": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "AUT-021": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "AUT-022": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-023": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "AUT-024": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "AUT-025": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-026": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "AUT-027": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-028": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-029": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-030": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-031": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "AUT-032": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-033": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-034": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-035": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-036": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "AUT-037": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-038": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-039": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-040": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-041": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "AUT-042": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-043": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-044": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-045": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-046": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "AUT-047": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-048": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-049": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-050": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "AUT-051": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "AUT-052": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-001": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-002": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-003": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-004": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-005": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-006": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-007": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-008": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-009": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-010": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-011": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-012": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-013": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-014": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-015": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-016": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-017": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-018": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-019": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-020": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-021": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-022": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-023": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-024": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-025": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-026": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-027": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-028": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-029": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-030": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-031": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-032": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-033": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-034": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-035": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-036": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-037": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-038": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-039": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-040": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-041": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-042": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-043": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-044": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-045": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-046": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-047": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-048": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-049": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-050": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-051": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-052": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-053": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-054": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-055": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-056": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-057": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-058": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-059": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-060": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-061": {
+     "status": "adquirido",
+     "obs": ""
+    },
+    "MOT-062": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-063": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-064": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-065": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-066": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-067": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-068": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-069": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-070": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-071": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-072": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-073": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-074": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-075": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-076": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-077": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-078": {
+     "status": "nao_adquirido",
+     "obs": ""
+    },
+    "MOT-079": {
+     "status": "emergente",
+     "obs": ""
+    },
+    "MOT-080": {
+     "status": "nao_adquirido",
+     "obs": ""
+    }
+   }
+  }
+ ]
+}

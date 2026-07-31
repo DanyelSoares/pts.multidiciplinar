@@ -1,4 +1,10 @@
 {
+  "institution": {
+    "name": "Mais Saúde",
+    "address": "",
+    "phone": "",
+    "logoUrl": ""
+  },
   "patientStatuses": [
     {
       "id": "active",
